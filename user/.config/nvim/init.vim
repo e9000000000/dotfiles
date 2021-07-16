@@ -101,6 +101,7 @@ nnoremap <leader>f :TagbarToggle<CR><C-W>l
 
 " nerdtree
 let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalUI=1
 
 " ale
 let g:ale_linters = {
@@ -114,6 +115,7 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 
 " tagbar
+let g:tagbar_compact = 1
 let g:tagbar_type_haskell = {
     \ 'ctagsbin'    : 'hasktags',
     \ 'ctagsargs'   : '-x -c -o-',

@@ -16,8 +16,10 @@ mkdir $DIR/user/.bg
 
 # copy configs
 cp -r ~/.config/i3 $DIR/user/.config/
+cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
-cp -r ~/.config/kitty $DIR/user/.config/
+cp ~/.xinitrc $DIR/user/
+cp -r ~/.Xresources $DIR/user/
 cp -r ~/.config/fish $DIR/user/.config/
 cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/nvim $DIR/user/.config/
@@ -30,6 +32,3 @@ cp -r ~/.scripts $DIR/user/
 
 # copy backgrounds
 cp -r ~/.bg $DIR/user/
-
-# copu xinitrc
-cp ~/.xinitrc $DIR/user/

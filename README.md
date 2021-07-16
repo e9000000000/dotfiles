@@ -1,14 +1,15 @@
 # arch_setup
 My arch setup
 
-![](https://i.imgur.com/2WMvxSM.jpg)
+![](https://i.imgur.com/tOu9OZ4.jpg)
 
 task               | solution
 ------------------ | ---
 os                 | arch
 shell              | fish
 de                 | i3-gaps
-theme              | material dark compact
+theme              | minimal Dark
+icons              | Breeze Dark
 browser            | firefox
 filemanager        | pcmanfm
 code editor        | code

@@ -1,0 +1,63 @@
+! remove scrollbar
+URxvt.scrollBar: false
+
+! remove trash window
+URxvt.iso14755: false
+
+! normal copy paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! font
+URxvt.font: xft:DejaVu Sans Mono:size=11.5
+
+! opacity
+! URxvt.transparent: true
+! URxvt.shading: 50
+
+! special
+URxvt*depth: 32
+*.foreground: #FFFFF0
+*.background: [90]#000000
+*.cursorColor: #FFFFF0
+
+! black
+*.color0: [90]#000000
+*.color8: #343434
+
+! red
+*.color1: [90]#E92F2F
+*.color9: #E92F2F
+
+! green
+*.color2: [90]#0ED839
+*.color10: #0ED839
+
+! yellow
+*.color3: [90]#505050
+*.color11: #505050
+
+! blue
+*.color4: [90]#0E8ED8
+*.color12: #0E8ED8
+
+! magenta
+*.color5: [90]#F996E2
+*.color13: #F996E2
+
+! cyan
+*.color6: [90]#707070
+*.color14: #707070
+
+! white
+*.color7: [90]#ABABAB
+*.color15: #F9F9F9

@@ -1,10 +1,8 @@
-################################################################################
-################################# i3-wm config #################################
-################################################################################
-
 # variables_____________________________________________________________________
+
+# local
 set $mod Mod4
-set $TERMINAL kitty
+set $TERMINAL urxvt
 
 # colors
 set $bg_color #000000
@@ -23,7 +21,8 @@ set $ws8 "8:八"
 set $ws9 "9:九"
 set $ws10 "10:十"
 
-# hotkeys_______________________________________________________________________
+
+# hotkeys to run something______________________________________________________
 bindsym $mod+Return exec $TERMINAL
 bindsym $mod+d exec "dmenu_run -nf '$tx_color' -nb '$bg_color' -sb '$fg_color' -sf '$tx_color' -fn 'DejaVu Sans-10' -p ''"
 bindsym Print exec flameshot gui
@@ -31,33 +30,35 @@ bindsym $mod+c exec pcmanfm
 bindsym $mod+x exec code
 bindsym $mod+z exec firefox
 
-# autorun_______________________________________________________________________
 
-# i3 autotiling
-exec_always autotiling 
+# autorun_______________________________________________________________________
 
 # mouse props
 exec xinput set-prop "SteelSeries SteelSeries Rival 3" "libinput Accel Speed" -1
 
 # desktop bg
-#exec ~/.scripts/anime_bg/anime_bg.sh #random anime bg from site
-exec feh --bg-center ~/.bg/bg1.png
+#exec ~/.scripts/anime_bg/anime_bg.sh # random anime bg from site
+exec feh --bg-center ~/.bg/bg1.png # static bg
 
-
-# apps
-exec compton --active-opacity 1 -e 1 -i 1 -m 1 --vsync --fade-delta=3
+# utils
+exec_always autotiling 
+exec picom
 exec flameshot
-exec discord
-exec telegram-desktop
 
 # keymaps
 exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 exec_always "setxkbmap -layout us,ru"
 
-# scripts in ~/.scripts/onstart
-exec fish ~/.scripts/onstart.fish
+# apps
+exec firefox
+exec discord
+exec telegram-desktop
 
-# apps show settings____________________________________________________________
+# scripts in ~/.scripts/onstart
+exec ~/.scripts/onstart.fish
+
+
+# windows display settings______________________________________________________
 
 # assigns
 assign [class="discord"] $ws9
@@ -67,20 +68,15 @@ assign [class="Telegram"] $ws8
 for_window [class="flameshot"] floating enable
 
 
-# font__________________________________________________________________________
+# appearance____________________________________________________________________
+
+# font
 font pango:DejaVu Sans 10
 
-
-# don't know what is it_________________________________________________________
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-
-# id appearance_________________________________________________________________
-
 # gaps
-gaps inner 2
-gaps outer -2
-
+smart_gaps on
+gaps inner 6
+gaps outer -3
 
 # window borders
 default_border pixel 0
@@ -98,14 +94,9 @@ client.placeholder      $bg_color $bg_color $tx_color $bg_color $bg_color
 client.background       $bg_color
 
 
-# don't know. something about volume____________________________________________
-
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# volume control________________________________________________________________
+bindsym $mod+m exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym $mod+n exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 
 # i3 controls___________________________________________________________________
@@ -115,39 +106,27 @@ floating_modifier $mod
 
 # kill focused window
 bindsym $mod+q kill
-bindsym $mod+Shift+q [workspace=$ws2] kill
 
-# alternatively, you can use the cursor keys:
+# move between windows
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
+# move windows
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# split in horizontal orientation
-bindsym $mod+b split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
 # toggle tiling / floating
-bindsym $mod+space floating toggle
+bindsym $mod+w floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+Shift+space focus mode_toggle
+bindsym $mod+Shift+w focus mode_toggle
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -173,23 +152,17 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-
-        # same bindings, but for the arrow keys
+        # binds to change width and height
         bindsym h resize shrink width 10 px or 4 ppt
         bindsym j resize grow height 10 px or 4 ppt
         bindsym k resize shrink height 10 px or 4 ppt
@@ -205,4 +178,4 @@ bindsym $mod+r mode "resize"
 
 
 # polybar_______________________________________________________________________
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always ~/.config/polybar/launch.sh
