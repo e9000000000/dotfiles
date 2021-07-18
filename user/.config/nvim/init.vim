@@ -81,27 +81,46 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 call plug#begin('~/.vim/bundle')
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'preservim/tagbar'
 call plug#end()
 filetype plugin indent on
 
 " status line
-set statusline=%f
-set statusline+=\ %=
-set statusline+=\ %l
-set statusline+=\ %c
+set statusline=%f%=\ %l/%L\ %c
 
 " hotkeys
 let g:mapleader = ","
 nnoremap <leader>i :tabprevious<CR>
 nnoremap <leader>o :tabnext<CR>
-nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>d :NERDTree<CR>
 nnoremap <leader>f :TagbarToggle<CR><C-W>l
 
 " nerdtree
 let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
+
+" nerdtree git
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+    \ 'Modified'  :'M',
+    \ 'Staged'    :'+',
+    \ 'Untracked' :'U',
+    \ 'Renamed'   :'R',
+    \ 'Unmerged'  :'N',
+    \ 'Deleted'   :'X',
+    \ 'Dirty'     :'D',
+    \ 'Ignored'   :'i',
+    \ 'Clean'     :'C',
+    \ 'Unknown'   :'?',
+\ }
+let g:NERDTreeGitStatusShowIgnored = 1
+
+" gitgutter
+highlight GitGutterAdd ctermfg=Green
+highlight GitGutterChange ctermfg=Grey
+highlight GitGutterDelete ctermfg=Red
 
 " ale
 let g:ale_linters = {

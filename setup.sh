@@ -9,7 +9,7 @@ bash $DIR/scripts/paru_install.sh
 # update software
 paru -Syu
 
-# install all another with the paru
+# install all another with paru
 paru -S --noconfirm `cat $DIR/lists/to_install`
 
 # enable services
@@ -20,6 +20,9 @@ bash $DIR/scripts/install_fish.sh
 
 # copy config files
 cp -r $DIR/user/. ~
+
+# set up cron
+bash $DIR/scripts/cron.sh
 
 # python libs
 pip install pynvim pyflakes flake8 rope black

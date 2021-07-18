@@ -1,0 +1,10 @@
+SHELL=/bin/fish
+MAILTO=root
+
+# clear cache and logs
+0 5 * * * rm -rf /var/cache/*
+0 5 * * * rm -rf /var/log/*
+
+# update system
+1 5 * * * paru -Syu --noconfirm; poweroff
+

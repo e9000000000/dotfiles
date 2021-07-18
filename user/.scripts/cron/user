@@ -1,0 +1,4 @@
+SHELL=/bin/fish
+MAILTO=e
+0 0 1 1 * DISPLAY=:0 zenity --info --text="Happy new year."
+

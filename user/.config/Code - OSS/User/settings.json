@@ -1,6 +1,5 @@
 {
     "python.linting.enabled": true,
-    "window.zoomLevel": 0,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "breadcrumbs.enabled": false,

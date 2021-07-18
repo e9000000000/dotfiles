@@ -45,10 +45,6 @@ exec_always autotiling
 exec picom
 exec flameshot
 
-# keymaps
-exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
-exec_always "setxkbmap -layout us,ru"
-
 # apps
 exec firefox
 exec discord
