@@ -9,8 +9,11 @@ bash $DIR/scripts/paru_install.sh
 # update software
 paru -Syu
 
-# install all another with paru
-paru -S --noconfirm `cat $DIR/lists/to_install`
+# install all another software with paru
+for NAME in $(cat $DIR/lists/to_install)
+do
+    paru -S --noconfirm $NAME
+done
 
 # enable services
 bash $DIR/scripts/services.sh

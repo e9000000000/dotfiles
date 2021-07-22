@@ -1,7 +1,8 @@
 xorg-server
+xorg-xinit
 i3-gaps
 dmenu
-urxvt
+rxvt-unicode
 torbrowser-launcher
 flameshot
 alsa-utils
