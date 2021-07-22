@@ -2,7 +2,7 @@
 
 # install software
 pacman -Syu --noconfirm
-pacman -S --noconfirm networkmanager chrony grub sudo
+pacman -S --noconfirm networkmanager chrony grub sudo os-prober
 
 # time
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -42,17 +42,16 @@ echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
 # uncomment only one part below, bios or efi
 
 # bios
-grub-install /dev/sdx
+# grub-install /dev/sdx
 
 # efi
 mkdir /boot/EFI
 mount /dev/sdx1 /boot/EFI
+pacman -S --noconfirm efibootmgr
 grub-install --target=x86_64-efi /dev/sdx
 
 # grub config
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # reboot
-exit
-umount -a
-reboot
+echo "please reboot now"
