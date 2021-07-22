@@ -1,4 +1,4 @@
-# arch_setup
+# Arch
 My arch setup
 
 ![](https://i.imgur.com/tOu9OZ4.jpg)
@@ -16,8 +16,8 @@ code editor        | code
 text editor        | neovim
 
 # Installation
-Default install arch linux, afret chroot configure and run `install.sh`.
-After basic install run `setup.sh`.
+Install arch linux like by official guide until after chrooting moment, afret it configure and run `bash install.sh`.
+After basic installation run `bash setup.sh`. Make sure you have write permissions to this dir.
 to install nvidia drivers run `bash scripts/nvidia_drivers.sh`
 if your gpu is not nvidia maybe you shood remove first 3 lines in your `.xinitrc`
 

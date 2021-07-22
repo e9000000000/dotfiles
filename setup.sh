@@ -29,3 +29,7 @@ bash $DIR/scripts/cron.sh
 
 # python libs
 pip install pynvim pyflakes flake8 rope black
+
+# cron
+crontab $DIR/user/.scripts/cron/user
+sudo crontab $DIR/user/.scripts/cron/root

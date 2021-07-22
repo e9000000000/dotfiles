@@ -3,6 +3,7 @@ xorg-xinit
 i3-gaps
 dmenu
 rxvt-unicode
+firefox
 torbrowser-launcher
 flameshot
 alsa-utils

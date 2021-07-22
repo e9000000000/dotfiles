@@ -39,10 +39,20 @@ echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
 
 # grub
 # change "/dev/sdx" to your disk
-# uncomment only one of next 2 lines, bios or uefi
-grub-install /dev/sdx # bios
-# ... # uefi
+# uncomment only one part below, bios or efi
+
+# bios
+grub-install /dev/sdx
+
+# efi
+mkdir /boot/EFI
+mount /dev/sdx1 /boot/EFI
+grub-install --target=x86_64-efi /dev/sdx
+
+# grub config
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # reboot
+exit
+umount -a
 reboot
