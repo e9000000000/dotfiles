@@ -97,6 +97,7 @@ nnoremap <leader>i :tabprevious<CR>
 nnoremap <leader>o :tabnext<CR>
 nnoremap <leader>d :NERDTree<CR>
 nnoremap <leader>f :TagbarToggle<CR><C-W>l
+nnoremap <leader>e :ALEDetail<CR>
 
 " nerdtree
 let NERDTreeAutoDeleteBuffer=1

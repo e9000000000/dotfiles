@@ -51,3 +51,5 @@ cabal-install
 ormolu
 hasktags
 plymouth-theme-minimal-dark-git
+mpv
+aria2

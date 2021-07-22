@@ -39,6 +39,7 @@ exec xinput set-prop "SteelSeries SteelSeries Rival 3" "libinput Accel Speed" -1
 # desktop bg
 #exec ~/.scripts/anime_bg/anime_bg.sh # random anime bg from site
 exec feh --bg-center ~/.bg/bg1.png # static bg
+#exec xwinwrap -ov -fs -- mpv --mute=yes --loop-file=inf -vo x11 -wid WID ~/.bg/vbg1.mp4 # video bg
 
 # utils
 exec_always autotiling 

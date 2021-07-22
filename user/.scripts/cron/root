@@ -6,5 +6,5 @@ MAILTO=root
 0 5 * * * rm -rf /var/log/*
 
 # update system
-1 5 * * * paru -Syu --noconfirm; poweroff
+1 5 * * * paru -Syu --noconfirm; reboot
 
