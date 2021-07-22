@@ -16,10 +16,10 @@ code editor        | code
 text editor        | neovim
 
 # Installation
-Install arch linux like by official guide until after chrooting moment, afret it configure and run `bash install.sh`.
-After basic installation run `bash setup.sh`. Make sure you have write permissions to this dir.
-to install nvidia drivers run `bash scripts/nvidia_drivers.sh`
-if your gpu is not nvidia maybe you shood remove first 3 lines in your `.xinitrc`
+Install arch linux by official guide until after chrooting moment, after it configure and run `install.sh`, and reboot.
+Next to basic installation run `setup.sh`.
+To install nvidia drivers run `bash scripts/nvidia_drivers.sh`.
+If your gpu is not nvidia maybe you shood remove 3 first lines in your `.xinitrc`.
 
 # Customisation
 dns configuration
