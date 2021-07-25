@@ -1,5 +1,5 @@
-xorg-server
-xorg-xinit
+pacman-contrib
+xorg
 i3-gaps
 dmenu
 rxvt-unicode
@@ -55,3 +55,12 @@ hasktags
 plymouth-theme-minimal-dark-git
 mpv
 aria2
+qemu
+qemu-kvm
+kvm
+python-virtinst
+libvirt
+libvirt-python
+virt-manager
+libguestfs-tools
+virtmanager

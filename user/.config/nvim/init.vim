@@ -70,6 +70,9 @@ highlight StatusLineNC ctermfg=Black ctermbg=Yellow cterm=None
 " remove comment section for Explore
 let g:netrw_banner=0
 
+" remove --INSERT--
+set noshowmode
+
 " sign column
 set scl=yes
 
@@ -83,13 +86,28 @@ call plug#begin('~/.vim/bundle')
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/vim-gitbranch'
 Plug 'dense-analysis/ale'
 Plug 'preservim/tagbar'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 filetype plugin indent on
 
-" status line
-set statusline=%f%=\ %l/%L\ %c
+" light line
+let g:lightline = {
+\   'colorscheme': 'wombat',
+\   'active': {
+\       'left': [
+\           [ 'mode', 'paste' ], [ 'gitbranch' ], [ 'filename' ], [ 'readonly' ]
+\        ],
+\       'right': [
+\           ['lineinfo'], ['percent']
+\       ]
+\   },
+\   'component_function': {
+\       'gitbranch': 'gitbranch#name'
+\   },
+\}
 
 " hotkeys
 let g:mapleader = ","

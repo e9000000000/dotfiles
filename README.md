@@ -2,6 +2,7 @@
 My arch setup
 
 ![](https://i.imgur.com/tOu9OZ4.jpg)
+![](https://i.imgur.com/8pURTgO.jpg)
 
 task               | solution
 ------------------ | ---

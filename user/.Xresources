@@ -1,8 +1,15 @@
+! without it some symbold like russian letters does not displayed
+URxvt.letterSpace: 0
+
 ! remove scrollbar
 URxvt.scrollBar: false
 
 ! remove trash window
 URxvt.iso14755: false
+
+! enable utf-8
+URxvt*utf8: 1
+URxvt*locale: 1
 
 ! normal copy paste
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
@@ -18,7 +25,7 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
 ! font
-URxvt.font: xft:DejaVu Sans Mono:size=11.5
+URxvt.font: [codeset=UTF-8]xft:DejaVu Sans Mono:minspace=False:size=11.5
 
 ! opacity
 ! URxvt.transparent: true

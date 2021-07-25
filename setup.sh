@@ -19,10 +19,13 @@ done
 bash $DIR/scripts/services.sh
 
 # install fish
-bash $DIR/scripts/install_fish.sh
+# bash $DIR/scripts/install_fish.sh
 
 # copy config files
 cp -r $DIR/user/. ~
+
+# configuring bash on system start
+ln -s ~/.bashrc ~/.profile
 
 # set up cron
 bash $DIR/scripts/cron.sh
@@ -32,4 +35,4 @@ pip install pynvim pyflakes flake8 rope black
 
 # cron
 crontab $DIR/user/.scripts/cron/user
-sudo crontab $DIR/user/.scripts/cron/root
+doas crontab $DIR/user/.scripts/cron/root

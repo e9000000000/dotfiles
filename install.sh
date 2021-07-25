@@ -35,7 +35,7 @@ echo "user password setup"
 passwd e
 
 # add user to sudousers
-echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
+echo "permit :wheel as root" > /etc/doas.conf
 
 # grub
 # change "/dev/sdx" to your disk
