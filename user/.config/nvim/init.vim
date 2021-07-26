@@ -104,6 +104,10 @@ let g:lightline = {
 \           ['lineinfo'], ['percent']
 \       ]
 \   },
+\   'inactive': {
+\       'left': [[ 'filename' ]],
+\       'right': []
+\   },
 \   'component_function': {
 \       'gitbranch': 'gitbranch#name'
 \   },

@@ -23,7 +23,7 @@ To install nvidia drivers run `bash scripts/nvidia_drivers.sh`.
 If your gpu is not nvidia maybe you shood remove 3 first lines in your `.xinitrc`.
 
 # Customisation
-dns configuration
+## dns configuration
 ```
 nmcli con # to know your connection name
 nmcli con mod "connection name" ipv4.dns "8.8.8.8 8.8.4.4"
@@ -36,6 +36,7 @@ nmcli con mod "connection name" ipv4.dns "8.8.8.8 8.8.4.4"
 * Dark Reader
 * Cookie-Editor
 * SoundFixer
+* Vimium
 * YouTube NonStop
 * TTV LOL
 * Now Streaming - Twitch

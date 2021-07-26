@@ -3,6 +3,9 @@
 # dir that script locate in
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
+# copy config files
+cp -r $DIR/user/. ~
+
 # install paru
 bash $DIR/scripts/paru_install.sh
 
@@ -20,9 +23,6 @@ bash $DIR/scripts/services.sh
 
 # install fish
 # bash $DIR/scripts/install_fish.sh
-
-# copy config files
-cp -r $DIR/user/. ~
 
 # configuring bash on system start
 ln -s ~/.bashrc ~/.profile

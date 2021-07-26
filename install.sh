@@ -1,8 +1,12 @@
 #!/bin/bash
 
+BOOTDISK="/dev/sdx"
+USERNAME="e"
+HOSTNAME="ar"
+
 # install software
 pacman -Syu --noconfirm
-pacman -S --noconfirm networkmanager chrony grub sudo os-prober
+pacman -S --noconfirm networkmanager chrony grub doas os-prober
 
 # time
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -18,7 +22,7 @@ echo "ja_JP.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
 # setup names localhosts etc
-echo "a" >> /etc/hostname
+echo $HOSTNAME >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1 localhost" >> /etc/hosts
 
@@ -30,15 +34,14 @@ passwd
 systemctl enable NetworkManager.service
 
 # create user
-useradd -m -G wheel,tty,audio,video,input,storage -s /bin/bash e
+useradd -m -G wheel,tty,audio,video,input,storage -s /bin/bash $USERNAME
 echo "user password setup"
-passwd e
+passwd $USERNAME
 
-# add user to sudousers
+# permit user to run doas
 echo "permit :wheel as root" > /etc/doas.conf
 
-# grub
-# change "/dev/sdx" to your disk
+# grub -------------------------------------
 # uncomment only one part below, bios or efi
 
 # bios
@@ -46,12 +49,12 @@ echo "permit :wheel as root" > /etc/doas.conf
 
 # efi
 mkdir /boot/EFI
-mount /dev/sdx1 /boot/EFI
+mount "${$BOOTDISK}1" /boot/EFI
 pacman -S --noconfirm efibootmgr
-grub-install --target=x86_64-efi /dev/sdx
+grub-install --target=x86_64-efi $BOOTDISK
 
 # grub config
 grub-mkconfig -o /boot/grub/grub.cfg
 
-# reboot
+# ask user to reboot
 echo "please reboot now"
