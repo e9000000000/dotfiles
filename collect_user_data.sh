@@ -15,6 +15,7 @@ mkdir $DIR/user/.scripts
 mkdir $DIR/user/.bg
 
 # copy configs
+cp -r ~/.config/paru $DIR/user/.config/
 cp -r ~/.config/i3 $DIR/user/.config/
 cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
