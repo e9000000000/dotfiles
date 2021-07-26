@@ -3,6 +3,11 @@
 # dir that script locate in
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
+# save doas configuration
+DOASCONFIG=$(cat /etc/doas.conf)
+# temp doas configuration for not asking password 10000 times
+doas bash -c 'echo "permit nopass :wheel" > /etc/doas.conf'
+
 # install paru
 bash $DIR/scripts/paru_install.sh
 
@@ -36,3 +41,7 @@ pip install pynvim pyflakes flake8 rope black
 # cron
 crontab $DIR/user/.scripts/cron/user
 doas crontab $DIR/user/.scripts/cron/root
+
+
+# restore doas config
+doas bash -c 'echo $DOASCONFIG > /etc/doas.conf'

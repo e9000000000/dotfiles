@@ -39,7 +39,7 @@ echo "user password setup"
 passwd $USERNAME
 
 # doas configuring
-echo "permit :wheel as root" > /etc/doas.conf
+echo "permit :wheel" > /etc/doas.conf
 ln -s /bin/doas /bin/sudo
 
 # grub -------------------------------------
