@@ -38,8 +38,9 @@ useradd -m -G wheel,tty,audio,video,input,storage -s /bin/bash $USERNAME
 echo "user password setup"
 passwd $USERNAME
 
-# permit user to run doas
+# doas configuring
 echo "permit :wheel as root" > /etc/doas.conf
+ln -s /bin/doas /bin/sudo
 
 # grub -------------------------------------
 # uncomment only one part below, bios or efi
