@@ -3,9 +3,6 @@
 # dir that script locate in
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-# copy config files
-cp -r $DIR/user/. ~
-
 # install paru
 bash $DIR/scripts/paru_install.sh
 
@@ -17,6 +14,9 @@ for NAME in $(cat $DIR/lists/to_install)
 do
     paru -S --noconfirm $NAME
 done
+
+# copy config files
+cp -r $DIR/user/. ~
 
 # enable services
 bash $DIR/scripts/services.sh

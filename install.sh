@@ -49,7 +49,7 @@ echo "permit :wheel as root" > /etc/doas.conf
 
 # efi
 mkdir /boot/EFI
-mount "${$BOOTDISK}1" /boot/EFI
+mount "$BOOTDISK"1 /boot/EFI
 pacman -S --noconfirm efibootmgr
 grub-install --target=x86_64-efi $BOOTDISK
 
