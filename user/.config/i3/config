@@ -29,6 +29,7 @@ bindsym Print exec flameshot gui
 bindsym $mod+c exec pcmanfm
 bindsym $mod+x exec code
 bindsym $mod+z exec firefox
+bindsym $mod+a exec pavucontrol
 
 
 # autorun_______________________________________________________________________
@@ -63,6 +64,7 @@ assign [class="Telegram"] $ws8
 
 # special windows preferences
 for_window [class="flameshot"] floating enable
+for_window [class="Pavucontrol"] floating enable
 
 
 # appearance____________________________________________________________________

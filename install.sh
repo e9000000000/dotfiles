@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# dir contains this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 BOOTDISK="/dev/sdx"
 USERNAME="e"
 HOSTNAME="ar"
 
 # install software
 pacman -Syu --noconfirm
-pacman -S --noconfirm networkmanager chrony grub doas os-prober
+pacman -S --noconfirm networkmanager chrony grub sudo sudo os-prober
 
 # time
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -38,9 +41,11 @@ useradd -m -G wheel,tty,audio,video,input,storage -s /bin/bash $USERNAME
 echo "user password setup"
 passwd $USERNAME
 
-# doas configuring
-echo "permit :wheel" > /etc/doas.conf
-ln -s /bin/doas /bin/sudo
+# sudo configuring
+echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
+
+# bash configuration
+cp $DIR/files/bash.bashrc /etc/
 
 # grub -------------------------------------
 # uncomment only one part below, bios or efi
