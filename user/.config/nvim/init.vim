@@ -3,6 +3,10 @@ nnoremap <Left> :echo "Unable"<CR>
 nnoremap <Right> :echo "Unable"<CR>
 nnoremap <Up> :echo "Unable"<CR>
 nnoremap <Down> :echo "Unable"<CR>
+inoremap <Left> <Esc>
+inoremap <Right> <Esc>
+inoremap <Up> <Esc>
+inoremap <Down> <Esc>
 nnoremap <PageUp> :echo "Unable"<CR>
 nnoremap <PageDown> :echo "Unable"<CR>
 
@@ -37,7 +41,7 @@ function SetTabIndent()
         set shiftwidth=4
     endif
 endfunction
-autocmd BufReadPost * call SetTabIndent()
+autocmd FileType * call SetTabIndent()
 
 set shiftround
 set expandtab
@@ -61,11 +65,11 @@ set path=.,**
 " colorscheme
 set background=dark
 :colorscheme delek
-highlight LineNr ctermfg=Yellow ctermbg=Black cterm=None
-highlight SignColumn ctermfg=White ctermbg=Black cterm=None
-highlight VertSplit ctermfg=Yellow ctermbg=Black cterm=None
-highlight StatusLine ctermfg=Black ctermbg=Yellow cterm=None
-highlight StatusLineNC ctermfg=Black ctermbg=Yellow cterm=None
+highlight LineNr ctermfg=Yellow ctermbg=None cterm=None
+highlight SignColumn ctermfg=White ctermbg=None cterm=None
+highlight VertSplit ctermfg=Yellow ctermbg=None cterm=None
+highlight StatusLine ctermfg=None ctermbg=Yellow cterm=None
+highlight StatusLineNC ctermfg=None ctermbg=Yellow cterm=None
 
 " remove comment section for Explore
 let g:netrw_banner=0
@@ -81,9 +85,11 @@ let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  :UpdateRemotePlugins
 endif
 call plug#begin('~/.vim/bundle')
 Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/vim-gitbranch'
@@ -113,13 +119,15 @@ let g:lightline = {
 \   },
 \}
 
-" hotkeys
+" keymap
 let g:mapleader = ","
+nnoremap <Esc> <Esc>:noh<CR>
 nnoremap <leader>i :tabprevious<CR>
 nnoremap <leader>o :tabnext<CR>
 nnoremap <leader>d :NERDTree<CR>
 nnoremap <leader>f :TagbarToggle<CR><C-W>l
 nnoremap <leader>e :ALEDetail<CR>
+nnoremap ; :
 
 " nerdtree
 let NERDTreeAutoDeleteBuffer=1
@@ -134,7 +142,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Unmerged'  :'N',
     \ 'Deleted'   :'X',
     \ 'Dirty'     :'D',
-    \ 'Ignored'   :'i',
+    \ 'Ignored'   :'_',
     \ 'Clean'     :'C',
     \ 'Unknown'   :'?',
 \ }

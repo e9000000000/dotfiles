@@ -1,5 +1,6 @@
 pacman-contrib
 xorg
+xorg-xinit
 i3-gaps
 dmenu
 rxvt-unicode

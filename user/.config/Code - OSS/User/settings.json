@@ -14,5 +14,18 @@
     "workbench.panel.defaultLocation": "right",
     "comments.openPanel": "openOnSessionStart",
     "workbench.panel.opensMaximized": "never",
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "vim.enableNeovim": true,
+    "vim.leader": ",",
+    "vim.neovimUseConfigFile": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                ":"
+            ]
+        }
+    ]
 }

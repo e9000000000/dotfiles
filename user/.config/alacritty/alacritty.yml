@@ -1,0 +1,121 @@
+window:
+  dimensions:
+    columns: 80
+    lines: 24
+
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: false
+
+  decorations: full
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+  gtk_theme_variant: None
+
+scrolling:
+  history: 4000
+  multiplier: 4
+
+font:
+  normal:
+    family: DejaVu Sans Mono
+  bold:
+    family: DejaVu Sans Mono
+  italic:
+    family: DejaVu Sans Mono
+  bold_italic:
+    family: DejaVu Sans Mono
+
+  size: 11.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
+
+background_opacity: 0.9
+
+colors:
+  primary:
+    background: '#000000'
+    foreground: '#fffff0'
+
+  cursor:
+    text: '#000000'
+    cursor: '#fffff0'
+
+  vi_mode_cursor:
+    text: '#000000'
+    cursor: '#606060'
+
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#202020'
+    focused_match:
+      foreground: '#ffffff'
+      background: '#404040'
+
+    bar:
+      background: '#c5c8c6'
+      foreground: '#1d1f21'
+
+  normal:
+    black:   '#000000'
+    red:     '#e92f2f'
+    green:   '#0ed839'
+    yellow:  '#505050'
+    blue:    '#0e8ed8'
+    magenta: '#f996e2'
+    cyan:    '#707070'
+    white:   '#ababab'
+
+  bright:
+    black:   '#343434'
+    red:     '#e92f2f'
+    green:   '#0ed839'
+    yellow:  '#505050'
+    blue:    '#0e8ed8'
+    magenta: '#f996e2'
+    cyan:    '#707070'
+    white:   '#f9f9f9'
+
+  #dim:
+  #  black:   '#131415'
+  #  red:     '#864343'
+  #  green:   '#777c44'
+  #  yellow:  '#9e824c'
+  #  blue:    '#556a7d'
+  #  magenta: '#75617b'
+  #  cyan:    '#5b7d78'
+  #  white:   '#828482'
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+    blinking: Never
+
+  vi_mode_style: None
+
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true
+
+key_bindings:
+  - { key: B, mods: Shift|Control, mode: ~Search, action: ToggleViMode }

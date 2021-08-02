@@ -2,7 +2,7 @@
 
 # local
 set $mod Mod4
-set $TERMINAL urxvt
+set $TERMINAL alacritty
 
 # colors
 set $bg_color #000000
