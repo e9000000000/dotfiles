@@ -34,9 +34,6 @@ bindsym $mod+a exec pavucontrol
 
 # autorun_______________________________________________________________________
 
-# mouse props
-exec xinput set-prop "SteelSeries SteelSeries Rival 3" "libinput Accel Speed" -1
-
 # desktop bg
 #exec ~/.scripts/anime_bg/anime_bg.sh # random anime bg from site
 exec feh --bg-center ~/.bg/bg1.png # static bg

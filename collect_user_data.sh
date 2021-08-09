@@ -20,7 +20,7 @@ cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
 cp ~/.xinitrc $DIR/user/
 cp -r ~/.config/alacritty $DIR/user/.config/
-cp /etc/bash.bashrc $DIR/files/
+cp ~/.bashrc $DIR/user/
 #cp -r ~/.config/fish $DIR/user/.config/
 cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/nvim $DIR/user/.config/

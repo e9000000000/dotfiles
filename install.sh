@@ -44,9 +44,6 @@ passwd $USERNAME
 # sudo configuring
 echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
 
-# bash configuration
-cp $DIR/files/bash.bashrc /etc/
-
 # grub -------------------------------------
 # uncomment only one part below, bios or efi
 

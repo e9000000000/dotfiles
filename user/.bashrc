@@ -16,7 +16,12 @@ else
 fi
 export PS1="$COLOR${LOCATION/$HOME/'~'}$COLOR_DEFAULT "
 
+# completions
+complete -cf sudo
+complete -cf doas
+
 # variables
+. ~/some/vars
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="nvim"

@@ -7,20 +7,19 @@ My arch setup
 task               | solution
 ------------------ | ---
 os                 | arch
-shell              | fish
+terminal           | alacritty
+shell              | bash
 de                 | i3-gaps
 theme              | minimal Dark
 icons              | Breeze Dark
 browser            | firefox
 filemanager        | pcmanfm
-code editor        | code
+code editor        | visual-studio-code-bin
 text editor        | neovim
 
 # Installation
 Install arch linux by official guide until after chrooting moment, after it configure and run `install.sh`, and reboot.
 Next to basic installation run `setup.sh`.
-To install nvidia drivers run `bash scripts/nvidia_drivers.sh`.
-If your gpu is not nvidia maybe you shood remove 3 first lines in your `.xinitrc`.
 
 # Customisation
 ## dns configuration

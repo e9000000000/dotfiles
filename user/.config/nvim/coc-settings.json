@@ -1,0 +1,30 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": ["python", "haskell", "c"],
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "~/.local/bin/black",
+    "haskell.formatting.provider": "ormolu",
+    "haskell.formatting.ormoluPath": "/bin/ormolu",
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    }
+}
