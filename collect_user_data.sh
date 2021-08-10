@@ -22,7 +22,6 @@ cp ~/.xinitrc $DIR/user/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
 #cp -r ~/.config/fish $DIR/user/.config/
-cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/nvim $DIR/user/.config/
 cp ~/.config/flake8 $DIR/user/.config/
 cp ~/.config/Code\ -\ OSS/User/settings.json $DIR/user/.config/Code\ -\ OSS/User

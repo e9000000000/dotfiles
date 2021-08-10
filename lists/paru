@@ -1,10 +1,9 @@
 pacman-contrib
 xorg
 xorg-xinit
+alacritty
 i3-gaps
 dmenu
-rxvt-unicode
-firefox
 torbrowser-launcher
 flameshot
 alsa-utils
@@ -27,7 +26,7 @@ git
 neovim
 xclip
 ctags
-screenfetch
+neofetch
 gtk3
 sassc
 gtk-engine-murrine
@@ -39,7 +38,6 @@ code
 pcmanfm
 evince
 polybar
-autotiling
 ttf-dejavu
 ttf-symbola
 ttf-koruri

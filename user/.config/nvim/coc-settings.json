@@ -1,4 +1,10 @@
 {
+    "python.pythonPath": "python",
+    "python.jediEnabled": true,
+    "python.jediPath": "~/.local/lib/python3.9/site-packages",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/bin/flake8",
     "coc.preferences.formatOnSaveFiletypes": ["python", "haskell", "c"],
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "~/.local/bin/black",

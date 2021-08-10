@@ -14,7 +14,7 @@ nnoremap <Backspace> <Delete>
 nnoremap ; :
 
 " disable highlight
-nnoremap <Esc> <Esc>:noh<CR>
+nnoremap <silent> <Esc> :noh<CR><Esc>
 
 " tabs and splits
 nnoremap <leader>i :tabprevious<CR>

@@ -10,7 +10,7 @@ bash $DIR/scripts/paru_install.sh
 paru -Syu
 
 # install all another software with paru
-for NAME in $(cat $DIR/lists/to_install)
+for NAME in $(cat $DIR/lists/paru)
 do
     paru -S --noconfirm $NAME
 done
@@ -31,8 +31,14 @@ ln -s ~/.bashrc ~/.profile
 bash $DIR/scripts/cron.sh
 
 # python libs
-pip install pynvim pyflakes flake8 rope black
+for NAME in $(cat $DIR/lists/pip)
+do
+    pip install $NAME
+done
 
 # cron
 crontab $DIR/user/.scripts/cron/user
 sudo crontab $DIR/user/.scripts/cron/root
+
+# set normal code extensions marketplace
+sudo ~/.scripts/fix_code_extensions.py

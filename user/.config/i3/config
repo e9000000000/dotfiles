@@ -40,7 +40,6 @@ exec feh --bg-center ~/.bg/bg1.png # static bg
 #exec xwinwrap -ov -fs -- mpv --mute=yes --loop-file=inf -vo x11 -wid WID ~/.bg/vbg1.mp4 # video bg
 
 # utils
-exec_always autotiling 
 exec picom
 exec flameshot
 
@@ -69,7 +68,7 @@ for_window [class="Pavucontrol"] floating enable
 # font
 font pango:DejaVu Sans 10
 
-# gaps
+# window spacing (gaps)
 smart_gaps on
 gaps inner 6
 gaps outer -3
@@ -91,8 +90,12 @@ client.background       $bg_color
 
 
 # volume control________________________________________________________________
-bindsym $mod+m exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym $mod+n exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# mute headphones
+bindsym $mod+m exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# mute microphone
+bindsym $mod+n exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 
 # i3 controls___________________________________________________________________
@@ -114,6 +117,10 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+
+# change vertical/horisontal windows split
+bindsym $mod+s split h
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -155,6 +162,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -169,8 +177,6 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
-bindsym $mod+r mode "resize"
 
 
 # polybar_______________________________________________________________________

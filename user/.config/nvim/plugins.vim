@@ -19,7 +19,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'itchyny/vim-gitbranch'
 
     " autocomplite () [] {}
-    Plug 'jiangmiao/auto-pairs'
+    " Plug 'jiangmiao/auto-pairs'
 
     " errors, go to definition, autocompliteon, etc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -37,9 +37,6 @@ call plug#begin('~/.vim/bundle')
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
-
-    " debug
-    Plug 'puremourning/vimspector'
 call plug#end()
 filetype plugin indent on
 

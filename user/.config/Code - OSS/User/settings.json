@@ -27,5 +27,7 @@
                 ":"
             ]
         }
-    ]
+    ],
+    "python.showStartPage": false,
+    "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'"
 }
