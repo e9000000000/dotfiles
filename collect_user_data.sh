@@ -16,6 +16,8 @@ mkdir $DIR/user/.bg
 
 # copy configs
 cp -r ~/.config/i3 $DIR/user/.config/
+cp -r ~/.config/bspwm $DIR/user/.config/
+cp -r ~/.config/sxhkd $DIR/user/.config/
 cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
 cp ~/.xinitrc $DIR/user/

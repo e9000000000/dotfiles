@@ -19,10 +19,11 @@ export PS1="$COLOR${LOCATION/$HOME/'~'}$COLOR_DEFAULT "
 # completions
 complete -cf sudo
 complete -cf doas
+complete -cf which
 
 # variables
 . ~/some/vars
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="nvim"
-export PATH="/bin:/home/e/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin"
+export PATH="/bin:~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin"

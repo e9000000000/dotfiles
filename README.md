@@ -9,11 +9,10 @@ task               | solution
 os                 | arch
 terminal           | alacritty
 shell              | bash
-de                 | i3-gaps
+de                 | bspwm
 theme              | minimal Dark
 icons              | Breeze Dark
 browser            | firefox
-filemanager        | pcmanfm
 code editor        | visual-studio-code-bin
 text editor        | neovim
 

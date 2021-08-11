@@ -1,0 +1,2 @@
+#!/bin/bash
+dmenu_run -b -nf '#fffff0' -nb '#000000' -sb '#181818' -sf '#fffff0' -fn 'DejaVu Sans-11.5' -p $USER

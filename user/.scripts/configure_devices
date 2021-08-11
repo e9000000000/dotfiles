@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# keyboard
+setxkbmap -option caps:escape
+xset r rate 190 20
+
+# ru-en keymap
+setxkbmap -layout us,ru
+setxkbmap -option 'grp:alt_shift_toggle'
+
+# mouse
+xinput set-prop "SteelSeries SteelSeries Rival 3" "libinput Accel Speed" -1
+

@@ -48,9 +48,6 @@ exec firefox
 exec discord
 exec telegram-desktop
 
-# scripts in ~/.scripts/onstart
-exec ~/.scripts/onstart.fish
-
 
 # windows display settings______________________________________________________
 

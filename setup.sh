@@ -40,5 +40,5 @@ done
 crontab $DIR/user/.scripts/cron/user
 sudo crontab $DIR/user/.scripts/cron/root
 
-# set normal code extensions marketplace
+# make code extensions marketplace work
 sudo ~/.scripts/fix_code_extensions.py
