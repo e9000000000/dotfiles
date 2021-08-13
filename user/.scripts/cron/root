@@ -6,5 +6,8 @@ MAILTO=root
 0 5 * * * rm -rf /var/log/*
 
 # update system
-1 5 * * * paru -Syu --noconfirm; reboot
+1 5 * * * paru -Syu --noconfirm
+# clear unused dependencies
+5 5 * * * paru -Rsn --noconfirm $(pacman -Qdtq)
+7 5 * * * reboot
 

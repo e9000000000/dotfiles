@@ -9,7 +9,7 @@ super + d
     ~/.scripts/custom_dmenu
 
 # flameshot
-super + r
+super + s
     flameshot gui
 
 

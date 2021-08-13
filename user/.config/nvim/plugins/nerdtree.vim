@@ -1,5 +1,6 @@
 " nerdtree
 let NERDTreeAutoDeleteBuffer=1
+let NERDTreeMinimalMenu=1
 let NERDTreeMinimalUI=1
 
 " nerdtree git

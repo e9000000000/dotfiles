@@ -42,3 +42,10 @@ sudo crontab $DIR/user/.scripts/cron/root
 
 # make code extensions marketplace work
 sudo ~/.scripts/fix_code_extensions.py
+
+# install code extensions
+for NAME in $(cat $DIR/lists/code)
+do
+    code --install-extension $NAM
+done
+

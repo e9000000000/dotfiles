@@ -2,7 +2,6 @@ pacman-contrib
 xorg
 xorg-xinit
 alacritty
-i3-gaps
 bspwm
 sxhkd
 dmenu
@@ -21,8 +20,7 @@ lxappearance
 obs-studio
 telegram-desktop
 discord
-xarchiver
-python3
+python
 python-pip
 git
 neovim

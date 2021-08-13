@@ -8,19 +8,9 @@ syntax on
 set clipboard+=unnamedplus
 
 " normalize tab
-function SetTabIndent()
-    if &filetype ==# 'haskell'
-        set tabstop=2
-        set softtabstop=2
-        set shiftwidth=2
-    else
-        set tabstop=4
-        set softtabstop=4
-        set shiftwidth=4
-    endif
-endfunction
-autocmd FileType * call SetTabIndent()
-
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set shiftround
 set expandtab
 set smartindent

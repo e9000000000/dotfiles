@@ -2,10 +2,10 @@ let g:lightline = {
 \   'colorscheme': 'wombat',
 \   'active': {
 \       'left': [
-\           [ 'mode', 'paste' ], [ 'gitbranch' ], [ 'filename' ], [ 'readonly' ]
+\           [ 'mode', 'paste' ], [ 'gitbranch' ], [ 'filename' ]
 \        ],
 \       'right': [
-\           ['lineinfo'], ['percent']
+\           [ 'readonly' ], ['lineinfo'], ['percent']
 \       ]
 \   },
 \   'inactive': {

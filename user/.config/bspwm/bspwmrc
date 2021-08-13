@@ -9,9 +9,9 @@ sxhkd &
 feh --bg-center ~/.bg/bg1.png &
 pgrep -x picom > /dev/null || picom &
 pgrep -x flameshot > /dev/null || flameshot &
-pgrep -x Discord > /dev/null || discord  &
+pgrep -x Discord > /dev/null || discord &
 pgrep -x telegram-desktop > /dev/null || telegram-desktop &
-pgrep -x firefox > /dev/null || firefox  &
+pgrep -x firefox > /dev/null || firefox &
 ~/.config/polybar/launch.sh &
 
 

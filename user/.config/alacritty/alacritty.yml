@@ -91,15 +91,15 @@ colors:
     cyan:    '#707070'
     white:   '#f9f9f9'
 
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
+  dim:
+    black:   '#000000'
+    red:     '#e92f2f'
+    green:   '#0ed839'
+    yellow:  '#505050'
+    blue:    '#0e8ed8'
+    magenta: '#f996e2'
+    cyan:    '#707070'
+    white:   '#ababab'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

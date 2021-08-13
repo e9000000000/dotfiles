@@ -3,21 +3,18 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "breadcrumbs.enabled": false,
-    "workbench.colorTheme": "VDark",
     "keyboard.dispatch": "keyCode",
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "none",
     "editor.minimap.enabled": false,
     "vim.smartRelativeLine": true,
     "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black",
     "workbench.editor.untitled.hint": "hidden",
     "workbench.panel.defaultLocation": "right",
     "comments.openPanel": "openOnSessionStart",
     "workbench.panel.opensMaximized": "never",
-    "window.menuBarVisibility": "toggle",
-    "vim.enableNeovim": true,
     "vim.leader": ",",
-    "vim.neovimUseConfigFile": true,
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -26,10 +23,73 @@
             "after": [
                 ":"
             ]
+        },
+        {
+            "before": [
+                "C-h"
+            ],
+            "after": [
+                "C-w",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "C-j"
+            ],
+            "after": [
+                "C-w",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "C-k"
+            ],
+            "after": [
+                "C-w",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "C-l"
+            ],
+            "after": [
+                "C-w",
+                "l"
+            ]
         }
     ],
     "python.showStartPage": false,
     "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'",
     "vim.useSystemClipboard": true,
-    "vim.hlsearch": true
+    "vim.hlsearch": true,
+    "workbench.colorTheme": "VDark",
+    "security.workspace.trust.enabled": false,
+    "python.linting.flake8Enabled": true,
+    "editor.linkedEditing": true,
+    "editor.codeLens": false,
+    "files.exclude": {
+        ".env/": true,
+        "env/": true
+    },
+    "editor.hover.delay": 200,
+    "editor.inlayHints.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'",
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "editor.tabCompletion": "on",
+    "editor.cursorBlinking": "solid",
+    "workbench.preferredDarkColorTheme": "VDark",
+    "workbench.preferredLightColorTheme": "VDark",
+    "workbench.tree.indent": 13,
+    "workbench.editor.closeOnFileDelete": true,
+    "window.menuBarVisibility": "toggle",
+    "explorer.autoReveal": false,
+    "explorer.openEditors.sortOrder": "alphabetical",
+    "explorer.sortOrder": "type",
+    "search.exclude": {
+        ".env/": true,
+        "env/": true
+    },
+    "debug.console.closeOnEnd": true
 }

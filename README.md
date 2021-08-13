@@ -1,9 +1,6 @@
 # Arch
 My arch setup
 
-![](https://i.imgur.com/tOu9OZ4.jpg)
-![](https://i.imgur.com/8pURTgO.jpg)
-
 task               | solution
 ------------------ | ---
 os                 | arch
@@ -13,7 +10,7 @@ de                 | bspwm
 theme              | minimal Dark
 icons              | Breeze Dark
 browser            | firefox
-code editor        | visual-studio-code-bin
+code editor        | code
 text editor        | neovim
 
 # Installation
@@ -44,10 +41,3 @@ nmcli con mod "connection name" ipv4.dns "8.8.8.8 8.8.4.4"
 * Canvas Defender
 * AudioContext Fingerprint Defender
 * uBlock Origin
-
-## vscode extensions
-* Theme - VDark
-* Vim
-* GitLens
-* Python
-* Docker
