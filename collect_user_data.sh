@@ -22,6 +22,7 @@ cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
 cp ~/.xinitrc $DIR/user/
 cp -r ~/.config/alacritty $DIR/user/.config/
+cp -r ~/.config/tmux $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
 #cp -r ~/.config/fish $DIR/user/.config/
 cp -r ~/.config/nvim $DIR/user/.config/
