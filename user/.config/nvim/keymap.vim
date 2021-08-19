@@ -3,6 +3,7 @@ let g:mapleader = ","
 
 " comfort
 nnoremap <Backspace> <Delete>
+vnoremap <Backspace> <Delete>
 nnoremap ; :
 
 " disable highlight

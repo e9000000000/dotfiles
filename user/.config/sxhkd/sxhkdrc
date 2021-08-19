@@ -2,7 +2,7 @@
 
 # terminal
 super + Return
-    alacritty
+    killall alacritty > /dev/null || alacritty -e $SHELL -c "tmux attach || tmux"
 
 # dmenu
 super + d
