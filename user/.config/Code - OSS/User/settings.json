@@ -64,7 +64,6 @@
     ],
     "python.showStartPage": false,
     "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'",
-    "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "security.workspace.trust.enabled": false,
     "python.linting.flake8Enabled": true,
@@ -650,5 +649,6 @@
         }
     },
     "python.linting.pylintEnabled": false,
-    "python.linting.pylintUseMinimalCheckers": false
+    "python.linting.pylintUseMinimalCheckers": false,
+    "docker.showStartPage": false
 }

@@ -37,6 +37,7 @@ tmux
 code
 evince
 polybar
+trayer
 ttf-dejavu
 ttf-symbola
 ttf-koruri
@@ -51,4 +52,4 @@ qemu
 libvirt
 libvirt-python
 virt-manager
-nodejs
+gdu-bin

@@ -17,15 +17,8 @@ text editor        | neovim
 Install arch linux by official guide until after chrooting moment, after it configure and run `install.sh`, and reboot.
 Next to basic installation run `setup.sh`.
 
-# Customisation
-## dns configuration
-```
-nmcli con # to know your connection name
-nmcli con mod "connection name" ipv4.dns "8.8.8.8 8.8.4.4"
-```
-
-# apps settings
-## firefox extensions
+# apps extensions
+## firefox
 * uBlock Origin
 * SponsorBlock
 * Dark Reader
@@ -36,7 +29,7 @@ nmcli con mod "connection name" ipv4.dns "8.8.8.8 8.8.4.4"
 * TTV LOL
 * Now Streaming - Twitch
 
-## tor extensions
+## tor-browser
 * Trace
 * Canvas Defender
 * AudioContext Fingerprint Defender

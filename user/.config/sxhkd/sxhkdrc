@@ -2,11 +2,11 @@
 
 # terminal
 super + Return
-    killall alacritty > /dev/null || alacritty -e $SHELL -c "tmux attach || tmux"
+    pkill alacritty > /dev/null || alacritty -e tmux attach
 
 # dmenu
 super + d
-    ~/.scripts/custom_dmenu
+    ~/.scripts/dmenu
 
 # flameshot
 super + s

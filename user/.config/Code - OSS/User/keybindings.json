@@ -1,5 +1,45 @@
 [
     {
+        "key": "alt+q",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "alt+o",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+i",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "alt+r",
+        "command": "editor.action.rename"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "alt+2",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "alt+3",
+        "command": "workbench.explorer.fileView.focus"
+    },
+    {
+        "key": "alt+4",
+        "command": "python_tests.focus"
+    },
+    {
+        "key": "alt+5",
+        "command": "outline.focus"
+    },
+    {
+        "key": "alt+6",
+        "command": "workbench.debug.welcome.focus"
+    },
+    {
         "key": "ctrl+h",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "panelFocus"
@@ -9,5 +49,4 @@
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "sideBarFocus"
     }
-
 ]
