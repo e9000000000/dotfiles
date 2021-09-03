@@ -22,21 +22,14 @@ module-margin-right = 1
 
 font-0 = DejaVuSans:size=10.5;4
 font-1 = Koruri:size=10.5:style=Bold;3
+font-2 = Symbola:size=15;4
 
 
-[bar/right]
+[bar/one]
 inherit = bar/base
-width = 12%
-offset-x = 88%
-modules-right = headphones mic xkeyboard date tray
-
-
-[bar/left]
-inherit = bar/base
-width = 10.3%
-offset-x = 7%
-radius-top = 20
+separator = " | "
 modules-left = bspwm
+modules-right = headphones mic xkeyboard time date tray
 
 
 [module/mic]
@@ -98,17 +91,30 @@ label-empty-foreground = #00000000
 label-empty-padding = 1
 
 
+[module/time]
+type = internal/date
+interval = 1
+time = %H:%M
+label = %time%
+
+
 [module/date]
 type = internal/date
 interval = 1
+date = %A %d %B
+label = %date%
 
-date = %a %m.%d
-date-alt = 
-
-time = %I:%M%P
-time-alt = time
-
-label = [ %date% %time% ]
+#[module/date]
+#type = internal/date
+#interval = 1
+#
+#date = %a %m.%d
+#date-alt = 
+#
+#time = %I:%M%P
+#time-alt = time
+#
+#label = %date% %time%
 
 
 [module/tray]

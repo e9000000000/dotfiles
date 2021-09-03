@@ -7,7 +7,7 @@ os                 | arch
 terminal           | alacritty
 shell              | bash
 de                 | bspwm
-theme              | minimal Dark
+theme              | ShadeZ-Dark-Glass
 icons              | Breeze Dark
 browser            | firefox
 code editor        | code
@@ -20,6 +20,7 @@ Next to basic installation run `setup.sh`.
 # apps extensions
 ## firefox
 * uBlock Origin
+* Nano Defender
 * SponsorBlock
 * Dark Reader
 * Cookie-Editor

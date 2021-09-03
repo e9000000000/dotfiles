@@ -46,7 +46,6 @@ unrar
 docker
 docker-compose
 cronie
-plymouth-theme-minimal-dark-git
 aria2
 qemu
 libvirt

@@ -19,9 +19,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" nerdtree
-nnoremap <leader>d :NERDTree<CR>
-
 " ignorecase
 nnoremap <leader>c :set ignorecase<CR>
 nnoremap <leader>C :set noignorecase<CR>
@@ -31,3 +28,9 @@ nnoremap <silent> <leader>z :vertical resize -5<CR>
 nnoremap <silent> <leader>x :vertical resize +5<CR>
 nnoremap <silent> <leader>vz :resize -5<CR>
 nnoremap <silent> <leader>vx :resize +5<CR>
+
+" hjkl in insert modes
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>

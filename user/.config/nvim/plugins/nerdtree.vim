@@ -3,6 +3,9 @@ let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalMenu=1
 let NERDTreeMinimalUI=1
 
+" open nerdtree
+nnoremap <leader>d :NERDTree<CR>
+
 " nerdtree git
 let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Modified'  :'M',

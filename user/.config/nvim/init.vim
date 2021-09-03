@@ -1,10 +1,12 @@
-" plugins
-source $HOME/.config/nvim/plugins.vim
-
-source $HOME/.config/nvim/plugins/nerdtree.vim
-source $HOME/.config/nvim/plugins/lightline.vim
-
 source $HOME/.config/nvim/keymap.vim
+source $HOME/.config/nvim/vim-plug.vim
 source $HOME/.config/nvim/settings.vim
 
-source $HOME/.config/nvim/plugins/gitgutter.vim
+if exists("g:vscode")
+    source $HOME/.config/nvim/vscode/init.vim
+else
+    source $HOME/.config/nvim/plugins.vim
+    source $HOME/.config/nvim/plugins/nerdtree.vim
+    source $HOME/.config/nvim/plugins/lightline.vim
+    source $HOME/.config/nvim/plugins/gitgutter.vim
+endif

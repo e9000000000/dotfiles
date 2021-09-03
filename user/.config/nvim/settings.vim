@@ -1,11 +1,18 @@
 " lines numbers
 set number
 
+" always utf-8
+set fileencoding=utf-8
+set encoding=utf-8
+
+" auto change directory
+set autochdir
+
 " syntax highlight
-syntax on
+syntax enable
 
 " normal copy paste
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 
 " normalize tab
 set tabstop=4
