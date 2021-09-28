@@ -6,7 +6,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 pkill sxhkd
 
 sxhkd &
-feh --bg-center ~/.bg/bg1.png &
+feh --bg-center ~/.bg/bg4.jpg &
 pgrep -x picom > /dev/null || picom &
 pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || discord &

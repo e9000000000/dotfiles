@@ -28,6 +28,7 @@ font-2 = Symbola:size=15;4
 [bar/one]
 inherit = bar/base
 separator = " | "
+separator-foreground = ${colors.unfocused}
 modules-left = bspwm
 modules-right = headphones mic xkeyboard time date tray
 

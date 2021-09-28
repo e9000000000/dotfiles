@@ -74,7 +74,6 @@
     "docker.showStartPage": false,
     "vscode-neovim.neovimExecutablePaths.linux": "/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.vim",
-    "editor.scrollBeyondLastLine": false,
     "python.pythonPath": "/bin/python",
     "workbench.colorCustomizations": {
         "editor.background": "#070707",
@@ -101,5 +100,6 @@
         "comments": "#808080",
         "numbers": "#0DBC79",
         "strings": "#0DBC79"
-    }
+    },
+    "editor.cursorSurroundingLines": 20
 }
