@@ -27,6 +27,7 @@ Next to basic installation run `setup.sh`.
 * SoundFixer
 * Vimium
 * YouTube NonStop
+* Youtube Playback Speed Control
 * TTV LOL
 * Now Streaming - Twitch
 
