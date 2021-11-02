@@ -46,6 +46,6 @@ sudo ~/.scripts/fix_code_extensions.py
 # install code extensions
 for NAME in $(cat $DIR/lists/code)
 do
-    code --install-extension $NAM
+    code --install-extension $NAME
 done
 

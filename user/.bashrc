@@ -50,7 +50,7 @@ function startpy() {
     echo "black" >> requirements.txt
     echo "pytest" >> requirements.txt
 
-    python -m venv env
+    python3.10 -m venv env
     source env/bin/activate
     pip install -r requirements.txt
     deactivate

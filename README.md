@@ -14,7 +14,7 @@ code editor        | code
 text editor        | neovim
 
 # Installation
-Install arch linux by official guide until after chrooting moment, after it configure and run `install.sh`, and reboot.
+Install arch linux by official guide until after chrooting moment, then configure and run `install.sh`, and reboot.
 Next to basic installation run `setup.sh`.
 
 # apps extensions

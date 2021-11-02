@@ -15,4 +15,7 @@ call plug#begin('~/.vim/bundle')
 
     " comment/uncomment code
     Plug 'tpope/vim-commentary'
+
+    " lsp
+    Plug 'neovim/nvim-lspconfig'
 call plug#end()

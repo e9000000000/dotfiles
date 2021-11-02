@@ -44,6 +44,8 @@ highlight LineNr ctermfg=Yellow ctermbg=None cterm=None
 highlight SignColumn ctermfg=White ctermbg=None cterm=None
 highlight VertSplit ctermfg=Yellow ctermbg=None cterm=None
 highlight Pmenu ctermfg=None ctermbg=Black cterm=None
+highlight LspDiagnosticsDefaultError ctermfg=Red
+highlight LspDiagnosticsVirtualTextError ctermfg=Red
 
 " remove comment section for Explore
 let g:netrw_banner=0

@@ -52,3 +52,4 @@ libvirt
 libvirt-python
 virt-manager
 gdu-bin
+pyright

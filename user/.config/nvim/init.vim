@@ -9,4 +9,5 @@ else
     source $HOME/.config/nvim/plugins/nerdtree.vim
     source $HOME/.config/nvim/plugins/lightline.vim
     source $HOME/.config/nvim/plugins/gitgutter.vim
+    source $HOME/.config/nvim/plugins/lsp.vim
 endif
