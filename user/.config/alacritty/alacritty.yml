@@ -49,11 +49,11 @@ background_opacity: 0.9
 colors:
   primary:
     background: '#000000'
-    foreground: '#fffff0'
+    foreground: '#ffffff'
 
   cursor:
     text: '#000000'
-    cursor: '#fffff0'
+    cursor: '#ffffff'
 
   vi_mode_cursor:
     text: '#000000'
@@ -71,6 +71,7 @@ colors:
       background: '#c5c8c6'
       foreground: '#1d1f21'
 
+  # colored
   normal:
     black:   '#000000'
     red:     '#e92f2f'
@@ -100,6 +101,27 @@ colors:
     magenta: '#f996e2'
     cyan:    '#707070'
     white:   '#ababab'
+
+  # shades of black
+  # normal:
+  #   black:   '#000000'
+  #   red:     '#aeaeae'
+  #   green:   '#b3b3b3'
+  #   yellow:  '#b9b9b9'
+  #   blue:    '#d3d3d3'
+  #   magenta: '#eaeaea'
+  #   cyan:    '#f1f1f1'
+  #   white:   '#f4f4f4'
+
+  # bright:
+  #   black:   '#aaaaaa'
+  #   red:     '#aeaeae'
+  #   green:   '#b3b3b3'
+  #   yellow:  '#b9b9b9'
+  #   blue:    '#d3d3d3'
+  #   magenta: '#eaeaea'
+  #   cyan:    '#f1f1f1'
+  #   white:   '#f4f4f4'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

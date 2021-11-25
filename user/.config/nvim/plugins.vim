@@ -11,7 +11,7 @@ call plug#begin('~/.vim/bundle')
     Plug 'itchyny/vim-gitbranch'
 
     " lightline
-    Plug 'itchyny/lightline.vim'
+    " Plug 'itchyny/lightline.vim'
 
     " comment/uncomment code
     Plug 'tpope/vim-commentary'

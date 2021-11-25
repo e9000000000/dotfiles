@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 # PS1
-LOCATION="\W"
+LOCATION="\w"
 COLOR_DEFAULT="\[\033[00;39m\]"
 if (( $EUID >= 1000 )); then
     COLOR="\[\033[00;32m\]"
@@ -23,39 +23,27 @@ complete -cf which
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="nvim"
-export PATH="~/.local/bin:/bin"
+export PATH="$HOME/.local/bin:/bin"
 
 # aliases
 alias mkdir="mkdir -p"
 alias ls="ls --color=auto"
-alias ga="git add .; git commit -m"
-alias gp="git push"
 alias vi="nvim"
-alias dockc="docker-compose up --build"
-alias dockd="docker-compose -f docker-compose.debug.yml up --build"
 
-# functions
-function vis() {
-    touch $1
-    chmod 755 $1
-    echo -e "#!/bin/bash\n" > $1
-    vi $1
+
+# functions____________________________________________________________________
+
+# auto python venv activate. works if venv folder name in (env, .env)
+function cd() {
+    builtin cd $@
+    if [ -d env ]; then
+        . env/bin/activate
+    elif [ -d .env ]; then
+        . .env/bin/activate
+    else
+        if command -v deactivate > /dev/null; then
+            deactivate
+        fi
+    fi
 }
-
-function startpy() {
-    mkdir -p $1
-    cd $1
-    touch requirements.txt
-    echo "flake8" >> requirements.txt
-    echo "black" >> requirements.txt
-    echo "pytest" >> requirements.txt
-
-    python3.10 -m venv env
-    source env/bin/activate
-    pip install -r requirements.txt
-    deactivate
-
-    cd ..
-    code $1
-}
-
+cd .

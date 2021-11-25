@@ -12,6 +12,10 @@ super + d
 super + s
     flameshot gui
 
+# tray
+super + c
+    ~/.scripts/polybar_modules/tray.sh
+
 
 # sound________________________________________________________________________
 

@@ -1,5 +1,8 @@
-" lines numbers
-set number
+" 16 colors
+set notermguicolors t_Co=16
+
+" status line
+set statusline=%=%l:%c\ 
 
 " always utf-8
 set fileencoding=utf-8
@@ -39,13 +42,15 @@ set path=.,**
 
 " colorscheme
 set background=dark
-:colorscheme delek
-highlight LineNr ctermfg=Yellow ctermbg=None cterm=None
-highlight SignColumn ctermfg=White ctermbg=None cterm=None
-highlight VertSplit ctermfg=Yellow ctermbg=None cterm=None
-highlight Pmenu ctermfg=None ctermbg=Black cterm=None
-highlight LspDiagnosticsDefaultError ctermfg=Red
-highlight LspDiagnosticsVirtualTextError ctermfg=Red
+colorscheme delek
+hi StatusLine ctermfg=NONE ctermbg=NONE cterm=NONE
+hi StatusLineNC ctermfg=Yellow ctermbg=NONE cterm=NONE
+hi LineNr ctermfg=Yellow ctermbg=None cterm=None
+hi SignColumn ctermfg=White ctermbg=None cterm=None
+hi VertSplit ctermfg=Yellow ctermbg=None cterm=None
+hi Pmenu ctermfg=None ctermbg=Black cterm=None
+hi LspDiagnosticsDefaultError ctermfg=Red
+hi LspDiagnosticsVirtualTextError ctermfg=Red
 
 " remove comment section for Explore
 let g:netrw_banner=0

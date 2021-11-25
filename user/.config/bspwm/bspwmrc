@@ -6,12 +6,12 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 pkill sxhkd
 
 sxhkd &
-feh --bg-center ~/.bg/bg4.jpg &
+feh --bg-center ~/.bg/0.png &
 pgrep -x picom > /dev/null || picom &
 pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || discord &
 pgrep -x telegram-desktop > /dev/null || telegram-desktop &
-pgrep -x firefox > /dev/null || firefox &
+pgrep -wf firefox > /dev/null || firefox &
 ~/.scripts/polybar &
 
 
@@ -30,6 +30,8 @@ bspc config split_ratio 0.5
 
 
 # window rules
+
+bspc rule -a 'firefox:Toolkit' state=floating
 bspc rule -a Alacritty state=floating sticky=on
 bspc rule -a code-oss desktop='^3'
 bspc rule -a TelegramDesktop desktop='^8'

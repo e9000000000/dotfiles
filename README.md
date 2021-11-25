@@ -7,7 +7,7 @@ os                 | arch
 terminal           | alacritty
 shell              | bash
 de                 | bspwm
-theme              | ShadeZ-Dark-Glass
+theme              | Adwaita-dark
 icons              | Breeze Dark
 browser            | firefox
 code editor        | code
@@ -23,7 +23,6 @@ Next to basic installation run `setup.sh`.
 * Nano Defender
 * SponsorBlock
 * Dark Reader
-* Cookie-Editor
 * SoundFixer
 * Vimium
 * YouTube NonStop

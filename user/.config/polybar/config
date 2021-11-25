@@ -1,6 +1,6 @@
 [colors]
 background = #e5000000
-foreground = #FFFFF0
+foreground = #ffffff
 unfocused = #373730
 alert = #e92f2f
 
@@ -30,7 +30,7 @@ inherit = bar/base
 separator = " | "
 separator-foreground = ${colors.unfocused}
 modules-left = bspwm
-modules-right = headphones mic xkeyboard time date tray
+modules-right = headphones mic xkeyboard time date
 
 
 [module/mic]
