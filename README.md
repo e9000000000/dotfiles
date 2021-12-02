@@ -27,6 +27,7 @@ Next to basic installation run `setup.sh`.
 * Vimium
 * YouTube NonStop
 * Youtube Playback Speed Control
+* Return Youtube Dislike
 * TTV LOL
 * Now Streaming - Twitch
 

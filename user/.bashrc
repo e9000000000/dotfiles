@@ -33,6 +33,27 @@ alias vi="nvim"
 
 # functions____________________________________________________________________
 
+# clear and run command if files matching pattern changed
+# Example:
+# autorun "src/*" make build_and_run
+function autorun() {
+    declare -a old_hashes=()
+    
+    while true; do
+        declare -a new_hashes=()
+        for file in $(find . 2>/dev/null -type f -name "$1"); do
+            new_hashes+=$(sha256sum $file)
+        done
+
+        if [ "${old_hashes[*]}" != "${new_hashes[*]}" ]; then
+            old_hashes=("${new_hashes[@]}")
+            clear
+            ${@:2}
+        fi
+        sleep 1
+    done
+}
+
 # auto python venv activate. works if venv folder name in (env, .env)
 function cd() {
     builtin cd $@
