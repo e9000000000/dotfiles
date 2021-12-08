@@ -8,6 +8,6 @@ else
     source $HOME/.config/nvim/plugins.vim
     source $HOME/.config/nvim/plugins/nerdtree.vim
     source $HOME/.config/nvim/plugins/gitgutter.vim
-    source $HOME/.config/nvim/plugins/lsp.vim
     source $HOME/.config/nvim/plugins/cmp.vim
+    source $HOME/.config/nvim/plugins/lsp.vim
 endif

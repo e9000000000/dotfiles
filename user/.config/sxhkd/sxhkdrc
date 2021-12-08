@@ -28,7 +28,7 @@ super + n
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 
-# windows______________________________________________________________________
+# windows and workspaces_______________________________________________________
 
 # close
 super + q

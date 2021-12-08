@@ -43,6 +43,9 @@ set path=.,**
 " colorscheme
 set background=dark
 colorscheme delek
+hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
+hi TabLine ctermfg=White ctermbg=NONE cterm=NONE
+hi TabLineSel ctermfg=Blue ctermbg=NONE cterm=NONE
 hi StatusLine ctermfg=NONE ctermbg=NONE cterm=NONE
 hi StatusLineNC ctermfg=Yellow ctermbg=NONE cterm=NONE
 hi LineNr ctermfg=Yellow ctermbg=None cterm=None
