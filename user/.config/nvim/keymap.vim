@@ -5,13 +5,14 @@ let g:mapleader = ","
 nnoremap <Backspace> <Delete>
 vnoremap <Backspace> <Delete>
 nnoremap ; :
+noremap <leader>q <C-^>
 
 " disable highlight
 nnoremap <silent> <Esc> :noh<CR><Esc>
 
 " tabs and splits
-nnoremap <C-i> :tabprevious<CR>
-nnoremap <C-o> :tabnext<CR>
+noremap <silent> <C-i> :tabprevious<CR>
+noremap <silent> <C-o> :tabnext<CR>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k

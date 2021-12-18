@@ -7,7 +7,7 @@
 LOCATION="\w"
 COLOR_DEFAULT="\[\033[00;39m\]"
 if (( $EUID >= 1000 )); then
-    COLOR="\[\033[00;32m\]"
+    COLOR="\[\033[00;33m\]"
 else
     COLOR="\[\033[00;31m\]"
 fi

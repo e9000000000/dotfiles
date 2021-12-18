@@ -7,8 +7,6 @@ os                 | arch
 terminal           | alacritty
 shell              | bash
 de                 | bspwm
-theme              | Adwaita-dark
-icons              | Breeze Dark
 browser            | firefox
 code editor        | code
 text editor        | neovim
