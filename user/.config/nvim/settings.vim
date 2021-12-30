@@ -1,4 +1,4 @@
-" disable text on sturt up
+" disable text on start
 set shortmess=I
 
 " 16 colors
@@ -28,6 +28,9 @@ set shiftround
 set expandtab
 set smartindent
 
+" lines before end while scrolling
+set scrolloff=13
+
 " my backspace in insert mode not works with out this
 set backspace=indent,eol,start
 
@@ -41,7 +44,7 @@ set incsearch
 set hls
 
 " path
-set path=.,**
+set path=,,**
 
 " colorscheme
 set background=dark

@@ -102,7 +102,7 @@ label = %time%
 [module/date]
 type = internal/date
 interval = 1
-date = %A %d %B
+date = %A %B %d
 label = %date%
 
 #[module/date]

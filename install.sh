@@ -48,12 +48,12 @@ echo "user password:"
 passwd $USERNAME
 
 # sudo configuring
-echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
+echo "%wheel ALL=(ALL) ALL" | EDITOR="tee" visudo
 
 # grub
 if [ $BOOT == "bios" ]
 then
-    grub-install /dev/sdx
+    grub-install "$BOOTDISK"
 elif [ $BOOT == "efi" ]
 then
     mkdir /boot/EFI

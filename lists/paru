@@ -40,3 +40,4 @@ docker-compose
 cronie
 gdu-bin
 pyright
+ccls

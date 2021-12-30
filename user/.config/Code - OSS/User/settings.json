@@ -9,7 +9,7 @@
                 "pathMappings": [
                     {
                         "localRoot": "${workspaceFolder}",
-                        "remoteRoot": "/service"
+                        "remoteRoot": "/app"
                     }
                 ],
                 "port": 5678,
@@ -37,7 +37,6 @@
             }
         ]
     },
-    "python.linting.enabled": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "breadcrumbs.enabled": false,
@@ -45,16 +44,12 @@
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "none",
     "editor.minimap.enabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.formatting.provider": "black",
     "workbench.editor.untitled.hint": "hidden",
     "workbench.panel.defaultLocation": "right",
     "comments.openPanel": "openOnSessionStart",
     "workbench.panel.opensMaximized": "never",
-    "python.showStartPage": false,
     "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'",
     "security.workspace.trust.enabled": false,
-    "python.linting.flake8Enabled": true,
     "editor.linkedEditing": true,
     "files.exclude": {
         ".env/": true,
@@ -76,11 +71,6 @@
         "env/": true
     },
     "debug.console.closeOnEnd": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pylintUseMinimalCheckers": false,
-    "docker.showStartPage": false,
-    "vscode-neovim.neovimExecutablePaths.linux": "/bin/nvim",
-    "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.vim",
     "python.pythonPath": "/bin/python",
     "workbench.colorCustomizations": {
         "editor.background": "#070707",
@@ -108,5 +98,7 @@
         "numbers": "#0DBC79",
         "strings": "#0DBC79"
     },
-    "editor.cursorSurroundingLines": 20
+    "editor.cursorSurroundingLines": 20,
+    "python.languageServer": "None",
+    "python.formatting.provider": "black"
 }

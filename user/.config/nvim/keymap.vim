@@ -21,9 +21,3 @@ map <C-l> <C-w>l
 " ignorecase
 nnoremap <leader>c :set ignorecase<CR>
 nnoremap <leader>C :set noignorecase<CR>
-
-" hjkl in insert modes
-inoremap <C-h> <Left>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-l> <Right>

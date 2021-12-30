@@ -1,19 +1,14 @@
 [
     {
-        "command": "vscode-neovim.escape",
-        "key": "Escape",
-        "when": "editorTextFocus && neovim.init"
-    },
-    {
         "key": "alt+q",
         "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "alt+d",
+        "key": "alt+f",
         "command": "extension.createFile"
     },
     {
-        "key": "alt+f",
+        "key": "alt+d",
         "command": "extension.createFolder"
     },
     {
@@ -51,33 +46,5 @@
     {
         "key": "alt+6",
         "command": "workbench.debug.welcome.focus"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "panelFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "sideBarFocus"
-    },
-    {
-        "key": "ctrl+h",
-        "command": ""
-    },
-    {
-        "key": "ctrl+k",
-        "command": ""
-    },
-    {
-        "key": "ctrl+h",
-        "command": "",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "",
-        "when": "editorFocus"
     }
 ]
