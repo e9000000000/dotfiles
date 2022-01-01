@@ -21,24 +21,8 @@ cp -r $DIR/user/. ~
 # enable services
 bash $DIR/scripts/services.sh
 
-# install fish
-# bash $DIR/scripts/install_fish.sh
-
 # configuring bash on system start
 ln -s ~/.bashrc ~/.profile
-
-# set up cron
-bash $DIR/scripts/cron.sh
-
-# python libs
-for NAME in $(cat $DIR/lists/pip)
-do
-    pip install $NAME
-done
-
-# cron
-crontab $DIR/user/.scripts/cron/user
-sudo crontab $DIR/user/.scripts/cron/root
 
 # make code extensions marketplace work
 sudo ~/.scripts/fix_code_extensions.py
@@ -48,4 +32,3 @@ for NAME in $(cat $DIR/lists/code)
 do
     code --install-extension $NAME
 done
-

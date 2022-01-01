@@ -15,7 +15,6 @@ mkdir $DIR/user/.scripts
 mkdir $DIR/user/.bg
 
 # copy configs
-cp -r ~/.config/i3 $DIR/user/.config/
 cp -r ~/.config/bspwm $DIR/user/.config/
 cp -r ~/.config/sxhkd $DIR/user/.config/
 cp -r ~/.config/picom $DIR/user/.config/
@@ -24,9 +23,6 @@ cp ~/.xinitrc $DIR/user/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
-#cp -r ~/.config/fish $DIR/user/.config/
-cp -r ~/.config/nvim $DIR/user/.config/
-cp ~/.config/flake8 $DIR/user/.config/
 cp ~/.config/Code\ -\ OSS/User/settings.json $DIR/user/.config/Code\ -\ OSS/User
 cp ~/.config/Code\ -\ OSS/User/keybindings.json $DIR/user/.config/Code\ -\ OSS/User
 

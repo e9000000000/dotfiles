@@ -17,28 +17,29 @@ export PS1="$COLOR${LOCATION/$HOME/'~'}$COLOR_DEFAULT "
 complete -cf sudo
 complete -cf doas
 complete -cf which
+complete -cf time
 
 # variables
 . ~/some/vars
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
-export EDITOR="nvim"
+export EDITOR="nano"
 export PATH="$HOME/.local/bin:/bin"
 
 # aliases
 alias mkdir="mkdir -p"
 alias ls="ls --color=auto"
-alias vi="nvim"
+alias n="nano -xLEMU0T 4"
 
 
 # functions____________________________________________________________________
 
 # clear and run command if files matching pattern changed
 # Example:
-# autorun "src/*" make build_and_run
+#     autorun "src/*" make build_and_run
 function autorun() {
     declare -a old_hashes=()
-    
+
     while true; do
         declare -a new_hashes=()
         for file in $(find . 2>/dev/null -type f -name "$1"); do

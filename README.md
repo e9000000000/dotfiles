@@ -9,7 +9,7 @@ shell              | bash
 de                 | bspwm
 browser            | firefox
 code editor        | code
-text editor        | neovim
+text editor        | nano
 
 # Installation
 Install arch linux by official guide until after chrooting moment, then configure and run `install.sh`, and reboot.
@@ -22,7 +22,6 @@ Next to basic installation run `setup.sh`.
 * SponsorBlock
 * Dark Reader
 * SoundFixer
-* Vimium
 * YouTube NonStop
 * Youtube Playback Speed Control
 * Return Youtube Dislike

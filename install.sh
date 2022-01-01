@@ -11,14 +11,13 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # install software
 pacman -Syu --noconfirm
-pacman -S --noconfirm networkmanager chrony grub sudo os-prober
+pacman -S --noconfirm networkmanager grub sudo os-prober
 
 # time
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc
-systemctl enable 
+systemctl enable
 systemctl enable systemd-timesyncd.service
-systemctl enable cronie.service
 
 # locale
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
@@ -43,7 +42,7 @@ CONNECTION=$(nmcli con | grep "ethernet" | grep -Eo "^(\w|\w )+" | sed 's/\s*$//
 nmcli con mod "$CONNECTION" ipv4.dns "8.8.8.8 8.8.4.4"
 
 # create user
-useradd -m -G wheel,tty,audio,video,input,storage -s /bin/bash $USERNAME
+useradd -m -G wheel,tty,audio,video,input,storage,docker -s /bin/bash $USERNAME
 echo "user password:"
 passwd $USERNAME
 

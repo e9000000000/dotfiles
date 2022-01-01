@@ -10,6 +10,7 @@ flameshot
 alsa-utils
 pulseaudio
 feh
+network-manager-applet
 mpv
 picom
 keepassxc
@@ -22,7 +23,7 @@ discord
 python
 python-pip
 git
-neovim
+nano
 xclip
 sassc
 tmux
@@ -37,7 +38,6 @@ man
 unrar
 docker
 docker-compose
-cronie
 gdu-bin
 pyright
 ccls

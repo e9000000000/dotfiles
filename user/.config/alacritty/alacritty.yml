@@ -138,6 +138,3 @@ cursor:
   thickness: 0.15
 
 live_config_reload: true
-
-key_bindings:
-  - { key: B, mods: Shift|Control, mode: ~Search, action: ToggleViMode }

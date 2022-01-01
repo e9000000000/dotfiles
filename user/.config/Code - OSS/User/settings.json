@@ -51,10 +51,6 @@
     "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'",
     "security.workspace.trust.enabled": false,
     "editor.linkedEditing": true,
-    "files.exclude": {
-        ".env/": true,
-        "env/": true
-    },
     "editor.hover.delay": 200,
     "editor.inlayHints.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'DejaVu Sans'",
     "editor.scrollbar.verticalScrollbarSize": 10,
@@ -67,6 +63,10 @@
     "explorer.openEditors.sortOrder": "alphabetical",
     "explorer.sortOrder": "type",
     "search.exclude": {
+        ".env/": true,
+        "env/": true
+    },
+    "files.exclude": {
         ".env/": true,
         "env/": true
     },
@@ -99,6 +99,6 @@
         "strings": "#0DBC79"
     },
     "editor.cursorSurroundingLines": 20,
-    "python.languageServer": "None",
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "python.languageServer": "None"
 }
