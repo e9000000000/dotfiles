@@ -10,7 +10,6 @@ flameshot
 alsa-utils
 pulseaudio
 feh
-network-manager-applet
 mpv
 picom
 keepassxc
@@ -24,6 +23,7 @@ python
 python-pip
 git
 nano
+neovim
 xclip
 sassc
 tmux

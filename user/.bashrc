@@ -20,16 +20,18 @@ complete -cf which
 complete -cf time
 
 # variables
-. ~/some/vars
+if [ -d ~/some/vars ]; then
+    . ~/some/vars
+fi
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
-export EDITOR="nano"
+export EDITOR="nvim"
 export PATH="$HOME/.local/bin:/bin"
 
 # aliases
 alias mkdir="mkdir -p"
 alias ls="ls --color=auto"
-alias n="nano -xLEMU0T 4"
+alias vi="nvim"
 
 
 # functions____________________________________________________________________

@@ -100,5 +100,6 @@
     },
     "editor.cursorSurroundingLines": 20,
     "python.formatting.provider": "black",
-    "python.languageServer": "None"
+    "python.languageServer": "None",
+    "editor.cursorStyle": "block"
 }

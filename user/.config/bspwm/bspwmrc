@@ -2,16 +2,22 @@
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
-# autostart
-pkill sxhkd
+# execute program if it's not running
+function exec_once() {
+    pgrep -wf "$1" > /dev/null || $1 &
+}
 
+# reload keybindings
+pkill sxhkd
 sxhkd &
+
+# autostart
 feh --bg-fill ~/.bg/bg3.png &
-pgrep -x picom > /dev/null || picom &
-pgrep -x flameshot > /dev/null || flameshot &
-pgrep -x Discord > /dev/null || discord &
-pgrep -x telegram-desktop > /dev/null || telegram-desktop &
-pgrep -wf firefox > /dev/null || firefox &
+exec_once picom
+exec_once flameshot
+exec_once discord
+exec_once telegram-desktop
+exec_once firefox
 ~/.scripts/polybar &
 
 
@@ -30,7 +36,6 @@ bspc config split_ratio 0.5
 
 
 # window rules
-
 bspc rule -a 'firefox:Toolkit' state=floating sticky=true
 bspc rule -a Alacritty state=floating sticky=true
 bspc rule -a code-oss desktop='^3'

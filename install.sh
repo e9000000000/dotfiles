@@ -38,8 +38,8 @@ passwd
 systemctl enable NetworkManager.service
 
 # dns configuration
-CONNECTION=$(nmcli con | grep "ethernet" | grep -Eo "^(\w|\w )+" | sed 's/\s*$//')
-nmcli con mod "$CONNECTION" ipv4.dns "8.8.8.8 8.8.4.4"
+# CONNECTION=$(nmcli con | grep "ethernet" | grep -Eo "^(\w|\w )+" | sed 's/\s*$//')
+# nmcli con mod "$CONNECTION" ipv4.dns "8.8.8.8 8.8.4.4"
 
 # create user
 useradd -m -G wheel,tty,audio,video,input,storage,docker -s /bin/bash $USERNAME

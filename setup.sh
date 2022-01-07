@@ -19,7 +19,7 @@ done
 cp -r $DIR/user/. ~
 
 # enable services
-bash $DIR/scripts/services.sh
+$DIR/scripts/services.sh
 
 # configuring bash on system start
 ln -s ~/.bashrc ~/.profile
@@ -27,6 +27,11 @@ ln -s ~/.bashrc ~/.profile
 # make code extensions marketplace work
 sudo ~/.scripts/fix_code_extensions.py
 
+# install python libs
+for NAME in $(cat $DIR/lists/code)
+do
+    pip install $NAME
+done
 # install code extensions
 for NAME in $(cat $DIR/lists/code)
 do

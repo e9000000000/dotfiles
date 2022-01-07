@@ -8,8 +8,8 @@ terminal           | alacritty
 shell              | bash
 de                 | bspwm
 browser            | firefox
-code editor        | code
-text editor        | nano
+code editor        | neovim or vscode
+text editor        | neovim
 
 # Installation
 Install arch linux by official guide until after chrooting moment, then configure and run `install.sh`, and reboot.
