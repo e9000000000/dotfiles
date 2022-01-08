@@ -16,7 +16,7 @@ mkdir $DIR/user/.bg
 
 # copy configs
 cp -r ~/.config/nvim $DIR/user/.config/
-rm -rf $DIR/user/.config/nvim/plugins/vimspector/gadgets
+rm -rf $DIR/user/.config/nvim/vimspector/gadgets
 cp -r ~/.config/bspwm $DIR/user/.config/
 cp -r ~/.config/sxhkd $DIR/user/.config/
 cp -r ~/.config/picom $DIR/user/.config/
