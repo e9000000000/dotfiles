@@ -32,6 +32,7 @@ for NAME in $(cat $DIR/lists/code)
 do
     pip install $NAME
 done
+
 # install code extensions
 for NAME in $(cat $DIR/lists/code)
 do
