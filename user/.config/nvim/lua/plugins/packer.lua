@@ -26,5 +26,5 @@ return require("packer").startup(function()
     use "hrsh7th/nvim-cmp"
 
     -- debuger
-    use "puremourning/vimspector"
+    use {"puremourning/vimspector", run = ":VimspectorUpdate"}
 end)
