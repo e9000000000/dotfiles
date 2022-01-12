@@ -40,4 +40,4 @@ genfstab -U /mnt >> /mnt/etc/fstab
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cp -r "$DIR" /mnt/users/"$USERNAME"
 # chroot
-arch-chroot /mnt "$DIR"/install_after_chroot
+arch-chroot /mnt "/users/$USERNAME/install_after_chroot"
