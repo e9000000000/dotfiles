@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# dir contains this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+# install paru
+"$DIR"/scripts/paru_install
+
+# update software
+paru -Syu
+
+# install all another software with paru
+for NAME in $(cat "$DIR"/lists/paru)
+do
+    paru -S --noconfirm "$NAME"
+done
+
+# copy config files
+cp -r "$DIR"/user/. ~
+
+# enable services
+"$DIR"/scripts/services
+
+# configuring bash on system start
+ln -s ~/.bashrc ~/.profile
+
+# make code extensions marketplace work
+sudo ~/.scripts/fix_code_extensions.py
+
+# install python libs
+for NAME in $(cat "$DIR"/lists/code)
+do
+    pip install "$NAME"
+done
+
+# install code extensions
+for NAME in $(cat "$DIR"/lists/code)
+do
+    code --install-extension "$NAME"
+done
+
+# ask user to reboot
+echo "please reboot now"

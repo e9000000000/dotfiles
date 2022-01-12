@@ -17,13 +17,15 @@ echo "ja_JP.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
 # setup names localhosts etc
-echo $HOSTNAME > /etc/hostname
+echo "$HOSTNAME" > /etc/hostname
 echo "127.0.0.1 localhost" > /etc/hosts
 echo "::1 localhost" >> /etc/hosts
 
 # root password
 echo "root password:"
-passwd
+while [ true ]; do
+    passwd > /dev/null && break
+done
 
 # network manager
 systemctl enable NetworkManager.service
@@ -33,18 +35,20 @@ systemctl enable NetworkManager.service
 # nmcli con mod "$CONNECTION" ipv4.dns "8.8.8.8 8.8.4.4"
 
 # create user
-useradd -m -G wheel,tty,audio,video,input,storage,docker -s /bin/bash $USERNAME
+useradd -m -G wheel,tty,audio,video,input,storage,docker -s /bin/bash "$USERNAME"
 echo "user password:"
-passwd $USERNAME
+while [ true ]; do
+    passwd "$USERNAME" > /dev/null && break
+done
 
 # sudo configuring
 echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
 
 # grub
-if [ $BOOT == "bios" ]
+if [ "$BOOT" == "bios" ]
 then
     grub-install "$DISK"
-elif [ $BOOT == "efi" ]
+elif [ "$BOOT" == "efi" ]
 then
     mkdir /boot/EFI
     mount "$DISK"1 /boot/EFI
@@ -57,52 +61,8 @@ fi
 # grub config
 grub-mkconfig -o /boot/grub/grub.cfg
 
-
-# 
-# CONFIGURATION
-#
-
 # dir contains this script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-chown -R $USERNAME $DIR/user
-su $USERNAME
-
-# install paru
-bash $DIR/scripts/paru_install.sh
-
-# update software
-paru -Syu
-
-# install all another software with paru
-for NAME in $(cat $DIR/lists/paru)
-do
-    paru -S --noconfirm $NAME
-done
-
-# copy config files
-cp -r $DIR/user/. ~
-
-# enable services
-$DIR/scripts/services.sh
-
-# configuring bash on system start
-ln -s ~/.bashrc ~/.profile
-
-# make code extensions marketplace work
-sudo ~/.scripts/fix_code_extensions.py
-
-# install python libs
-for NAME in $(cat $DIR/lists/code)
-do
-    pip install $NAME
-done
-
-# install code extensions
-for NAME in $(cat $DIR/lists/code)
-do
-    code --install-extension $NAME
-done
-
-# ask user to reboot
-echo "please reboot now"
+chown -R "$USERNAME" "$DIR"/user
+su "$USERNAME" -c "$DIR"/install_afrer_su
