@@ -105,10 +105,11 @@ grub-mkconfig -o /boot/grub/grub.cfg
 # CONFIGURATION
 #
 
-su $USERNAME
-
 # dir contains this script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+chown -R $USERNAME $DIR/user
+su $USERNAME
 
 # install paru
 bash $DIR/scripts/paru_install.sh
