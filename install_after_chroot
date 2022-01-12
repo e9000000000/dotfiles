@@ -2,7 +2,7 @@
 
 # install software
 pacman -Syu --noconfirm
-pacman -S --noconfirm networkmanager grub sudo os-prober
+pacman -S --noconfirm networkmanager grub sudo os-prober git
 
 # time
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -64,5 +64,5 @@ grub-mkconfig -o /boot/grub/grub.cfg
 # dir contains this script
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-chown -R "$USERNAME" "$DIR"/user
+chown -R "$USERNAME" "$DIR"
 su "$USERNAME" -c "$DIR"/install_after_su
