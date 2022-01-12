@@ -41,3 +41,4 @@ docker-compose
 gdu-bin
 pyright
 ccls
+transmission-cli

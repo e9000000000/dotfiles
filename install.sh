@@ -1,13 +1,47 @@
 #!/bin/bash
 
-# user configuration
-BOOT="efi" # `bios` or `efi` lowercase
-BOOTDISK="/dev/sdx" # disk with `/boot` dir
-USERNAME="e"
-HOSTNAME="a"
 
-# dir contains this script
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# 
+# INSTALLATION
+#
+
+# variables
+ls /sys/firmware/efi/efivars && BOOT=efi || BOOT=bios
+
+fdisk -l | less
+echo "disk to install arch (all data will be deleted) '/dev/sdx':"
+read DISK
+
+echo "username:"
+read USERNAME
+
+echo "hostname:"
+read HOSTNAME
+
+
+# partition the disks
+if [ $BOOT == "bios" ]; then
+    printf "g\nn\n\n\n+1M\nt\n4\nn\n\n\n\nw\n" | fdisk "$DISK"
+else
+    printf "g\nn\n\n\n+512M\nt\n1\nn\n\n\n\nw\n" | fdisk "$DISK"
+    mkfs.fat -F 32 "$DISK"1
+fi
+mkfs.ext4 "$DISK"2
+
+# mount
+mount "$DISK"2 /mnt
+if [ $BOOT == "efi" ]; then
+    mkdir -p /mnt/boot
+    mount "$DISK"1 /mnt/boot
+fi
+
+# install base
+pacstrap /mnt base base-devel linux linux-firmware
+genfstab -U /mnt >> /mnt/etc/fstab
+
+# chroot
+arch-chroot /mnt
+
 
 # install software
 pacman -Syu --noconfirm
@@ -47,24 +81,70 @@ echo "user password:"
 passwd $USERNAME
 
 # sudo configuring
-echo "%wheel ALL=(ALL) ALL" | EDITOR="tee" visudo
+echo "%wheel ALL=(ALL) ALL" | EDITOR="tee -a" visudo
 
 # grub
 if [ $BOOT == "bios" ]
 then
-    grub-install "$BOOTDISK"
+    grub-install "$DISK"
 elif [ $BOOT == "efi" ]
 then
     mkdir /boot/EFI
-    mount "$BOOTDISK"1 /boot/EFI
+    mount "$DISK"1 /boot/EFI
     pacman -S --noconfirm efibootmgr
-    grub-install --target=x86_64-efi $BOOTDISK
+    grub-install --target=x86_64-efi "$DISK"
 else
     echo "please setup 'BOOT' variable to 'bios' or 'efi'"
 fi
 
 # grub config
 grub-mkconfig -o /boot/grub/grub.cfg
+
+
+# 
+# CONFIGURATION
+#
+
+su $USERNAME
+
+# dir contains this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+# install paru
+bash $DIR/scripts/paru_install.sh
+
+# update software
+paru -Syu
+
+# install all another software with paru
+for NAME in $(cat $DIR/lists/paru)
+do
+    paru -S --noconfirm $NAME
+done
+
+# copy config files
+cp -r $DIR/user/. ~
+
+# enable services
+$DIR/scripts/services.sh
+
+# configuring bash on system start
+ln -s ~/.bashrc ~/.profile
+
+# make code extensions marketplace work
+sudo ~/.scripts/fix_code_extensions.py
+
+# install python libs
+for NAME in $(cat $DIR/lists/code)
+do
+    pip install $NAME
+done
+
+# install code extensions
+for NAME in $(cat $DIR/lists/code)
+do
+    code --install-extension $NAME
+done
 
 # ask user to reboot
 echo "please reboot now"
