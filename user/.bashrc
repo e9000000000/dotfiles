@@ -20,7 +20,7 @@ complete -cf which
 complete -cf time
 
 # variables
-if [ -d ~/some/vars ]; then
+if [ -f ~/some/vars ]; then
     . ~/some/vars
 fi
 export LC_ALL="en_US.UTF-8"

@@ -43,6 +43,9 @@ vim.o.hls = true
 -- path
 vim.o.path = ",,**"
 
+-- ignore folders for :find
+vim.o.wildignore = "**/__pycache__/**,**/.env/**,**/env/**,**/.git/**"
+
 -- remove --INSERT--
 vim.o.showmode = false
 
