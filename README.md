@@ -12,11 +12,11 @@ code editor        | neovim or vscode
 text editor        | neovim
 
 # Installation
-Install arch linux by official guide until after chrooting moment, then configure and run `install.sh`, and reboot.
-Next to basic installation run `setup.sh`.
+start `./install`
 
 # apps extensions
 ## firefox
+* Vimium-FF
 * uBlock Origin
 * Nano Defender
 * SponsorBlock

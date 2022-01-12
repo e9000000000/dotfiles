@@ -24,19 +24,10 @@ cp -r "$DIR"/user/. ~
 # configuring bash on system start
 ln -s ~/.bashrc ~/.profile
 
-# make code extensions marketplace work
-sudo ~/.scripts/fix_code_extensions.py
-
 # install python libs
-for NAME in $(cat "$DIR"/lists/code)
+for NAME in $(cat "$DIR"/lists/pip)
 do
     pip install "$NAME"
-done
-
-# install code extensions
-for NAME in $(cat "$DIR"/lists/code)
-do
-    code --install-extension "$NAME"
 done
 
 # ask user to reboot

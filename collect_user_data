@@ -9,8 +9,6 @@ rm -rf $DIR/user/
 #create dirs
 mkdir $DIR/user
 mkdir $DIR/user/.config
-mkdir $DIR/user/.config/Code\ -\ OSS
-mkdir $DIR/user/.config/Code\ -\ OSS/User
 mkdir $DIR/user/.scripts
 mkdir $DIR/user/.bg
 
@@ -25,8 +23,6 @@ cp ~/.xinitrc $DIR/user/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
-cp ~/.config/Code\ -\ OSS/User/settings.json $DIR/user/.config/Code\ -\ OSS/User
-cp ~/.config/Code\ -\ OSS/User/keybindings.json $DIR/user/.config/Code\ -\ OSS/User
 
 # copy scripts
 cp -r ~/.scripts $DIR/user/

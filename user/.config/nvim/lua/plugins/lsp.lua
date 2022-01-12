@@ -1,4 +1,4 @@
-local servers = { "pyright", "ccls"}
+local servers = { "pyright" }
 
 local nvim_lsp = require("lspconfig")
 local cmp = require("cmp")

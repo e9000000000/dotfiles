@@ -1,4 +1,4 @@
-pacman-contrib
+firefox
 xorg
 xorg-xinit
 alacritty
@@ -25,9 +25,7 @@ git
 nano
 neovim
 xclip
-sassc
 tmux
-code
 evince
 polybar
 trayer
@@ -40,5 +38,4 @@ docker
 docker-compose
 gdu-bin
 pyright
-ccls
 transmission-cli
