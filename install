@@ -38,6 +38,6 @@ pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-cp -r "$DIR" /mnt/users/"$USERNAME"
+cp -r "$DIR"/* /mnt/arch_setup/
 # chroot
-arch-chroot /mnt "/users/$USERNAME/arch_setup/install_after_chroot"
+arch-chroot /mnt "/arch_setup/install_after_chroot"
