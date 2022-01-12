@@ -35,7 +35,7 @@ systemctl enable NetworkManager.service
 # nmcli con mod "$CONNECTION" ipv4.dns "8.8.8.8 8.8.4.4"
 
 # create user
-useradd -m -G wheel,tty,audio,video,input,storage,docker -s /bin/bash "$USERNAME"
+useradd -m -G wheel,tty,audio,video,input,storage -s /bin/bash "$USERNAME"
 echo "user password:"
 while [ true ]; do
     passwd "$USERNAME" > /dev/null && break
