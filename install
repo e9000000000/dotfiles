@@ -2,6 +2,7 @@
 
 # variables
 ls /sys/firmware/efi/efivars && BOOT=efi || BOOT=bios
+export BOOT
 
 fdisk -l | less
 echo "disk to install arch (all data will be deleted) '/dev/sdx':"
