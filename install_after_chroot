@@ -65,4 +65,4 @@ grub-mkconfig -o /boot/grub/grub.cfg
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 chown -R "$USERNAME" "$DIR"/user
-su "$USERNAME" -c "bash $DIR/install_afrer_su"
+su "$USERNAME" -c "$DIR"/install_afrer_su
