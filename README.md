@@ -8,8 +8,7 @@ terminal           | alacritty
 shell              | bash
 de                 | bspwm
 browser            | firefox
-code editor        | neovim or vscode
-text editor        | neovim
+code editor        | neovim
 
 # Installation
 start `./install`
