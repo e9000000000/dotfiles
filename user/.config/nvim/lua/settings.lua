@@ -1,3 +1,6 @@
+-- autoreload files
+vim.o.autoread = true
+
 -- disable text on start
 vim.o.shortmess = "I"
 

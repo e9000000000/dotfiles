@@ -11,6 +11,7 @@ return require("packer").startup(function()
     -- nerdtree
     use "preservim/nerdtree"
     use "Xuyuanp/nerdtree-git-plugin"
+    use "EvanDotPro/nerdtree-chmod"
 
     -- comment/uncomment code
     use "tpope/vim-commentary"
