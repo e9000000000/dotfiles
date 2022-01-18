@@ -3,6 +3,12 @@ local map = vim.api.nvim_set_keymap
 -- leader
 vim.g.mapleader = ","
 
+-- find
+map("", "<Leader>f", ":find ", {noremap=true, silent=false})
+
+-- term
+map("", "<Leader>v", ":split<CR> :term<CR>i", {noremap=true, silent=false})
+
 -- comfort
 map("", "<Backspace>", "<Delete>", {noremap=true, silent=true})
 map("", ";", ":", {noremap=true, silent=false})

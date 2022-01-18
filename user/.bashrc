@@ -33,6 +33,7 @@ alias mkdir="mkdir -p"
 alias ls="ls --color=auto"
 alias vi="nvim"
 alias ga="git add .; git commit -m"
+alias gp="git push"
 
 
 # functions____________________________________________________________________

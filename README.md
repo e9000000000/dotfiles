@@ -15,10 +15,12 @@ start `./install`
 
 # apps extensions
 ## firefox
+* Matte Black (Grey)
 * Vimium-FF
 * uBlock Origin
 * Nano Defender
 * SponsorBlock
+* I don't care about cookies
 * Dark Reader
 * SoundFixer
 * YouTube NonStop

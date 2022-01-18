@@ -10,7 +10,7 @@ flameshot
 alsa-utils
 pulseaudio
 feh
-mpv
+ffmpeg
 picom
 keepassxc
 zip
@@ -39,3 +39,4 @@ docker-compose
 gdu-bin
 pyright
 transmission-cli
+xdotool

@@ -1,6 +1,9 @@
 -- autoreload files
 vim.o.autoread = true
 
+-- split below
+vim.o.splitbelow = true
+
 -- disable text on start
 vim.o.shortmess = "I"
 
@@ -54,9 +57,6 @@ vim.o.showmode = false
 
 -- sign column on start
 vim.o.scl = "yes"
-
--- disable comment new line when press enter from commented line
-vim.cmd "autocmd FileType * setlocal formatoptions-=cro"
 
 -- set python3 provider
 vim.g.python3_host_prog = "/bin/python"

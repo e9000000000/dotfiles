@@ -23,11 +23,11 @@ local on_attach = function(client, bufnr)
     map("n", "<leader>r", ":lua vim.lsp.buf.rename()<CR>", opts)
     map("n", "<leader>y", ":lua vim.lsp.buf.code_action()<CR>", opts)
     map("n", "gr", ":lua vim.lsp.buf.references()<CR>", opts)
-    map("n", "<leader>e", ":lua vim.lsp.diagnostic.show_line_diagnostics()<CR>", opts)
-    map("n", "[d", ":lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
-    map("n", "]d", ":lua vim.lsp.diagnostic.goto_next()<CR>", opts)
-    map("n", "<leader>l", ":lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
-    map("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
+    map("n", "<leader>e", ":lua vim.diagnostic.open_float()<CR>", opts)
+    map("n", "[d", ":lua vim.diagnostic.goto_prev()<CR>", opts)
+    map("n", "]d", ":lua vim.diagnostic.goto_next()<CR>", opts)
+    map("n", "<leader>l", ":lua vim.diagnostic.setloclist()<CR>", opts)
+    -- map("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
 
@@ -63,6 +63,9 @@ for _, lsp in ipairs(servers) do
         capabilities = capabilities,
         flags = {
             debounce_text_changes = 150,
+        },
+        settings = {
+            rootMarkers = {".git/"}
         }
     }
 end
