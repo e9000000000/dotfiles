@@ -9,7 +9,7 @@ local on_attach = function(client, bufnr)
 
     option("omnifunc", "v:lua.vim.lsp.omnifunc")
 
-    local opts = { noremap=true, silent=true }
+    local opts = {noremap=true, silent=true}
 
     map("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts)
     map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
@@ -27,13 +27,15 @@ local on_attach = function(client, bufnr)
     map("n", "[d", ":lua vim.diagnostic.goto_prev()<CR>", opts)
     map("n", "]d", ":lua vim.diagnostic.goto_next()<CR>", opts)
     map("n", "<leader>l", ":lua vim.diagnostic.setloclist()<CR>", opts)
-    -- map("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
 
 cmp.setup({
+    preselect = cmp.PreselectMode.Item,
+    experimental = {native_menu = true},
     completion = {
         autocomplete = false,
+        completeopt = "menu,menuone"
     },
     mapping = {
         ["<C-n>"] = cmp.mapping(function(fallback)
@@ -42,7 +44,7 @@ cmp.setup({
             else
                 cmp.complete()
             end
-        end, { "i", "s" }),
+        end, {"i", "c"}),
         ["<C-p>"] = cmp.mapping.select_prev_item(),
         ["<C-e>"] = cmp.mapping({
             i = cmp.mapping.abort(),
@@ -50,9 +52,9 @@ cmp.setup({
         }),
     },
     sources = cmp.config.sources({
-        { name = "nvim_lsp" },
-        { name = "buffer" },
-        { name = "path" },
+        {name = "nvim_lsp"},
+        {name = "buffer"},
+        {name = "path"},
     })
 })
 
@@ -65,7 +67,7 @@ for _, lsp in ipairs(servers) do
             debounce_text_changes = 150,
         },
         settings = {
-            rootMarkers = {".git/"}
+            rootMarkers = {".git/", ".env/", "env/"}
         }
     }
 end

@@ -16,6 +16,9 @@ return require("packer").startup(function()
     -- comment/uncomment code
     use "tpope/vim-commentary"
 
+    -- auto pairt
+    use "jiangmiao/auto-pairs"
+
     -- lsp
     use "neovim/nvim-lspconfig"
 
@@ -28,4 +31,7 @@ return require("packer").startup(function()
 
     -- debuger
     use {"puremourning/vimspector", run = ":VimspectorUpdate"}
+
+    -- python normal indents
+    use "Vimjas/vim-python-pep8-indent"
 end)

@@ -1,5 +1,7 @@
 local map = vim.api.nvim_set_keymap
 
+-- maps for lsp and cmp located in plugins/lsp.lua
+
 -- leader
 vim.g.mapleader = ","
 
@@ -33,7 +35,7 @@ map("", "<leader>C", ":set noignorecase<CR>", {noremap=true, silent=false})
 map("t", "<Esc>", "<C-\\><C-n>", {noremap=true, silent=true})
 
 -- open nerdtree
-map("", "<leader>d", ":NERDTree<CR>", {noremap=true, silent=true})
+map("", "<leader>d", ":e .<CR>", {noremap=true, silent=true})
 
 -- vimspector
 map("", "<leader>a", ":call vimspector#Continue()<CR>", {noremap=true, silent=true})

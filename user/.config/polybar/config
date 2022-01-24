@@ -20,9 +20,9 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = DejaVuSans:size=10.5;4
-font-1 = Koruri:size=10.5:style=Bold;3
-font-2 = Symbola:size=15;4
+font-0 = "DejaVuSans:size=10.5;4"
+font-1 = "Koruri:size=10.5:style=Bold;3"
+font-2 = "Symbola:size=15;4"
 
 
 [bar/one]

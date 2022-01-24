@@ -10,9 +10,6 @@ vim.o.shortmess = "I"
 -- status line
 vim.o.statusline = "%=%l:%c "
 
--- complite menu
-vim.o.completeopt = "menu,menuone,noselect"
-
 -- always utf-8
 vim.o.fileencoding = "utf-8"
 vim.o.encoding = "utf-8"
@@ -23,13 +20,13 @@ vim.o.autochdir = false
 -- normal copy paste
 vim.o.clipboard = "unnamedplus"
 
--- normalize tab
+-- normalize indents
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-vim.o.shiftround = true
+vim.o.shiftwidth = 8
+vim.o.shiftround = false
 vim.o.expandtab = true
-vim.o.smartindent = true
+vim.o.smartindent = false
 
 -- lines before end while scrolling
 vim.o.scrolloff = 13

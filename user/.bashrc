@@ -11,7 +11,7 @@ if (( $EUID >= 1000 )); then
 else
     COLOR="\[\033[00;31m\]"
 fi
-export PS1="$COLOR${LOCATION/$HOME/'~'}$COLOR_DEFAULT "
+export PS1="$COLOR${LOCATION/$HOME/'~'}￥$COLOR_DEFAULT "
 
 # completions
 complete -cf sudo
@@ -32,6 +32,7 @@ export PATH="$HOME/.local/bin:/bin"
 alias mkdir="mkdir -p"
 alias ls="ls --color=auto"
 alias vi="nvim"
+alias gc="git clone"
 alias ga="git add .; git commit -m"
 alias gp="git push"
 

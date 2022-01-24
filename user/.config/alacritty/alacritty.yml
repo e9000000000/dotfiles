@@ -1,4 +1,5 @@
 window:
+  opacity: 0.9
   dimensions:
     columns: 140
     lines: 40
@@ -44,8 +45,6 @@ font:
 
 draw_bold_text_with_bright_colors: false
 
-background_opacity: 0.9
-
 colors:
   primary:
     background: '#000000'
@@ -54,10 +53,6 @@ colors:
   cursor:
     text: '#000000'
     cursor: '#ffffff'
-
-  vi_mode_cursor:
-    text: '#000000'
-    cursor: '#606060'
 
   search:
     matches:
@@ -71,7 +66,6 @@ colors:
       background: '#c5c8c6'
       foreground: '#1d1f21'
 
-  # colored
   normal:
     black:   '#000000'
     red:     '#e92f2f'
@@ -102,27 +96,6 @@ colors:
     cyan:    '#707070'
     white:   '#ababab'
 
-  # shades of black
-  # normal:
-  #   black:   '#000000'
-  #   red:     '#aeaeae'
-  #   green:   '#b3b3b3'
-  #   yellow:  '#b9b9b9'
-  #   blue:    '#d3d3d3'
-  #   magenta: '#eaeaea'
-  #   cyan:    '#f1f1f1'
-  #   white:   '#f4f4f4'
-
-  # bright:
-  #   black:   '#aaaaaa'
-  #   red:     '#aeaeae'
-  #   green:   '#b3b3b3'
-  #   yellow:  '#b9b9b9'
-  #   blue:    '#d3d3d3'
-  #   magenta: '#eaeaea'
-  #   cyan:    '#f1f1f1'
-  #   white:   '#f4f4f4'
-
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: false
@@ -131,8 +104,6 @@ cursor:
   style:
     shape: Block
     blinking: Never
-
-  vi_mode_style: None
 
   unfocused_hollow: true
   thickness: 0.15
