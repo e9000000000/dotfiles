@@ -13,6 +13,15 @@ return require("packer").startup(function()
     use "Xuyuanp/nerdtree-git-plugin"
     use "EvanDotPro/nerdtree-chmod"
 
+    -- todo/fixme/... list
+    use {
+        "folke/todo-comments.nvim",
+        requires = "nvim-lua/plenary.nvim",
+        config = function()
+            require("todo-comments").setup {}
+        end
+    }
+
     -- comment/uncomment code
     use "tpope/vim-commentary"
 

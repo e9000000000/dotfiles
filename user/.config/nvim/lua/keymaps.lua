@@ -6,7 +6,7 @@ local map = vim.api.nvim_set_keymap
 vim.g.mapleader = ","
 
 -- find
-map("", "<Leader>f", ":find ", {noremap=true, silent=false})
+map("n", "<Leader>f", ":find ", {noremap=true, silent=false})
 
 -- term
 map("", "<Leader>v", ":split<CR> :term<CR>i", {noremap=true, silent=false})

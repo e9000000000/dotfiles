@@ -14,7 +14,6 @@ mkdir $DIR/user/.bg
 
 # copy configs
 cp -r ~/.config/nvim $DIR/user/.config/
-rm -rf $DIR/user/.config/nvim/vimspector/gadgets
 cp -r ~/.config/bspwm $DIR/user/.config/
 cp -r ~/.config/sxhkd $DIR/user/.config/
 cp -r ~/.config/picom $DIR/user/.config/
@@ -23,6 +22,11 @@ cp ~/.xinitrc $DIR/user/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
+cp ~/.gitconfig $DIR/user/
+
+# remove trash
+rm -rf $DIR/user/.config/nvim/vimspector/gadgets
+rm -rf $DIR/user/.config/nvim/plugin
 
 # copy scripts
 cp -r ~/.scripts $DIR/user/

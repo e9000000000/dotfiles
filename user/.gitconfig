@@ -1,0 +1,18 @@
+[core]
+    editor = nvim
+[web]
+    browser = firefox
+
+[difftool]
+    prompt = false
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+
+[merge]
+    tool = nvim
+[mergetool]
+    keepBackup = false
+[mergetool "nvim"]
+    cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
