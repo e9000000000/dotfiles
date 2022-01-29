@@ -36,7 +36,8 @@ man
 unrar
 docker
 docker-compose
-gdu-bin
 pyright
 transmission-cli
 xdotool
+mdp
+glow

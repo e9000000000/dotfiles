@@ -1,3 +1,8 @@
+[user]
+    name = 6
+    email = skipper224483@gmail.com
+    username = e9000000000
+
 [core]
     editor = nvim
 [web]

@@ -1,3 +1,6 @@
 rm -rf /var/cache/*
 rm -rf /var/log/*
 rm -rf ~/.local/share/Trash/*
+rm -rf ~/.local/share/TelegramDesktop/tdata/user_data/cache/*
+rm -rf ~/.local/share/TelegramDesktop/tdata/user_data/media_cache/*
+rm -rf ~/.cache/*
