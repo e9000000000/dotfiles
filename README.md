@@ -1,5 +1,5 @@
 ## Dotfiles
-in `./user` dir
+config files in `./user` dir
 
 task               | solution
 ------------------ | ---
@@ -10,12 +10,8 @@ de                 | bspwm
 browser            | firefox
 code/text editor   | neovim
 
-
-# arch installation from just started iso
-start `./install`
-
-# apps extensions
-## firefox
+## apps extensions
+### firefox
 - Matte Black (Grey)
 - Black New Tab
 - Vimium-FF
@@ -31,8 +27,11 @@ start `./install`
 - TTV LOL
 - Now Streaming - Twitch
 
-## tor-browser
+### tor-browser
 - Trace
 - Canvas Defender
 - AudioContext Fingerprint Defender
 - uBlock Origin
+
+# arch installation from just started iso
+start `./install`
