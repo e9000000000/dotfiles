@@ -1,8 +1,5 @@
 ## Dotfiles
-in `./user` directory
-
-# Arch
-My arch setup
+in `./user` dir
 
 task               | solution
 ------------------ | ---
