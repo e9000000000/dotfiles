@@ -13,7 +13,7 @@ return require("packer").startup(function()
     use "Xuyuanp/nerdtree-git-plugin"
     use "EvanDotPro/nerdtree-chmod"
 
-    -- todo/fixme/... list
+    -- todo, fixme, ... list
     use {
         "folke/todo-comments.nvim",
         requires = "nvim-lua/plenary.nvim",
@@ -27,6 +27,12 @@ return require("packer").startup(function()
 
     -- auto pairt
     use "jiangmiao/auto-pairs"
+
+    -- fuzzy search
+    use "junegunn/fzf.vim"
+
+    -- git commits view (maybe not only commits)
+    use "tpope/vim-fugitive"
 
     -- lsp
     use "neovim/nvim-lspconfig"
@@ -43,4 +49,6 @@ return require("packer").startup(function()
 
     -- python normal indents
     use "Vimjas/vim-python-pep8-indent"
+    -- haskell normal indents
+    use "itchyny/vim-haskell-indent"
 end)

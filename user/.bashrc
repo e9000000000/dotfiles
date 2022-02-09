@@ -4,14 +4,13 @@
 [[ $- != *i* ]] && return
 
 # PS1
-LOCATION="\w"
 COLOR_DEFAULT="\[\033[00;39m\]"
-if (( $EUID >= 1000 )); then
+if (( $EUID != 0 )); then
     COLOR="\[\033[00;33m\]"
 else
     COLOR="\[\033[00;31m\]"
 fi
-export PS1="$COLOR${LOCATION/$HOME/'~'}$COLOR_DEFAULT "
+export PS1="$COLOR\w$COLOR_DEFAULT "
 
 # completions
 complete -cf sudo
@@ -37,7 +36,7 @@ alias pvi="poetry run nvim"
 alias gc="git clone"
 alias ga="git add . && git commit -m"
 alias gp="git push"
-alias gd="git difftool"
+alias gd="git diff"
 
 
 # functions____________________________________________________________________

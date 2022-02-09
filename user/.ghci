@@ -1,0 +1,12 @@
+:set prompt "\ESC[00;34m✝\ESC[00;39m "
+:set prompt-cont "\ESC[00;34m☦\ESC[00;39m| "
+:set -XOverloadedStrings
+:set editor nvim
+:def hoogle \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
+
+-- normal if-then-else use: Bool ? varIfTrue $ varIfFalse
+:{
+(?) :: Bool -> a -> a -> a
+(?) True a _ = a
+(?) False _ a = a
+:}

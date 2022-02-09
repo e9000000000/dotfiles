@@ -48,53 +48,104 @@ draw_bold_text_with_bright_colors: false
 colors:
   primary:
     background: '#000000'
-    foreground: '#ffffff'
+    foreground: '#fefefe'
 
   cursor:
     text: '#000000'
-    cursor: '#ffffff'
+    cursor: '#fefefe'
 
-  search:
-    matches:
-      foreground: '#000000'
-      background: '#202020'
-    focused_match:
-      foreground: '#ffffff'
-      background: '#404040'
+  # first colors
+  # normal:
+  #   black:   '#000000'
+  #   red:     '#e92f2f'
+  #   green:   '#0ed839'
+  #   yellow:  '#505050'
+  #   blue:    '#0e8ed8'
+  #   magenta: '#f996e2'
+  #   cyan:    '#707070'
+  #   white:   '#ababab'
 
-    bar:
-      background: '#c5c8c6'
-      foreground: '#1d1f21'
+  # bright:
+  #   black:   '#343434'
+  #   red:     '#e92f2f'
+  #   green:   '#0ed839'
+  #   yellow:  '#505050'
+  #   blue:    '#0e8ed8'
+  #   magenta: '#f996e2'
+  #   cyan:    '#707070'
+  #   white:   '#f9f9f9'
 
+  # dim:
+  #   black:   '#000000'
+  #   red:     '#e92f2f'
+  #   green:   '#0ed839'
+  #   yellow:  '#505050'
+  #   blue:    '#0e8ed8'
+  #   magenta: '#f996e2'
+  #   cyan:    '#707070'
+  #   white:   '#ababab'
+
+  # second colors
+  # normal:
+  #   black:   '#000000'
+  #   red:     '#e30137'
+  #   green:   '#016837'
+  #   yellow:  '#505050'
+  #   blue:    '#1e9be3'
+  #   magenta: '#9b1ee1'
+  #   cyan:    '#707070'
+  #   white:   '#fefefe'
+
+  # bright:
+  #   black:   '#101010'
+  #   red:     '#e30137'
+  #   green:   '#016837'
+  #   yellow:  '#505050'
+  #   blue:    '#1e9be3'
+  #   magenta: '#343434'
+  #   cyan:    '#707070'
+  #   white:   '#fefefe'
+
+  # dim:
+  #   black:   '#000000'
+  #   red:     '#e30137'
+  #   green:   '#016837'
+  #   yellow:  '#505050'
+  #   blue:    '#1e9be3'
+  #   magenta: '#343434'
+  #   cyan:    '#707070'
+  #   white:   '#fefefe'
+
+  # noir
   normal:
     black:   '#000000'
-    red:     '#e92f2f'
-    green:   '#0ed839'
-    yellow:  '#505050'
-    blue:    '#0e8ed8'
-    magenta: '#f996e2'
-    cyan:    '#707070'
-    white:   '#ababab'
+    red:     '#e30137'
+    green:   '#6e6e6e'
+    yellow:  '#777777'
+    blue:    '#5c5c5c'
+    magenta: '#656565'
+    cyan:    '#808080'
+    white:   '#fafafa'
 
   bright:
-    black:   '#343434'
-    red:     '#e92f2f'
-    green:   '#0ed839'
-    yellow:  '#505050'
-    blue:    '#0e8ed8'
-    magenta: '#f996e2'
-    cyan:    '#707070'
-    white:   '#f9f9f9'
+    black:   '#000000'
+    red:     '#e30137'
+    green:   '#6e6e6e'
+    yellow:  '#777777'
+    blue:    '#5c5c5c'
+    magenta: '#656565'
+    cyan:    '#808080'
+    white:   '#fafafa'
 
   dim:
     black:   '#000000'
-    red:     '#e92f2f'
-    green:   '#0ed839'
-    yellow:  '#505050'
-    blue:    '#0e8ed8'
-    magenta: '#f996e2'
-    cyan:    '#707070'
-    white:   '#ababab'
+    red:     '#e30137'
+    green:   '#6e6e6e'
+    yellow:  '#777777'
+    blue:    '#5c5c5c'
+    magenta: '#656565'
+    cyan:    '#808080'
+    white:   '#fafafa'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

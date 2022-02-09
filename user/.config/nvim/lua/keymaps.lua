@@ -6,10 +6,13 @@ local map = vim.api.nvim_set_keymap
 vim.g.mapleader = ","
 
 -- find
-map("n", "<Leader>f", ":find ", {noremap=true, silent=false})
+map("n", "<C-g>", ":FzfFiles<CR>", {noremap=true, silent=true})
+map("n", "<C-f>", ":FzfGFiles<CR>", {noremap=true, silent=true})
+map("n", "<Leader>f", ":FzfAg<CR>", {noremap=true, silent=true})
+map("n", "<Leader>F", ":FzfCommits<CR>", {noremap=true, silent=true})
 
 -- term
-map("", "<Leader>v", ":split<CR> :term<CR>i", {noremap=true, silent=false})
+map("", "<Leader>v", ":split<CR> :term<CR>i", {noremap=true, silent=true})
 
 -- comfort
 map("", "<Backspace>", "<Delete>", {noremap=true, silent=true})

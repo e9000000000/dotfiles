@@ -21,15 +21,15 @@ vim.o.autochdir = false
 vim.o.clipboard = "unnamedplus"
 
 -- normalize indents
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = true
-vim.o.cindent = true
-vim.o.cinoptions = ">1s"
+function set_indents()
+    vim.o.tabstop = get_indent()
+    vim.o.softtabstop = get_indent()
+    vim.o.shiftwidth = get_indent()
+    vim.o.expandtab = get_expand_tab()
+end
+set_indents()
+autocmd("FileType", "*", "set_indents()")
 vim.o.shiftround = false
-vim.o.smartindent = false
-vim.o.autoindent = false
 
 -- lines before end while scrolling
 vim.o.scrolloff = 13
@@ -53,7 +53,7 @@ vim.o.path = ",,**"
 vim.o.wildignore = "**/__pycache__/**,**/.env/**,**/env/**,**/.git/**"
 
 -- remove --INSERT--
-vim.o.showmode = false
+vim.o.showmode = true
 
 -- sign column on start
 vim.o.scl = "yes"

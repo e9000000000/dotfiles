@@ -4,6 +4,9 @@ vim.cmd "syntax enable"
 vim.o.background = "dark"
 vim.cmd "colorscheme delek"
 
+
+hi("Constant", {ctermfg="Red", ctermbg="None", cterm="None"}, false)
+hi("Number", {ctermfg="Red", ctermbg="None", cterm="None"}, false)
 hi("TabLineFill", {ctermfg="None", ctermbg="None", cterm="None"}, false)
 hi("TabLine", {ctermfg="Grey", ctermbg="None", cterm="None"}, false)
 hi("TabLineSel", {ctermfg="White", ctermbg="None", cterm="None"}, false)
@@ -14,8 +17,8 @@ hi("SignColumn", {ctermfg="White", ctermbg="None", cterm="None"}, false)
 hi("VertSplit", {ctermfg="Yellow", ctermbg="None", cterm="None"}, false)
 hi("Pmenu", {ctermfg="None", ctermbg="Black", cterm="None"}, false)
 hi("Error", {ctermfg="Black", ctermbg="Red"}, false)
-hi("NvimInternalError", {ctermfg="Black", ctermbg="Red"}, false)
-hi("Special", {ctermfg="Magenta", ctermbg="None"}, false)
+hi("NvimInternalError", {ctermfg="Black", ctermbg="Red", cterm="None"}, false)
+hi("Special", {ctermfg="Magenta", ctermbg="None", cterm="None"}, false)
 hi("MatchParen", {ctermfg="Black", ctermbg="Yellow"}, false)
 hi("NonText", {ctermfg="Black", ctermbg="None", cterm="None"}, false)
 hi("Todo", {ctermfg="Black", ctermbg="Red", cterm="None"}, false)
@@ -28,3 +31,5 @@ hi("DiffLine", {ctermfg="Yellow", ctermbg="Black", cterm="None"}, false)
 hi("Folded", {ctermfg="Yellow", ctermbg="Black", cterm="None"}, false)
 hi("FoldColumn", {ctermfg="Yellow", ctermbg="Black", cterm="None"}, false)
 hi("PmenuThumb", {ctermfg="Yellow", ctermbg="Black", cterm="None"}, false)
+hi("Underlined", {ctermfg="Blue", ctermbg="None", cterm="underline"}, false)
+hi("NERDTreeExecFile", {ctermfg="Green", ctermbg="None", cterm="none"}, false)

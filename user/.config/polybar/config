@@ -1,8 +1,8 @@
 [colors]
 background = #e5000000
-foreground = #ffffff
-unfocused = #373730
-alert = #e92f2f
+foreground = #fefefe
+unfocused = #343434
+alert = #e30137
 
 
 [bar/base]
@@ -104,18 +104,6 @@ type = internal/date
 interval = 1
 date = %A %B %d
 label = %date%
-
-#[module/date]
-#type = internal/date
-#interval = 1
-#
-#date = %a %m.%d
-#date-alt = 
-#
-#time = %I:%M%P
-#time-alt = time
-#
-#label = %date% %time%
 
 
 [module/tray]

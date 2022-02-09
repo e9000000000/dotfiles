@@ -41,3 +41,6 @@ transmission-cli
 xdotool
 mdp
 glow
+fzf
+the_silver_searcher
+mediainfo

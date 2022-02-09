@@ -1,4 +1,4 @@
-local servers = { "pyright" }
+local servers = {"pyright"}
 
 local nvim_lsp = require("lspconfig")
 local cmp = require("cmp")
@@ -29,13 +29,10 @@ local on_attach = function(client, bufnr)
     map("n", "<leader>l", ":lua vim.diagnostic.setloclist()<CR>", opts)
 end
 
-
 cmp.setup({
-    preselect = cmp.PreselectMode.Item,
-    experimental = {native_menu = true},
     completion = {
         autocomplete = false,
-        completeopt = "menu,menuone"
+        completeopt = "menu,menuone,noselect"
     },
     mapping = {
         ["<C-n>"] = cmp.mapping(function(fallback)
@@ -43,6 +40,7 @@ cmp.setup({
                 cmp.select_next_item()
             else
                 cmp.complete()
+                cmp.select_next_item()
             end
         end, {"i", "c"}),
         ["<C-p>"] = cmp.mapping.select_prev_item(),

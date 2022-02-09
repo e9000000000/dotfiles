@@ -1,0 +1,10 @@
+#!/bin/bash
+paru -Sy --noconfirm --needed ghc cabal-install
+
+GHC="--ghc-options=-dynamic"
+PACKETS="ghcid hoogle"
+
+cabal update
+for PACKET in $PACKETS; do
+    cabal install "$PACKET" "$GHC"
+done

@@ -1,3 +1,6 @@
+## Dotfiles
+in `./user` directory
+
 # Arch
 My arch setup
 
@@ -10,7 +13,8 @@ de                 | bspwm
 browser            | firefox
 code/text editor   | neovim
 
-# Installation
+
+# arch installation from just started iso
 start `./install`
 
 # apps extensions
