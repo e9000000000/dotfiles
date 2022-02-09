@@ -20,7 +20,7 @@ super + s
 
 # tray
 super + c
-    ~/.scripts/polybar_modules/tray.sh
+    ~/.scripts/tray
 
 
 # sound________________________________________________________________________

@@ -1,2 +1,0 @@
-#!/bin/bash
-trayer --distance 20 --align right --widthtype request --heighttype request --padding 4 --tint 0x000000

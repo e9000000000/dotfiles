@@ -10,4 +10,3 @@ setxkbmap -option 'grp:alt_shift_toggle'
 
 # mouse
 xinput set-prop "SteelSeries SteelSeries Rival 3" "libinput Accel Speed" -1
-

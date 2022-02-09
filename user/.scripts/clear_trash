@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf /var/cache/*
 rm -rf /var/log/*
 rm -rf ~/.local/share/Trash/*

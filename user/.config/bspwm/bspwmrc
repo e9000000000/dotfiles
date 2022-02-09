@@ -4,21 +4,27 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 # execute program if it's not running
 function exec_once() {
-    pgrep -wf "$1" > /dev/null || $1 &
+    pgrep -wf "$1" > /dev/null || $@ &
 }
 
-# reload keybindings
-pkill sxhkd
-sxhkd &
+# kill program (if it's already runed) and run it again
+function exec_restart() {
+    pkill "$1"
+    $@ &
+}
+
+# wallpapers
+feh --bg-fill ~/.bg/bg3.png &
 
 # autostart
-feh --bg-fill ~/.bg/bg3.png &
+exec_restart sxhkd
+exec_restart polybar one
+
 exec_once picom
 exec_once flameshot
 exec_once discord
 exec_once telegram-desktop
 exec_once firefox
-~/.scripts/polybar &
 
 
 # borders

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if pgrep -x "trayer" > /dev/null
+then
+    pkill trayer
+else
+    trayer --distance 20 --align right --widthtype request --heighttype request --padding 4 --tint 0x000000
+fi

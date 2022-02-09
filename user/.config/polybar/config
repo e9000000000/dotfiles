@@ -35,7 +35,7 @@ modules-right = headphones mic xkeyboard time date
 
 [module/mic]
 type = custom/script
-exec = ~/.scripts/polybar_modules/mic.sh
+exec = ~/.config/polybar/mic.sh
 interval = 0.1
 
 format = <label>
@@ -45,7 +45,7 @@ format-foreground = ${colors.alert}
 
 [module/headphones]
 type = custom/script
-exec = ~/.scripts/polybar_modules/headphones.sh
+exec = ~/.config/polybar/headphones.sh
 interval = 0.1
 
 format = <label>
@@ -104,14 +104,6 @@ type = internal/date
 interval = 1
 date = %A %B %d
 label = %date%
-
-
-[module/tray]
-type = custom/script
-exec = echo "^.^"
-click-left = ~/.scripts/polybar_modules/tray.sh
-
-format = <label>
 
 
 [settings]
