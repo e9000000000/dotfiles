@@ -21,6 +21,7 @@ cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
+cp -r ~/.config/htop $DIR/user/.config/
 cp ~/.xinitrc $DIR/user/
 cp ~/.bashrc $DIR/user/
 cp ~/.ghci $DIR/user/
