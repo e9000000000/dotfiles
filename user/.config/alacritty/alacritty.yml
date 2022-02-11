@@ -54,68 +54,6 @@ colors:
     text: '#000000'
     cursor: '#fefefe'
 
-  # first colors
-  # normal:
-  #   black:   '#000000'
-  #   red:     '#e92f2f'
-  #   green:   '#0ed839'
-  #   yellow:  '#505050'
-  #   blue:    '#0e8ed8'
-  #   magenta: '#f996e2'
-  #   cyan:    '#707070'
-  #   white:   '#ababab'
-
-  # bright:
-  #   black:   '#343434'
-  #   red:     '#e92f2f'
-  #   green:   '#0ed839'
-  #   yellow:  '#505050'
-  #   blue:    '#0e8ed8'
-  #   magenta: '#f996e2'
-  #   cyan:    '#707070'
-  #   white:   '#f9f9f9'
-
-  # dim:
-  #   black:   '#000000'
-  #   red:     '#e92f2f'
-  #   green:   '#0ed839'
-  #   yellow:  '#505050'
-  #   blue:    '#0e8ed8'
-  #   magenta: '#f996e2'
-  #   cyan:    '#707070'
-  #   white:   '#ababab'
-
-  # second colors
-  # normal:
-  #   black:   '#000000'
-  #   red:     '#e30137'
-  #   green:   '#016837'
-  #   yellow:  '#505050'
-  #   blue:    '#1e9be3'
-  #   magenta: '#9b1ee1'
-  #   cyan:    '#707070'
-  #   white:   '#fefefe'
-
-  # bright:
-  #   black:   '#101010'
-  #   red:     '#e30137'
-  #   green:   '#016837'
-  #   yellow:  '#505050'
-  #   blue:    '#1e9be3'
-  #   magenta: '#343434'
-  #   cyan:    '#707070'
-  #   white:   '#fefefe'
-
-  # dim:
-  #   black:   '#000000'
-  #   red:     '#e30137'
-  #   green:   '#016837'
-  #   yellow:  '#505050'
-  #   blue:    '#1e9be3'
-  #   magenta: '#343434'
-  #   cyan:    '#707070'
-  #   white:   '#fefefe'
-
   # noir
   normal:
     black:   '#000000'

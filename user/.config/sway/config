@@ -43,7 +43,6 @@ set $down j
 set $up k
 set $right l
 set $screenshot flameshot gui
-set $dmenu dmenu_run -nf '#fafafa' -nb '#000000' -sb '#e30137' -sf '#000000' -fn 'DejaVu Sans-10.5'
 
 # autostart
 exec flameshot
@@ -67,18 +66,17 @@ assign [app_id="telegramdesktop"] $ws8
 assign [title="Discord"] $ws9
 for_window [class="feh"] floating enable
 
-# window status         border   | bg      | text    | indic.  | child_border
-client.focused          $fg_color $fg_color $tx_color $bg_color $fg_color
-client.focused_inactive $bg_color $bg_color $tx_color $bg_color $bg_color
-client.unfocused        $bg_color $bg_color $tx_color $bg_color $bg_color
-client.urgent           $fg_color $fg_color $tx_color $bg_color $fg_color
-client.placeholder      $bg_color $bg_color $tx_color $bg_color $bg_color
-client.background       $bg_color
+# window status         border    bg        text      indicator   child_border
+client.focused          $fg_color $fg_color $tx_color $bg_color   $fg_color
+client.focused_inactive $bg_color $bg_color $tx_color $bg_color   $bg_color
+client.unfocused        $bg_color $bg_color $tx_color $bg_color   $bg_color
+client.urgent           $fg_color $fg_color $tx_color $bg_color   $fg_color
+client.placeholder      $bg_color $bg_color $tx_color $bg_color   $bg_color
 
 # keybinds
 bindsym $mod+s exec $screenshot
 bindsym $mod+q kill
-bindsym $mod+d exec $dmenu
+bindsym $mod+d exec wofi
 bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaymsg exit
 

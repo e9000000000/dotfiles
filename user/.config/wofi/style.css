@@ -1,0 +1,76 @@
+#window {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: black;
+  font: 10.5pt "DejaVu Sans", sans;
+}
+
+#input {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  color: #fafafa;
+  background-color: black;
+}
+
+image {
+  color: #343434;
+}
+
+#scroll {
+  margin: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  background-color: black;
+}
+
+#inner-box {
+  margin: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  background-color: black;
+}
+
+expander {
+  color: #fafafa;
+  background-color: black;
+}
+
+expander:selected {
+  color: black;
+  background-color: #e30137;
+}
+
+expander image {
+  color: #343434;
+  background-color: black;
+}
+
+#entry {
+  background-color: black;
+}
+
+#entry:selected {
+  background-color: #e30137;
+}
+
+#unselected {
+  background-color: black;
+}
+
+#selected {
+  background-color: #e30137;
+}
+
+#text {
+  margin: 0px;
+  border: 0;
+  color: #fafafa;
+} 
+
+#text:selected {
+  color: black;
+}

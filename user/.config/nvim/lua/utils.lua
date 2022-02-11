@@ -22,6 +22,8 @@ function get_indent()
         indent = 2
     elseif filetype == "nginx" then
         indent = 2
+    elseif filetype == "css" then
+        indent = 2
     end
     return indent
 end

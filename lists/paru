@@ -3,12 +3,16 @@ firefox
 torbrowser-launcher
 keepassxc
 sway
+wofi
 alacritty
-dmenu
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 grim
 flameshot
+obs-studio
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+pipewire
 pipeware-pulse
 pamixer
 noise-suppression-for-voice
@@ -20,7 +24,6 @@ zip
 unzip
 unrar
 telegram-desktop
-discord
 git
 python
 python-pip

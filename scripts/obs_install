@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# TODO: make it work
-# don't kwno what to do, can't record display with obs, something not working
-paru -Sy --noconfirm --needed xdg-desktop-portal xdg-desktop-portal-wlr pipewire ffmpeg obs-studio

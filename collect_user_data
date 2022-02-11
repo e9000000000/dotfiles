@@ -16,6 +16,7 @@ mkdir $DIR/user/.cabal
 cp -r ~/.bg $DIR/user/
 cp -r ~/.config/nvim $DIR/user/.config/
 cp -r ~/.config/sway $DIR/user/.config/
+cp -r ~/.config/wofi $DIR/user/.config/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
 cp -r ~/.config/htop $DIR/user/.config/
