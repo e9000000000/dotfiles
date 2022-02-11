@@ -15,16 +15,19 @@ input type:pointer {
     pointer_accel -1
 }
 
+# hide cursor when not moving it
+seat * hide_cursor 666
+
 # workspaces
 set $ws1 "1:<"
 set $ws2 "2:3"
-set $ws3 "3:["
-set $ws4 "4:4"
-set $ws5 "5:{"
-set $ws6 "6:5"
-set $ws7 "7:("
-set $ws8 "8:6"
-set $ws9 "9:9"
+set $ws3 "3:?"
+set $ws4 "4:$"
+set $ws5 "5:%"
+set $ws6 "6:^"
+set $ws7 "7:@"
+set $ws8 "8:#"
+set $ws9 "9:&"
 
 # colors
 set $opacity_bg_color #000000e5
@@ -137,7 +140,6 @@ bar {
     status_command while date +'%H:%M  %A %b %d'; do sleep 1; done
     status_edge_padding 3
     status_padding 0
-    # strip_workspace_name no
     strip_workspace_numbers yes
     colors {
         statusline $tx_color
