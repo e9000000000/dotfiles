@@ -1,4 +1,4 @@
-## Dotfiles
+# Dotfiles
 config files in `./user` dir
 
 task               | solution
