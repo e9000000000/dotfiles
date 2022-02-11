@@ -1,6 +1,0 @@
-#!/bin/bash
-
-W=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
-H=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2)
-
-xdotool mousemove $(expr $W / 2) $H

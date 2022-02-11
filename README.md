@@ -6,7 +6,7 @@ task               | solution
 os                 | arch
 terminal           | alacritty
 shell              | bash
-de                 | bspwm
+de                 | sway
 browser            | firefox
 code/text editor   | neovim
 

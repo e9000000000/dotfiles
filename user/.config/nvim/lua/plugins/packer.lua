@@ -8,6 +8,9 @@ return require("packer").startup(function()
     -- packer itself
     use "wbthomason/packer.nvim"
 
+    -- normal keybindings in cmd and insert mode
+    use "maxbrunsfeld/vim-emacs-bindings"
+
     -- nerdtree
     use "preservim/nerdtree"
     use "Xuyuanp/nerdtree-git-plugin"

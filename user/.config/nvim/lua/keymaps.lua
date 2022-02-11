@@ -19,9 +19,6 @@ map("", "<Backspace>", "<Delete>", {noremap=true, silent=true})
 map("", ";", ":", {noremap=true, silent=false})
 map("", "<leader>q", "<C-^>", {noremap=true, silent=true})
 
--- disable highlight
-map("n", "<Esc>", ":noh<CR><Esc>", {noremap=true, silent=true})
-
 -- tabs and splits
 map("", "<C-i>", ":tabprevious<CR>", {noremap=true, silent=true})
 map("", "<C-o>", ":tabnext<CR>", {noremap=true, silent=true})

@@ -5,8 +5,10 @@ keepassxc
 sway
 alacritty
 dmenu
+xdg-desktop-portal
+xdg-desktop-portal-wlr
+grim
 flameshot
-obs-studio
 alsa-utils
 pulseaudio
 feh
@@ -30,10 +32,9 @@ tmux
 neovim
 fzf
 the_silver_searcher
-xclip
+wl-clipboard
 evince
 glow
 transmission-cli
 ttf-dejavu
 ttf-symbola
-ttf-koruri

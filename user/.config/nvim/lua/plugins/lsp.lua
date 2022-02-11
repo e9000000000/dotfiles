@@ -1,4 +1,4 @@
-local servers = {"pyright"}
+local servers = {"pyright", "rust_analyzer"}
 
 local nvim_lsp = require("lspconfig")
 local cmp = require("cmp")
@@ -44,6 +44,14 @@ cmp.setup({
             end
         end, {"i", "c"}),
         ["<C-p>"] = cmp.mapping.select_prev_item(),
+        ['<C-[>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+        ['<C-]>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+        ['<ESC>'] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+                cmp.close()
+            end
+            fallback()
+        end, { 'i', 'c' }),
         ["<C-e>"] = cmp.mapping({
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
