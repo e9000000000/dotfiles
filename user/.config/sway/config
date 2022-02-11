@@ -50,6 +50,7 @@ exec flameshot
 exec alacritty -e tmux a
 exec firefox
 exec telegram-desktop
+exec pipewire -c ~/.config/pipewire/nonoice.conf
 
 # wallpapers
 output * bg ~/.bg/bg3.png fill

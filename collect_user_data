@@ -19,6 +19,7 @@ cp -r ~/.config/sway $DIR/user/.config/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
 cp -r ~/.config/htop $DIR/user/.config/
+cp -r ~/.config/pipewire $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
 cp ~/.ghci $DIR/user/
 cp ~/.gitconfig $DIR/user/
