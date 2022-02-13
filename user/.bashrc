@@ -64,31 +64,3 @@ function autorun() {
         sleep 1
     done
 }
-
-# auto python venv activate. works if venv folder name in $envdirs
-function cd() {
-    builtin cd "$@"
-    envdirs=("env" ".env" "venv" ".venv")
-    checkdir=$(pwd)
-    is_in_folder_with_env=false
-    while [ "$checkdir" != "/" ]; do
-        for envdir in ${envdirs[@]}; do
-            envbin="$checkdir/$envdir/bin"
-            if [ -f "$envbin/activate" ]; then
-                if [ "$envbin/python" != $(which python) ]; then
-                    . "$envbin/activate"
-                fi
-                is_in_folder_with_env=true
-                break
-            fi
-        done
-        checkdir="$(dirname "$checkdir")"
-    done
-
-    if ! $is_in_folder_with_env; then
-        if command -v deactivate > /dev/null; then
-            deactivate
-        fi
-    fi
-}
-cd .
