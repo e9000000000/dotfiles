@@ -24,9 +24,6 @@ return require("packer").startup(function()
     -- comment/uncomment code
     use "tpope/vim-commentary"
 
-    -- auto pairs
-    use "jiangmiao/auto-pairs"
-
     -- fuzzy search
     use "junegunn/fzf.vim"
 
