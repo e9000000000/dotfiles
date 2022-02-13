@@ -18,6 +18,8 @@ vim.o.clipboard = "unnamedplus"
 
 -- normalize indents
 vim.cmd "filetype plugin indent on"
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 
 -- lines before end while scrolling
 vim.o.scrolloff = 13
