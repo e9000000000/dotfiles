@@ -9,7 +9,6 @@ rm -rf $DIR/user/
 #create dirs
 mkdir $DIR/user
 mkdir $DIR/user/.config
-mkdir $DIR/user/.bg
 mkdir $DIR/user/.cabal
 
 # copy files
@@ -29,3 +28,6 @@ cp ~/.cabal/config $DIR/user/.cabal/config
 # remove trash
 rm -rf $DIR/user/.config/nvim/vimspector/gadgets
 rm -rf $DIR/user/.config/nvim/plugin
+
+# open lazy git to view changes
+lazygit

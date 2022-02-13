@@ -33,7 +33,7 @@ set $ws9 "9:&"
 set $opacity_bg_color #282828
 set $bg_color #282828
 set $fg_color #928374
-set $urgent_color #cc241d
+set $urgent_color #fabd2f
 set $tx_color #ebdbb2
 
 # variables
