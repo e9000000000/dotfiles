@@ -39,10 +39,7 @@ alias ls="ls --color=auto"
 alias duh="du -h -BM -a --max-depth=1 2>/dev/null | sort -n"
 alias vi="nvim"
 alias pvi="poetry run nvim"
-alias gc="git clone"
-alias ga="git add . && git commit -m"
-alias gp="git push"
-alias gd="git diff"
+alias lg="lazygit"
 
 
 # functions____________________________________________________________________
