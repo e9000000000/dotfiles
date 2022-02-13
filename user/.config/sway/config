@@ -30,11 +30,11 @@ set $ws8 "8:#"
 set $ws9 "9:&"
 
 # colors
-set $opacity_bg_color #000000e5
-set $bg_color #000000
-set $fg_color #343434
-set $urgent_color #e30137
-set $tx_color #fafafa
+set $opacity_bg_color #282828
+set $bg_color #282828
+set $fg_color #928374
+set $urgent_color #cc241d
+set $tx_color #ebdbb2
 
 # variables
 set $mod Mod4
@@ -52,7 +52,7 @@ exec telegram-desktop
 exec pipewire -c ~/.config/pipewire/nonoice.conf
 
 # wallpapers
-output * bg ~/.bg/bg3.png fill
+output * bg #282828 solid_color
 
 # borders
 default_border pixel 1

@@ -1,7 +1,7 @@
-man
 firefox
 torbrowser-launcher
 keepassxc
+telegram-desktop
 sway
 wofi
 alacritty
@@ -19,12 +19,13 @@ noise-suppression-for-voice
 feh
 ffmpeg
 mediainfo
+man
 htop
 zip
 unzip
 unrar
-telegram-desktop
 git
+lazygit
 python
 python-pip
 pyright

@@ -12,8 +12,7 @@ code/text editor   | neovim
 
 ## apps extensions
 ### firefox
-- Matte Black (Grey)
-- Black New Tab
+- Gruvbox Dark
 - Vimium-FF
 - uBlock Origin
 - Nano Defender

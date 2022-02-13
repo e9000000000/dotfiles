@@ -1,38 +1,23 @@
 local map = vim.api.nvim_set_keymap
 
--- maps for lsp and cmp located in plugins/lsp.lua
+-- maps for lsp and autocompletion located in plugins/lsp.lua
 
 -- leader
 vim.g.mapleader = ","
 
--- find
+-- comfort
+map("", ";", ":", {noremap=true, silent=false})
+map("", "<leader>q", "<C-^>", {noremap=true, silent=true})
+map("c", "<C-f>", "<Right>", {noremap=true, silent=false})
+map("c", "<C-b>", "<Left>", {noremap=true, silent=false})
+map("i", "<C-f>", "<Right>", {noremap=true, silent=false})
+map("i", "<C-b>", "<Left>", {noremap=true, silent=false})
+map("t", "<Esc>", "<C-\\><C-n>", {noremap=true, silent=true})
+
+-- fzf
 map("n", "<C-g>", ":FzfFiles<CR>", {noremap=true, silent=true})
 map("n", "<C-f>", ":FzfGFiles<CR>", {noremap=true, silent=true})
 map("n", "<Leader>f", ":FzfAg<CR>", {noremap=true, silent=true})
-map("n", "<Leader>F", ":FzfCommits<CR>", {noremap=true, silent=true})
-
--- term
-map("", "<Leader>v", ":split<CR> :term<CR>i", {noremap=true, silent=true})
-
--- comfort
-map("", "<Backspace>", "<Delete>", {noremap=true, silent=true})
-map("", ";", ":", {noremap=true, silent=false})
-map("", "<leader>q", "<C-^>", {noremap=true, silent=true})
-
--- tabs and splits
-map("", "<C-i>", ":tabprevious<CR>", {noremap=true, silent=true})
-map("", "<C-o>", ":tabnext<CR>", {noremap=true, silent=true})
-map("", "<C-h>", "<C-w>h", {noremap=true, silent=true})
-map("", "<C-j>", "<C-w>j", {noremap=true, silent=true})
-map("", "<C-k>", "<C-w>k", {noremap=true, silent=true})
-map("", "<C-l>", "<C-w>l", {noremap=true, silent=true})
-
--- ignorecase
-map("", "<leader>c", ":set ignorecase<CR>", {noremap=true, silent=false})
-map("", "<leader>C", ":set noignorecase<CR>", {noremap=true, silent=false})
-
--- term
-map("t", "<Esc>", "<C-\\><C-n>", {noremap=true, silent=true})
 
 -- open nerdtree
 map("", "<leader>d", ":e .<CR>", {noremap=true, silent=true})

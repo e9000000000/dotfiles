@@ -1,4 +1,3 @@
-require("utils")
 local packer_path = os.getenv("HOME").."/.local/share/nvim/site/pack/packer/start/packer.nvim"
 if not exists(packer_path) then
     os.execute("git clone --depth 1 https://github.com/wbthomason/packer.nvim "..packer_path)
@@ -7,9 +6,6 @@ end
 return require("packer").startup(function()
     -- packer itself
     use "wbthomason/packer.nvim"
-
-    -- normal keybindings in cmd and insert mode
-    use "maxbrunsfeld/vim-emacs-bindings"
 
     -- nerdtree
     use "preservim/nerdtree"
@@ -28,14 +24,11 @@ return require("packer").startup(function()
     -- comment/uncomment code
     use "tpope/vim-commentary"
 
-    -- auto pairt
+    -- auto pairs
     use "jiangmiao/auto-pairs"
 
     -- fuzzy search
     use "junegunn/fzf.vim"
-
-    -- git commits view (maybe not only commits)
-    use "tpope/vim-fugitive"
 
     -- lsp
     use "neovim/nvim-lspconfig"
@@ -50,8 +43,10 @@ return require("packer").startup(function()
     -- debuger
     use {"puremourning/vimspector", run = ":VimspectorUpdate"}
 
-    -- python normal indents
-    use "Vimjas/vim-python-pep8-indent"
-    -- haskell normal indents
-    use "itchyny/vim-haskell-indent"
+    -- normal indents
+    use "Vimjas/vim-python-pep8-indent" -- python
+    use "itchyny/vim-haskell-indent" -- haskell
+
+    -- theme
+    use "morhetz/gruvbox"
 end)
