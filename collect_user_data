@@ -22,9 +22,7 @@ cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/pipewire $DIR/user/.config/
 cp -r ~/.config/zathura $DIR/user/.config/
 cp ~/.bashrc $DIR/user/
-cp ~/.ghci $DIR/user/
 cp ~/.gitconfig $DIR/user/
-cp ~/.cabal/config $DIR/user/.cabal/config
 
 # remove trash
 rm -rf $DIR/user/.config/nvim/vimspector/gadgets
