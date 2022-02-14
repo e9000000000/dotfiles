@@ -1,6 +1,5 @@
 require("plugins.packer")
 require("plugins.autopairs")
 require("plugins.fzf")
-require("plugins.nerdtree")
 require("plugins.lsp")
 require("plugins.vimspector")

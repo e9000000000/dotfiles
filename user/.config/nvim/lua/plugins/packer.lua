@@ -7,11 +7,6 @@ return require("packer").startup(function()
     -- packer itself
     use "wbthomason/packer.nvim"
 
-    -- nerdtree
-    use "preservim/nerdtree"
-    use "Xuyuanp/nerdtree-git-plugin"
-    use "EvanDotPro/nerdtree-chmod"
-
     -- todo, fixme, ... list
     use {
         "folke/todo-comments.nvim",

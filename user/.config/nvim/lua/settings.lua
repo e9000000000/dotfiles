@@ -3,6 +3,9 @@ vim.cmd "syntax enable"
 vim.o.background = "dark"
 vim.cmd "colorscheme gruvbox"
 
+-- netrw banner disable on start
+vim.g.netrw_banner = 0
+
 -- split below
 vim.o.splitbelow = true
 

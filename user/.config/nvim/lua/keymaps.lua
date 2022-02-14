@@ -19,9 +19,6 @@ map("n", "<C-g>", ":FzfFiles<CR>", {noremap=true, silent=true})
 map("n", "<C-f>", ":FzfGFiles<CR>", {noremap=true, silent=true})
 map("n", "<Leader>f", ":FzfAg<CR>", {noremap=true, silent=true})
 
--- open nerdtree
-map("", "<leader>d", ":e .<CR>", {noremap=true, silent=true})
-
 -- vimspector
 map("", "<leader>a", ":call vimspector#Continue()<CR>", {noremap=true, silent=true})
 map("", "<leader>A", ":call vimspector#Restart()<CR>", {noremap=true, silent=true})
