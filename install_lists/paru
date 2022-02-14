@@ -38,7 +38,7 @@ neovim
 fzf
 the_silver_searcher
 wl-clipboard
-evince
+zathura-pdf-mupdf
 glow
 transmission-cli
 ttf-dejavu
