@@ -7,14 +7,8 @@ return require("packer").startup(function()
     -- packer itself
     use "wbthomason/packer.nvim"
 
-    -- todo, fixme, ... list
-    use {
-        "folke/todo-comments.nvim",
-        requires = "nvim-lua/plenary.nvim",
-        config = function()
-            require("todo-comments").setup {}
-        end
-    }
+    -- normal indents/syntax
+	use "sheerun/vim-polyglot"
 
     -- comment/uncomment code
     use "tpope/vim-commentary"
@@ -37,10 +31,6 @@ return require("packer").startup(function()
 
     -- debuger
     use {"puremourning/vimspector", run = ":VimspectorUpdate"}
-
-    -- normal indents
-    use "Vimjas/vim-python-pep8-indent" -- python
-    use "itchyny/vim-haskell-indent" -- haskell
 
     -- theme
     use "morhetz/gruvbox"

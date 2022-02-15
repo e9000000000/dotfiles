@@ -26,7 +26,6 @@ cp ~/.gitconfig $DIR/user/
 
 # remove trash
 rm -rf $DIR/user/.config/nvim/vimspector/gadgets
-rm -rf $DIR/user/.config/nvim/plugin
 
 # open lazy git to view changes
 lazygit
