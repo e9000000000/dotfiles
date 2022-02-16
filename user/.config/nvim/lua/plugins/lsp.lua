@@ -40,7 +40,6 @@ cmp.setup({
                 cmp.select_next_item()
             else
                 cmp.complete()
-                cmp.select_next_item()
             end
         end, {"i", "c"}),
         ["<C-p>"] = cmp.mapping.select_prev_item(),
