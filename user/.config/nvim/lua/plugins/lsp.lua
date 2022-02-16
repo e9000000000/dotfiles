@@ -78,3 +78,7 @@ for _, lsp in ipairs(servers) do
         }
     }
 end
+
+-- for unknown reasons cmp slows macros when in temp buffer, or txt file or something like that
+-- so there is a command to disable cmp for current buffer, and macros will be fast enought
+vim.cmd[[:command DisableCmp lua require('cmp').setup.buffer { enabled = false }]]
