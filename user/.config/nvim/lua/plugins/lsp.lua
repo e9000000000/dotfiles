@@ -15,7 +15,7 @@ local on_attach = function(client, bufnr)
     map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
     map("n", "K", ":lua vim.lsp.buf.hover()<CR>", opts)
     map("n", "gi", ":lua vim.lsp.buf.implementation()<CR>", opts)
-    map("n", "<C-k>", ":lua vim.lsp.buf.signature_help()<CR>", opts)
+    map("n", "<C-h>", ":lua vim.lsp.buf.signature_help()<CR>", opts)
     map("n", "<leader>wa", ":lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
     map("n", "<leader>wr", ":lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
     map("n", "<leader>wl", ":lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)
@@ -44,8 +44,8 @@ cmp.setup({
             end
         end, {"i", "c"}),
         ["<C-p>"] = cmp.mapping.select_prev_item(),
-        ['<C-y>'] = cmp.mapping(cmp.mapping.scroll_docs(4)),
-        ['<C-u>'] = cmp.mapping(cmp.mapping.scroll_docs(-4)),
+        ['<C-k>'] = cmp.mapping(cmp.mapping.scroll_docs(4)),
+        ['<C-j>'] = cmp.mapping(cmp.mapping.scroll_docs(-4)),
         ['<ESC>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.complete()

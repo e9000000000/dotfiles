@@ -8,7 +8,7 @@ return require("packer").startup(function()
     use "wbthomason/packer.nvim"
 
     -- normal indents/syntax
-	use "sheerun/vim-polyglot"
+    use "sheerun/vim-polyglot"
 
     -- comment/uncomment code
     use "tpope/vim-commentary"

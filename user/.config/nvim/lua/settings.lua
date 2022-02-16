@@ -6,6 +6,9 @@ vim.cmd "colorscheme gruvbox"
 -- netrw
 vim.g.netrw_banner = 0
 
+-- lazy readraw
+vim.o.lazyredraw = true
+
 -- split below
 vim.o.splitbelow = true
 
