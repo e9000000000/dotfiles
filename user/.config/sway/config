@@ -46,7 +46,7 @@ set $screenshot flameshot gui
 
 # autostart
 exec flameshot
-exec alacritty -e tmux a
+exec alacritty -e tmux new -As0
 exec firefox
 exec telegram-desktop
 exec pipewire -c ~/.config/pipewire/nonoice.conf
