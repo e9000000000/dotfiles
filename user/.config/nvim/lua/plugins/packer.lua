@@ -13,9 +13,6 @@ return require("packer").startup(function()
     -- comment/uncomment code
     use "tpope/vim-commentary"
 
-    -- autopairs
-    use "windwp/nvim-autopairs"
-
     -- fuzzy search
     use "junegunn/fzf.vim"
 
