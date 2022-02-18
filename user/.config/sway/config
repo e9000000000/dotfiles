@@ -45,6 +45,7 @@ set $right l
 set $screenshot flameshot gui
 
 # autostart
+exec mako
 exec flameshot
 exec alacritty -e tmux new -As0
 exec firefox
@@ -65,6 +66,7 @@ assign [app_id="Alacritty"] $ws2
 assign [app_id="telegramdesktop"] $ws8
 assign [title="Discord"] $ws9
 for_window [class="feh"] floating enable
+for_window [title="^Picture-in-Picture$"] floating enable, sticky enable
 
 # window status         border    bg        text      indicator   child_border
 client.focused          $fg_color $fg_color $tx_color $bg_color   $fg_color

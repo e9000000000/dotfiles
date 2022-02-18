@@ -1,76 +1,35 @@
 #window {
-  margin: 0;
-  padding: 0;
-  border: 0;
   background-color: #282828;
   font: 10.5pt "DejaVu Sans", sans;
 }
 
 #input {
-  margin: 0;
   border: 0;
   border-radius: 0;
   color: #ebdbb2;
   background-color: #282828;
 }
 
-image {
-  color: #928374;
-}
-
-#scroll {
-  margin: 0;
-  margin: 0;
-  border: 0;
-  color: #282828;
-  background-color: #282828;
-}
-
-#inner-box {
-  margin: 0;
-  margin: 0;
-  border: 0;
-  color: #282828;
-  background-color: #282828;
-}
-
-expander {
-  color: #ebdbb2;
-  background-color: #282828;
-}
-
-expander:selected {
-  color: #282828;
-  background-color: #ebdbb2;
-}
-
-expander image {
-  color: #928374;
-  background-color: #282828;
+#input:focus {
+  box-shadow: none;
 }
 
 #entry {
+  color: #ebdbb2;
   background-color: #282828;
 }
 
 #entry:selected {
   background-color: #ebdbb2;
+  color: #282828;
+  outline: none;
+  box-shadow: none;
 }
-
-#unselected {
-  background-color: #282828;
-}
-
-#selected {
-  background-color: #ebdbb2;
-}
-
-#text {
-  margin: 0px;
-  border: 0;
-  color: #ebdbb2;
-} 
 
 #text:selected {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  background-color: #ebdbb2;
   color: #282828;
 }
