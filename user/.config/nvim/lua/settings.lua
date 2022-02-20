@@ -19,9 +19,6 @@ vim.o.shortmess = "I"
 vim.o.fileencoding = "utf-8"
 vim.o.encoding = "utf-8"
 
--- normal copy paste
-vim.o.clipboard = "unnamedplus"
-
 -- normalize indents
 vim.cmd "filetype plugin indent on"
 vim.o.smartindent = true

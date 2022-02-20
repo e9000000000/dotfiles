@@ -1,0 +1,6 @@
+tint2 &
+dunst &
+flameshot &
+firefox &
+telegram-desktop &
+alacritty -e tmux new -As0
