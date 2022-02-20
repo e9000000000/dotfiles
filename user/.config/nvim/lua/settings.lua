@@ -1,7 +1,7 @@
 -- theme
 vim.cmd "syntax enable"
 vim.o.background = "dark"
-vim.cmd "colorscheme gruvbox"
+vim.cmd "colorscheme peachpuff"
 
 -- netrw
 vim.g.netrw_banner = 0

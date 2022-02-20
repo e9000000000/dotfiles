@@ -3,9 +3,10 @@
 <openbox_menu>
 
 <menu id="root-menu" label="aefiwhofihoifwejj">
-  <item label="alacritty">
+	<separator label="use std::fuck::linux;" />
+  <item label="urxvt">
     <action name="Execute">
-      <command>alacritty</command>
+      <command>urxvt</command>
     </action>
   </item>
   <item label="firefox">
@@ -26,7 +27,7 @@
     </item>
     <item label="exit">
       <action name="Exit">
-        <prompt>yes</prompt>
+        <prompt>no</prompt>
       </action>
     </item>
     <item label="restart">

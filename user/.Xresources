@@ -1,0 +1,4 @@
+*.foreground: #ffffff
+*.background: #000000
+*.font: xft:DejaVu Sans Mono:size=11:anitialias=true
+URxvt.scrollBar: false

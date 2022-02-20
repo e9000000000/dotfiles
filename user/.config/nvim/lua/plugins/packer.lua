@@ -28,7 +28,4 @@ return require("packer").startup(function()
 
     -- debuger
     use {"puremourning/vimspector", run = ":VimspectorUpdate"}
-
-    -- theme
-    use "morhetz/gruvbox"
 end)

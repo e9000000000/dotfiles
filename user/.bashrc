@@ -6,7 +6,7 @@
 # PS1
 COLOR_DEFAULT="\[\033[00;39m\]"
 if (( $EUID != 0 )); then
-    COLOR="\[\033[00;33m\]"
+    COLOR="\[\033[00;32m\]"
 else
     COLOR="\[\033[00;31m\]"
 fi
@@ -22,6 +22,8 @@ complete -cf time
 if [ -f ~/some/vars ]; then
     . ~/some/vars
 fi
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
 export EDITOR="nvim"
 export PATH="$HOME/.local/bin:/bin"
 
