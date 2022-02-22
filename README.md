@@ -4,15 +4,15 @@ config files in `./user` dir
 task               | solution
 ------------------ | ---
 os                 | arch
-terminal           | alacritty
+terminal           | urxvt
 shell              | bash
-de                 | sway
+de                 | openbox
 browser            | firefox
 code/text editor   | neovim
 
 ## apps extensions
 ### firefox
-- Gruvbox Dark
+- Matte Black (Grey)
 - Vimium-FF
 - uBlock Origin
 - Nano Defender

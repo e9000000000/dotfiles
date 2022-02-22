@@ -3,7 +3,7 @@ xorg-xinit
 openbox
 tint2
 dunst
-alacritty
+rxvt-unicode
 firefox
 torbrowser-launcher
 keepassxc

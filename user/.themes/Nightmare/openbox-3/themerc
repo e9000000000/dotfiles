@@ -1,35 +1,20 @@
-#============================================================
-#
-#
-# 	 _   _ _       _     _                            
-#	| \ | (_)     | |   | |                           
-#	|  \| |_  __ _| |__ | |_ _ __ ___   __ _ _ __ ___ 
-#	| . ` | |/ _` | '_ \| __| '_ ` _ \ / _` | '__/ _ \
-#	| |\  | | (_| | | | | |_| | | | | | (_| | | |  __/
-#	\_| \_/_|\__, |_| |_|\__|_| |_| |_|\__,_|_|  \___|
-#	          __/ |                                   
-#	         |___/                                    
-#
-#                                  
-# "Nightmare" for openbox by Maxim. Date June 01, 2014.         
-#  Inspired by "Nightmare" for pekwm by Gilbert Flores.                                                                                
-#============================================================
+# fork of "Nightmare" for openbox by Maxim.
 
 #======================================
 #     Menu Settings	
 #======================================
 
 menu.title.bg: raised
-menu.title.bg.color: #181818
+menu.title.bg.color: #000000
 menu.title.text.color: #ffffff
-menu.separator.color: #242424
+menu.separator.color: #343434
 menu.items.bg: raised
-menu.items.bg.color: #181818
+menu.items.bg.color: #000000
 menu.items.text.color: #ffffff
-menu.items.disabled.text.color: #707070
+menu.items.disabled.text.color: #808080
 menu.items.active.bg: flat border
-menu.items.active.bg.color: #7f1e31
-menu.items.active.bg.border.color: #c3314f
+menu.items.active.bg.color: #343434
+menu.items.active.bg.border.color: #000000
 menu.items.active.text.color: #ffffff
 
 #======================================
@@ -37,9 +22,9 @@ menu.items.active.text.color: #ffffff
 #======================================
 
 window.active.title.bg: raised
-window.active.title.bg.color: #181818
+window.active.title.bg.color: #000000
 window.active.handle.bg: raised
-window.active.handle.bg.color: #181818
+window.active.handle.bg.color: #000000
 window.active.grip.bg: parentrelative
 window.active.label.bg: parentrelative
 window.active.label.text.color: #ffffff
@@ -53,21 +38,21 @@ window.active.button.disabled.image.color: #ffffff
 #======================================
 
 window.inactive.title.bg: raised
-window.inactive.title.bg.color: #181818
+window.inactive.title.bg.color: #000000
 window.inactive.handle.bg: raised
-window.inactive.handle.bg.color: #181818
+window.inactive.handle.bg.color: #000000
 window.inactive.grip.bg: parentrelative
 window.inactive.label.bg: parentrelative
-window.inactive.label.text.color: #181818
+window.inactive.label.text.color: #000000
 window.inactive.button.*.image.color: #ffffff
 
 #======================================
 #     Global Width Settings
 #======================================
 
-padding.width: 1
+padding.width: 7
 padding.height: 1
-border.width: 1
+border.width: 0
 window.handle.width: 3
 window.client.padding.width: 0
 menu.overlap.x: -5
@@ -84,12 +69,12 @@ menu.border.color: #000000
 #======================================
 
 osd.hilight.bg: flat border
-osd.hilight.bg.color: #7f1e31
-osd.hilight.bg.border.color: #c3314f
+osd.hilight.bg.color: #343434
+osd.hilight.bg.border.color: #444444
 
 #======================================
 #     Title Justification
 #======================================
 
-menu.title.text.justify: center
-window.label.text.justify: center
+menu.title.text.justify: left
+window.label.text.justify: left
