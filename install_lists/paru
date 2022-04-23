@@ -1,9 +1,11 @@
 xorg
 xorg-xinit
-openbox
-tint2
+bspwm
+polybar
+sxhkd
+dmenu
 dunst
-rxvt-unicode
+alacritty
 firefox
 torbrowser-launcher
 keepassxc
@@ -41,3 +43,4 @@ glow
 transmission-cli
 ttf-dejavu
 ttf-symbola
+ttf-koruri

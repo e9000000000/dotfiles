@@ -12,18 +12,18 @@ mkdir -p $DIR/user/.config
 # copy files
 cp -r ~/.bg $DIR/user/
 cp -r ~/.config/nvim $DIR/user/.config/
-cp -r ~/.config/openbox $DIR/user/.config/
-cp -r ~/.config/tint2 $DIR/user/.config/
+cp -r ~/.config/alacritty $DIR/user/.config/
+cp -r ~/.config/bspwm $DIR/user/.config/
+cp -r ~/.config/sxhkd $DIR/user/.config/
+cp -r ~/.config/polybar $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
 cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/pipewire $DIR/user/.config/
 cp -r ~/.config/zathura $DIR/user/.config/
 cp -r ~/.config/dunst $DIR/user/.config/
 cp ~/.xinit $DIR/user/
-cp ~/.Xresources $DIR/user/
 cp ~/.bashrc $DIR/user/
 cp ~/.gitconfig $DIR/user/
-cp -r ~/.themes $DIR/user/
 
 # remove trash
 rm -rf $DIR/user/.config/nvim/vimspector/gadgets

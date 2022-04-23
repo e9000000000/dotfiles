@@ -1,0 +1,61 @@
+#!/bin/bash
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9
+
+# execute program if it's not running
+function exec_once() {
+    if [ -f /tmp/bspwm_started ]; then
+        return
+    fi
+    # pgrep -wf "$1" > /dev/null || $@ &
+    $@ &
+}
+
+# kill program (if it's already runed) and run it again
+function exec_restart() {
+    pkill "$1"
+    $@ &
+}
+
+# wallpapers
+# feh --bg-fill ~/.bg/bg3.png &
+xsetroot -solid black &
+
+# autostart
+exec_restart sxhkd
+exec_restart polybar one
+exec_once dunst
+# exec_once picom
+
+exec_once pipewire -c ~/.config/pipewire/nonoice.conf
+exec_once flameshot
+
+exec_once telegram-desktop
+exec_once firefox
+
+echo "a" > /tmp/bspwm_started
+
+
+# borders
+bspc config focused_border_color "#343434"
+bspc config normal_border_color "#000000"
+bspc config border_width 1
+bspc config window_gap 0
+bspc config single_monocle 	true
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+
+# split
+bspc config split_ratio 0.5
+
+
+# window rules
+bspc rule -a 'Matplotlib' state=floating
+bspc rule -a 'firefox:Toolkit' state=floating sticky=true
+# bspc rule -a Alacritty state=floating sticky=true border=off
+bspc rule -a code-oss desktop='^3'
+bspc rule -a TelegramDesktop desktop='^8'
+bspc rule -a discord desktop='^9'
+bspc rule -a flameshot state=floating
+bspc rule -a feh state=floating

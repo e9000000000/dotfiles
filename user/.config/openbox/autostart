@@ -1,6 +1,0 @@
-xsetroot -solid black &
-tint2 &
-dunst &
-flameshot &
-firefox &
-telegram-desktop &
