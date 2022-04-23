@@ -1,6 +1,7 @@
 xorg
 xorg-xinit
 bspwm
+picom
 polybar
 sxhkd
 dmenu

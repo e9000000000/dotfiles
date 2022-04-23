@@ -14,6 +14,7 @@ cp -r ~/.bg $DIR/user/
 cp -r ~/.config/nvim $DIR/user/.config/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/bspwm $DIR/user/.config/
+cp -r ~/.config/picom $DIR/user/.config/
 cp -r ~/.config/sxhkd $DIR/user/.config/
 cp -r ~/.config/polybar $DIR/user/.config/
 cp -r ~/.config/tmux $DIR/user/.config/
