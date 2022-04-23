@@ -25,6 +25,8 @@ code/text editor   | neovim
 - Return Youtube Dislike
 - TTV LOL
 - Now Streaming - Twitch
+- Grepper
+- Take Webpage Screenshots Entirely - FireShot
 
 ### tor-browser
 - Trace
