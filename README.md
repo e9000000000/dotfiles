@@ -4,9 +4,9 @@ config files in `./user` dir
 task               | solution
 ------------------ | ---
 os                 | arch
-terminal           | urxvt
+terminal           | alacritty
 shell              | bash
-de                 | openbox
+de                 | bspwm
 browser            | firefox
 code/text editor   | neovim
 
