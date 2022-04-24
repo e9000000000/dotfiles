@@ -29,6 +29,7 @@ code/text editor   | neovim
 - Take Webpage Screenshots Entirely - FireShot
 
 ### tor-browser
+- Random User-Agent
 - Trace
 - Canvas Defender
 - AudioContext Fingerprint Defender
