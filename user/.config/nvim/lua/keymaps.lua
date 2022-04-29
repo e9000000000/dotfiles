@@ -16,7 +16,7 @@ map("n", "<C-f>", ":FzfGFiles<CR>", {noremap=true, silent=true})
 map("n", "<Leader>f", ":FzfAg<CR>", {noremap=true, silent=true})
 
 -- vimspector
-map("", "<leader>r", ":call vimspector#Continue()<CR>", {noremap=true, silent=true})
+map("", "<leader>q", ":call vimspector#Continue()<CR>", {noremap=true, silent=true})
 map("", "<leader>R", ":call vimspector#Restart()<CR>", {noremap=true, silent=true})
 map("", "<leader>s", ":VimspectorReset<CR>", {noremap=true, silent=true})
 map("", "<leader>S", ":call vimspector#Pause()<CR>", {noremap=true, silent=true})
