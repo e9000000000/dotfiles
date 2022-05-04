@@ -22,7 +22,7 @@ cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/pipewire $DIR/user/.config/
 cp -r ~/.config/zathura $DIR/user/.config/
 cp -r ~/.config/dunst $DIR/user/.config/
-cp ~/.xinit $DIR/user/
+cp ~/.xinitrc $DIR/user/
 cp ~/.bashrc $DIR/user/
 cp ~/.gitconfig $DIR/user/
 
