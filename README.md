@@ -8,7 +8,7 @@ terminal           | alacritty
 shell              | bash
 de                 | bspwm
 browser            | firefox
-code/text editor   | neovim
+code/text editor   | neovim or vscode
 
 ## apps extensions
 ### firefox
