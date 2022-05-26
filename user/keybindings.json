@@ -1,0 +1,6 @@
+[
+    {
+        "key": "alt+`",
+        "command": "workbench.action.toggleMaximizedPanel",
+    }
+]

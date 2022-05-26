@@ -22,8 +22,8 @@ cp -r ~/.config/htop $DIR/user/.config/
 cp -r ~/.config/pipewire $DIR/user/.config/
 cp -r ~/.config/zathura $DIR/user/.config/
 cp -r ~/.config/dunst $DIR/user/.config/
-cp "~/.config/Code - OSS/User/keybindings.json" $DIR/user/
-cp "~/.config/Code - OSS/User/settings.json" $DIR/user/
+cp "$HOME/.config/Code - OSS/User/keybindings.json" $DIR/user/
+cp "$HOME/.config/Code - OSS/User/settings.json" $DIR/user/
 cp ~/.xinitrc $DIR/user/
 cp ~/.bashrc $DIR/user/
 cp ~/.gitconfig $DIR/user/
