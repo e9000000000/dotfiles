@@ -23,6 +23,7 @@ ffmpeg
 vlc
 mediainfo
 man
+rlwrap
 htop
 zip
 unzip
