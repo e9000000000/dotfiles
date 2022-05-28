@@ -38,6 +38,7 @@ rust-analyzer
 docker
 docker-compose
 tmux
+nnn
 neovim
 fzf
 the_silver_searcher

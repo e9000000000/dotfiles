@@ -57,7 +57,8 @@ colors:
   # noir
   normal:
     black:   '#000000'
-    red:     '#e30137'
+    # red:     '#e30137'
+    red:     '#ffce00'
     green:   '#6e6e6e'
     yellow:  '#777777'
     blue:    '#5c5c5c'
@@ -67,7 +68,8 @@ colors:
 
   bright:
     black:   '#000000'
-    red:     '#e30137'
+    # red:     '#e30137'
+    red:     '#ffce00'
     green:   '#6e6e6e'
     yellow:  '#777777'
     blue:    '#5c5c5c'
@@ -77,7 +79,8 @@ colors:
 
   dim:
     black:   '#000000'
-    red:     '#e30137'
+    # red:     '#e30137'
+    red:     '#ffce00'
     green:   '#6e6e6e'
     yellow:  '#777777'
     blue:    '#5c5c5c'
