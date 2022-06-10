@@ -20,6 +20,9 @@ pipewire
 pipeware-pulse
 pamixer
 noise-suppression-for-voice
+pavucontrol
+pasystray
+network-manager-applet
 feh
 ffmpeg
 vlc

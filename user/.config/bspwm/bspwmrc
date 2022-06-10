@@ -26,7 +26,8 @@ exec_restart sxhkd
 exec_once picom
 exec_restart polybar one
 exec_once dunst
-# exec_once picom
+exec_once pasystray
+exec_once nm-applet
 
 exec_once pipewire -c ~/.config/pipewire/nonoice.conf
 exec_once flameshot
