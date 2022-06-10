@@ -3,8 +3,7 @@
 background = #e5000000
 foreground = #fefefe
 unfocused = #343434
-; alert = #e30137
-alert = #ffce00
+alert = #e30137
 
 
 [bar/base]
