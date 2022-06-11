@@ -13,7 +13,7 @@ gtk theme          | [adwaita-dark-amoled](https://www.gnome-look.org/p/1553851)
 
 ## apps extensions
 ### firefox
-- Matte Black (Grey)
+- Black
 - Vimium-FF
 - uBlock Origin
 - Nano Defender
