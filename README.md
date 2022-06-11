@@ -9,6 +9,7 @@ shell              | bash
 de                 | bspwm
 browser            | firefox
 code/text editor   | neovim or vscode
+gtk theme          | [adwaita-dark-amoled](https://www.gnome-look.org/p/1553851)
 
 ## apps extensions
 ### firefox
@@ -37,3 +38,6 @@ code/text editor   | neovim or vscode
 
 # arch installation from just started iso
 start `./install`
+
+# gtk theme
+`https://www.gnome-look.org/p/1553851`

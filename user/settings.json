@@ -15,8 +15,10 @@
     "python.linting.pylamaEnabled": true,
     "git.enableSmartCommit": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "VLight",
     "editor.cursorBlinking": "solid",
     "editor.fontFamily": "DejaVu Sans Mono",
     "editor.fontSize": 13.5,
+    "keyboard.dispatch": "keyCode",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "AMOLED"
 }

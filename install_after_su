@@ -30,5 +30,11 @@ do
     pip install "$NAME"
 done
 
+# install vscode exts
+for NAME in $(cat "$DIR"/install_lists/code)
+do
+    code --install-extension "$NAME"
+done
+
 # ask user to reboot
 echo "please reboot now"
