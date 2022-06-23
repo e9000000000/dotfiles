@@ -20,5 +20,6 @@
     "editor.fontSize": 13.5,
     "keyboard.dispatch": "keyCode",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "AMOLED"
+    "workbench.colorTheme": "AMOLED",
+    "python.defaultInterpreterPath": "/bin/python"
 }
