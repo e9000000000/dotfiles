@@ -30,6 +30,7 @@ alias mkdir="mkdir -p"
 alias ls="ls --color=auto"
 alias duh="du -h -BM -a --max-depth=1 2>/dev/null | sort -n"
 alias vi="nvim"
+alias n="nnn"
 alias pvi="poetry run nvim"
 alias lg="lazygit"
 

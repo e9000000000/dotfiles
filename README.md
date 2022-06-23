@@ -10,6 +10,8 @@ de                 | bspwm
 browser            | firefox
 code/text editor   | neovim or vscode
 gtk theme          | [adwaita-dark-amoled](https://www.gnome-look.org/p/1553851)
+telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
+discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 
 ## apps extensions
 ### firefox

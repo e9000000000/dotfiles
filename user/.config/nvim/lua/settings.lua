@@ -3,6 +3,9 @@ vim.cmd "syntax enable"
 vim.o.background = "dark"
 vim.cmd "colorscheme peachpuff"
 
+-- lazy readraw
+vim.o.relativenumber = true
+
 -- netrw
 vim.g.netrw_banner = 0
 
