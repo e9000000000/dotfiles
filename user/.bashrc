@@ -16,6 +16,10 @@ export PS1="$COLOR\w$COLOR_DEFAULT "
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
+# one tab completion
+bind 'set show-all-if-ambiguous on'
+bind 'set completion-ignore-case on'
+
 # variables
 if [ -f ~/some/vars ]; then
     . ~/some/vars
