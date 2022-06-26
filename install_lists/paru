@@ -37,7 +37,6 @@ git
 lazygit
 python
 python-pip
-pyright
 rust
 rust-analyzer
 docker
