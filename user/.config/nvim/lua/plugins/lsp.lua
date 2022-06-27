@@ -1,5 +1,4 @@
--- local servers = {"pyright", "rust_analyzer"}
-local servers = {"pylsp", "rust_analyzer"}
+local servers = {"pyright", "rust_analyzer"}
 
 local nvim_lsp = require("lspconfig")
 local cmp = require("cmp")

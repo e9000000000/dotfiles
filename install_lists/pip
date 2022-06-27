@@ -1,6 +1,5 @@
 pynvim
 poetry
 black
-python-language-server[all]
 ipython
 ipdb
