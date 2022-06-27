@@ -44,6 +44,7 @@ docker-compose
 tmux
 nnn
 neovim
+helix
 fzf
 the_silver_searcher
 code
