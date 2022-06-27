@@ -37,6 +37,7 @@ git
 lazygit
 python
 python-pip
+pyright
 rust
 rust-analyzer
 docker
@@ -44,7 +45,6 @@ docker-compose
 tmux
 nnn
 neovim
-helix
 fzf
 the_silver_searcher
 code

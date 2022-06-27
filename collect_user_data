@@ -13,7 +13,6 @@ mkdir -p "$DIR/user/.config/Code - OSS/User/"
 # copy files
 cp -r ~/.bg $DIR/user/
 cp -r ~/.config/nvim $DIR/user/.config/
-cp -r ~/.config/helix $DIR/user/.config/
 cp -r ~/.config/alacritty $DIR/user/.config/
 cp -r ~/.config/bspwm $DIR/user/.config/
 cp -r ~/.config/picom $DIR/user/.config/
