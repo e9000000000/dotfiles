@@ -6,7 +6,7 @@ super + Return
 
 # dmenu
 super + d
-    dmenu_run -b -nf "#fafafa" -nb "#000000" -sb "#e30137" -sf "#000000" -fn "DejaVu Sans-10.5" -p "r"
+    dmenu_run -b -nf "#fafafa" -nb "#000000" -sb "#d7afff" -sf "#000000" -fn "DejaVu Sans-10.5" -p "r"
 
 # flameshot
 Print

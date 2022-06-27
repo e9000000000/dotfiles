@@ -1,5 +1,5 @@
 set notification-error-bg       "#000000" # bg
-set notification-error-fg       "#e30137" # bright:red
+set notification-error-fg       "#d7afff" # bright:red
 set notification-warning-bg     "#000000" # bg
 set notification-warning-fg     "#777777" # bright:yellow
 set notification-bg             "#000000" # bg
