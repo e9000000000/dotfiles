@@ -22,6 +22,7 @@ pamixer
 noise-suppression-for-voice
 pavucontrol
 pasystray
+networkmanager
 network-manager-applet
 feh
 ffmpeg
@@ -40,7 +41,7 @@ python-pip
 pyright
 rust
 rust-analyzer
-docker
+docker  # systemctl enable docker.service
 docker-compose
 tmux
 nnn
