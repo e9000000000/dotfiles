@@ -1,5 +1,4 @@
 local hi = vim.highlight.create
-vim.cmd "syntax enable"
 vim.o.background = "dark"
 vim.cmd "colorscheme peachpuff"
 
