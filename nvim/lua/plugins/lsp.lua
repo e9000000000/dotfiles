@@ -32,7 +32,7 @@ end
 cmp.setup({
     completion = {
         autocomplete = false,
-        completeopt = "menu,menuone,noselect"
+        completeopt = "menu,menuone"
     },
     mapping = {
         ["<C-n>"] = cmp.mapping(function(fallback)
@@ -51,10 +51,11 @@ cmp.setup({
             end
             fallback()
         end, { 'i', 'c' }),
-        ["<C-e>"] = cmp.mapping({
+        ["<C-h>"] = cmp.mapping({
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
         }),
+        ["<C-l>"] = cmp.mapping.confirm({ select = true }),
     },
     sources = cmp.config.sources({
         {name = "nvim_lsp"},
