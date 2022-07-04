@@ -32,7 +32,7 @@ end
 cmp.setup({
     completion = {
         autocomplete = false,
-        completeopt = "menu,menuone"
+        completeopt = "menu,menuone,noselect"
     },
     mapping = {
         ["<C-n>"] = cmp.mapping(function(fallback)
