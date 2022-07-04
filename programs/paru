@@ -39,8 +39,6 @@ lazygit
 python
 python-pip
 pyright
-rust
-rust-analyzer
 docker  # systemctl enable docker.service
 docker-compose
 tmux

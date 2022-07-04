@@ -49,5 +49,6 @@
     "scm.diffDecorations": "gutter",
     "editor.hideCursorInOverviewRuler": true,
     "window.menuBarVisibility": "toggle",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "telemetry.telemetryLevel": "off"
 }
