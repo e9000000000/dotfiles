@@ -1,3 +1,4 @@
+# WARNING: never ever use linux for desktop, it's TRASH. use WINDOWS.
 # Dotfiles
 task               | solution
 ------------------ | ---
