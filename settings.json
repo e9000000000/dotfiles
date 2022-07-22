@@ -48,5 +48,6 @@
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
     "workbench.layoutControl.enabled": false,
-    "workbench.colorTheme": "Black"
+    "workbench.colorTheme": "Black",
+    "git.confirmSync": false
 }
