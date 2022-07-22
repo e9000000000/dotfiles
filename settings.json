@@ -1,5 +1,4 @@
 {
-    "python.venvPath": "~/.cache/pypoetry/virtualenvs",
     "editor.formatOnSave": true,
     "python.linting.mypyEnabled": true,
     "python.linting.enabled": true,
@@ -9,30 +8,19 @@
         "**/.mypy_cache": true,
         "**/.env": true
     },
-    "python.languageServer": "Jedi",
     "explorer.confirmDelete": false,
     "python.linting.pylamaEnabled": true,
     "git.enableSmartCommit": true,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.cursorBlinking": "solid",
-    "editor.fontFamily": "DejaVu Sans Mono",
     "keyboard.dispatch": "keyCode",
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "AMOLED",
-    "python.defaultInterpreterPath": "/bin/python",
-    "editor.codeLensFontFamily": "DejaVu Sans Mono",
-    "editor.inlayHints.fontFamily": "DejaVu Sans Mono",
-    "notebook.outputFontFamily": "DejaVu Sans MonoDejaVu Sans Mono",
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono",
-    "errorLens.fontSize": "14",
-    "errorLens.fontFamily": "DejaVu Sans Mono",
     "editor.cursorStyle": "block",
     "editor.renderLineHighlight": "none",
     "editor.folding": false,
     "editor.occurrencesHighlight": false,
     "explorer.openEditors.visible": 0,
     "workbench.activityBar.visible": false,
-    "workbench.editor.showIcons": false,
     "workbench.editor.tabCloseButton": "off",
     "files.watcherExclude": {
         "**/.env/**": true
@@ -50,5 +38,15 @@
     "editor.hideCursorInOverviewRuler": true,
     "window.menuBarVisibility": "toggle",
     "git.autofetch": true,
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.startupPrompt": "always",
+    "editor.unicodeHighlight.allowedLocales": {
+        "ru": true
+    },
+    "workbench.editor.showIcons": false,
+    "workbench.iconTheme": null,
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Black"
 }

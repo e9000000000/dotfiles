@@ -1,0 +1,1 @@
+Set-PSReadLineKeyHandler -Chord 'Ctrl+w' -Function BackwardKillWord
