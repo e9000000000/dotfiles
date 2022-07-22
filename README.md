@@ -2,13 +2,13 @@
 # Dotfiles
 task               | solution
 ------------------ | ---
-os                 | arch
-terminal           | alacritty
-shell              | bash
-de                 | bspwm
+os                 | windows
+terminal           | windows
+shell              | windows
+de                 | windows
 browser            | firefox
-code/text editor   | neovim or vscode
-gtk theme          | [adwaita-dark-amoled](https://www.gnome-look.org/p/1553851)
+code/text editor   | vacode
+windows theme      | black
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 
@@ -25,10 +25,7 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - YouTube NonStop
 - Youtube Playback Speed Control
 - Return Youtube Dislike
-- TTV LOL
-- Now Streaming - Twitch
-- Grepper
-- Take Webpage Screenshots Entirely - FireShot
+- CORS Everywhere
 
 ## tor-browser
 - Random User-Agent
@@ -36,3 +33,16 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - Canvas Defender
 - AudioContext Fingerprint Defender
 - uBlock Origin
+
+## vscode
+- formulahendry.auto-rename-tag
+- jaakko.black
+- mitchdenny.ecdc
+- usernamehw.errorlens
+- ckolkman.vscode-postgres
+- humao.rest-client
+- jmfirth.vsc-space-block-jumper
+- alexcvzz.vscode-sqlite
+- gruntfuggly.todo-tree
+- dbaeumer.vscode-eslint
+- ms-python.python
