@@ -28,7 +28,6 @@
     "search.exclude": {
         "**/.env": true
     },
-    "editor.lineNumbers": "off",
     "editor.scrollbar.vertical": "visible",
     "errorLens.scrollbarHackEnabled": true,
     "editor.scrollbar.horizontal": "hidden",
@@ -36,7 +35,6 @@
     "editor.overviewRulerBorder": false,
     "scm.diffDecorations": "gutter",
     "editor.hideCursorInOverviewRuler": true,
-    "window.menuBarVisibility": "toggle",
     "git.autofetch": true,
     "telemetry.telemetryLevel": "off",
     "editor.unicodeHighlight.nonBasicASCII": false,
@@ -47,7 +45,14 @@
     },
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
-    "workbench.layoutControl.enabled": false,
     "workbench.colorTheme": "Black",
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "python.analysis.autoImportCompletions": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.tips.enabled": false,
+    "workbench.startupEditor": "none",
+    "todo-tree.tree.disableCompactFolders": true,
+    "editor.lightbulb.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "workbench.layoutControl.enabled": false
 }
