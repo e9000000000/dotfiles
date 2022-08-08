@@ -7,7 +7,7 @@ terminal           | windows
 shell              | windows
 de                 | windows
 browser            | firefox
-code/text editor   | vacode
+code/text editor   | vscode
 windows theme      | black
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
@@ -35,14 +35,17 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - uBlock Origin
 
 ## vscode
+- jaakko.black
+- vscodevim.vim
+- donjayamanne.githistory
 - formulahendry.auto-rename-tag
 - jaakko.black
 - mitchdenny.ecdc
 - usernamehw.errorlens
-- ckolkman.vscode-postgres
-- humao.rest-client
-- jmfirth.vsc-space-block-jumper
-- alexcvzz.vscode-sqlite
 - gruntfuggly.todo-tree
+- alexcvzz.vscode-sqlite
+- ckolkman.vscode-postgres
+- formulahendry.vscode-mysql
+- humao.rest-client
 - dbaeumer.vscode-eslint
 - ms-python.python
