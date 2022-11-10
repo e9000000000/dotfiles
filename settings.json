@@ -54,5 +54,7 @@
     "todo-tree.tree.disableCompactFolders": true,
     "editor.lightbulb.enabled": false,
     "extensions.ignoreRecommendations": true,
-    "workbench.layoutControl.enabled": false
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "workbench.editor.showTabs": false
 }
