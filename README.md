@@ -17,7 +17,7 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - Black
 - Vimium-FF
 - uBlock Origin
-- Nano Defender
+<!-- - Nano Defender
 - SponsorBlock
 - I don't care about cookies
 - Dark Reader
@@ -25,7 +25,7 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - YouTube NonStop
 - Youtube Playback Speed Control
 - Return Youtube Dislike
-- CORS Everywhere
+- CORS Everywhere -->
 
 ## tor-browser
 - Random User-Agent
@@ -35,11 +35,10 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - uBlock Origin
 
 ## vscode
-- jaakko.black
+- vincesalvino.dark-plus-black
 - vscodevim.vim
 - donjayamanne.githistory
 - formulahendry.auto-rename-tag
-- jaakko.black
 - mitchdenny.ecdc
 - usernamehw.errorlens
 - gruntfuggly.todo-tree
