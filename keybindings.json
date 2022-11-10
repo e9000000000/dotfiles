@@ -12,21 +12,5 @@
         "key": "ctrl+shift+n",
         "command": "explorer.newFolder",
         "when": "explorerViewletFocus"
-    },
-    {
-        "key": "ctrl+up",
-        "command": "spaceBlockJumper.moveUp"
-    },
-    {
-        "key": "ctrl+down",
-        "command": "spaceBlockJumper.moveDown"
-    },
-    {
-        "key": "shift+ctrl+up",
-        "command": "paceBlockJumper.selectUp"
-    },
-    {
-        "key": "shift+ctrl+down",
-        "command": "spaceBlockJumper.selectDown"
     }
 ]
