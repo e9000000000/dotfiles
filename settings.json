@@ -56,5 +56,8 @@
     "extensions.ignoreRecommendations": true,
     "workbench.layoutControl.enabled": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "workbench.editor.showTabs": false
+    "workbench.editor.showTabs": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    }
 }

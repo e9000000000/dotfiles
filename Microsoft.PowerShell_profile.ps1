@@ -6,6 +6,10 @@ function prompt {
     ' '
 }
 
+function enva {
+    . .env/Scripts/activate
+}
+
 
 # Import the Chocolatey Profile that contains the necessary code to enable
 # tab-completions to function for `choco`.
