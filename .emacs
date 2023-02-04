@@ -17,6 +17,10 @@
 (set-frame-parameter (selected-frame) 'alpha '(90 90))
 (add-to-list 'default-frame-alist '(alpha 90 90))
 
+;;; grep search
+(setq grep-find-ignored-directories
+      (list ".git" "node_modules" ".env"))
+
 ;;; ido
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
@@ -43,6 +47,9 @@
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
+
+;;; python
+(setq exec-path (append exec-path '("C:\\Python311\\python.exe")))
 
 ;;; generated code
 (custom-set-variables
