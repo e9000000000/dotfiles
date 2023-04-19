@@ -45,7 +45,7 @@
     },
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
-    "workbench.colorTheme": "Dark+ Black",
+    "workbench.colorTheme": "Ayu Light Bordered",
     "git.confirmSync": false,
     "python.analysis.autoImportCompletions": false,
     "workbench.editor.untitled.hint": "hidden",

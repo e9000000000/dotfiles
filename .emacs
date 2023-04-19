@@ -10,6 +10,20 @@
 (scroll-bar-mode 0)
 (setq split-width-threshold nil)
 
+;;; normal emacs size on start and remove borders
+(add-to-list 'initial-frame-alist '(maximized . fullscreen))
+(setq default-frame-alist '((undecorated . t)))
+(add-to-list 'default-frame-alist '(internal-border-width . 10))
+
+;;; instant kill current buffer
+(global-set-key (kbd "C-x C-k") 'kill-this-buffer)
+
+;;; enable to remove selected text
+(delete-selection-mode 1)
+
+;;; title
+(setq frame-title-format "NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER")
+
 ;;; font
 (set-frame-font "Courier New-12" nil t)
 
@@ -17,9 +31,17 @@
 (set-frame-parameter (selected-frame) 'alpha '(90 90))
 (add-to-list 'default-frame-alist '(alpha 90 90))
 
+;;; utf-8 eshel
+(defun my-term-use-utf8 ()
+  (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix))
+(add-hook 'term-exec-hook 'my-term-use-utf8)
+
 ;;; grep search
-(setq grep-find-ignored-directories
-      (list ".git" "node_modules" ".env"))
+(eval-after-load 'grep
+  '(progn
+     (add-to-list 'grep-find-ignored-directories ".gin")
+     (add-to-list 'grep-find-ignored-directories "node_modules")
+     (add-to-list 'grep-find-ignored-directories ".env")))
 
 ;;; ido
 (setq ido-enable-flex-matching t)
@@ -48,8 +70,27 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
-;;; python
-(setq exec-path (append exec-path '("C:\\Python311\\python.exe")))
+;;; what is it for?
+(defvar tra-ta-ta-timer nil
+  "Timer object for tra ta ta func.")
+
+(defun tra-ta-ta ()
+  (interactive)
+  (goto-char (random (point-max)))
+  (message ""))
+
+(defun toggle-tra-ta-ta ()
+  (interactive)
+  (if tra-ta-ta-timer
+      (progn
+        (cancel-timer tra-ta-ta-timer)
+        (setq tra-ta-ta-timer nil)
+        (message "d"))
+    (setq tra-ta-ta-timer
+          (run-with-timer 0 (* 1 30) 'tra-ta-ta))
+    (message "e")))
+
+(global-set-key (kbd "C-c r") 'toggle-tra-ta-ta)
 
 ;;; generated code
 (custom-set-variables
@@ -61,10 +102,11 @@
  '(custom-safe-themes
    '("1c9ba588b7dedc017c5ee7fab0b9c74595a622d94298d9b79633a55091bed503" "45e76a1b1e3bd74adb03192bf8d6eea2e469a1cf6f60088b99d57f1374d77a04" "ebd6fc300de1edea826a49e702367d52d371ac3186cb6aa308acdcf4e08704d4" default))
  '(package-selected-packages
-   '(powershell tr-ime ## ir-black-theme smex multiple-cursors move-text)))
+   '(magit ejc-sql powershell tr-ime ## ir-black-theme smex multiple-cursors move-text)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'downcase-region 'disabled nil)
