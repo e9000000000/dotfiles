@@ -3,11 +3,11 @@
 task               | solution
 ------------------ | ---
 os                 | windows
-terminal           | eshell
-shell              | eshell
+terminal           | cmder
+shell              | cmder
 de                 | windows
 browser            | firefox
-code/text editor   | emacs
+code/text editor   | nvim
 windows theme      | black
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
