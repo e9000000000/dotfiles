@@ -4,15 +4,22 @@ task               | solution
 ------------------ | ---
 os                 | windows
 terminal           | cmder
-shell              | cmder
+shell              | cmd:cmder
 de                 | windows
 browser            | firefox
-code/text editor   | nvim
+code/text editor   | emacs
 windows theme      | black
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 
 # apps extensions
+## emacs
+- ir-black-theme
+- magit
+- move-text
+- multiple-cursors
+- smex
+
 ## firefox
 - Black
 - Vimium-FF
