@@ -3,8 +3,8 @@
 task               | solution
 ------------------ | ---
 os                 | windows
-terminal           | cmder
-shell              | cmd:cmder
+terminal           | windows terminal
+shell              | cmd
 de                 | windows
 browser            | firefox
 code/text editor   | gvim
