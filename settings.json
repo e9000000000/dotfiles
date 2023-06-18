@@ -42,16 +42,10 @@
     {
         "defaults": 
         {
-            "colorScheme": "Campbell"
+            "colorScheme": "nori_256"
         },
         "list": 
         [
-            {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "cursorShape": "filledBox",
@@ -61,10 +55,32 @@
                 "scrollbarState": "hidden"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "cursorShape": "filledBox",
+                "elevate": true,
+                "font": 
+                {
+                    "face": "Cascadia Mono",
+                    "size": 12.0
+                },
+                "guid": "{84e9ef28-e875-46bd-9243-a3959a31e4a5}",
                 "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "name": "admin huy",
+                "padding": "8, 8, 8, 8",
+                "scrollbarState": "hidden",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": false
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
             }
         ]
     },
@@ -276,8 +292,32 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#000000",
+            "black": "#0C0C0C",
+            "blue": "#585858",
+            "brightBlack": "#000000",
+            "brightBlue": "#585858",
+            "brightCyan": "#AF0000",
+            "brightGreen": "#8A8A8A",
+            "brightPurple": "#D0D0D0",
+            "brightRed": "#FF0000",
+            "brightWhite": "#BCBCBC",
+            "brightYellow": "#EEEEEE",
+            "cursorColor": "#BCBCBC",
+            "cyan": "#AF0000",
+            "foreground": "#BCBCBC",
+            "green": "#8A8A8A",
+            "name": "nori_256",
+            "purple": "#D0D0D0",
+            "red": "#FF0000",
+            "selectionBackground": "#BCBCBC",
+            "white": "#BCBCBC",
+            "yellow": "#EEEEEE"
         }
     ],
+    "theme": "light",
     "themes": 
     [
         {

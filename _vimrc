@@ -16,7 +16,9 @@ set nowritebackup
 set nobackup
 set noundofile
 set noswapfile 
+set wildmenu 
 set gp=git\ grep\ -n
+au GUIEnter * simalt ~x
 
 " gui
 set guifont=Courier\ New:h14
