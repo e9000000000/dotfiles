@@ -13,8 +13,7 @@ telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 
 # apps extensions
-## emacs
-- phoenix-dark-pink-theme
+## emacs elpa melpa
 - restclient
 - magit
 - tr-ime
