@@ -78,7 +78,7 @@
   (goto-char (random (point-max)))
   (message ""))
 
-(defun toggle-tra-ta-ta ()
+
   (interactive)
   (if tra-ta-ta-timer
       (progn

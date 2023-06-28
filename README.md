@@ -3,8 +3,8 @@
 task               | solution
 ------------------ | ---
 os                 | windows
-terminal           | emacs
-shell              | emacs
+terminal           | windows terminal
+shell              | git bash
 de                 | windows
 browser            | chromium
 code/text editor   | emacs
