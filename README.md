@@ -3,31 +3,11 @@
 task               | solution
 ------------------ | ---
 os                 | windows
-terminal           | windows terminal
-shell              | cmd
+terminal           | emacs
+shell              | emacs
 de                 | windows
-browser            | firefox
+browser            | chromium
 code/text editor   | emacs
 windows theme      | black
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
-
-# apps extensions
-## emacs elpa melpa
-- restclient
-- magit
-- tr-ime
-- multiple-cursors
-- move-text
-
-## firefox
-- Black
-- Vimium-FF
-- uBlock Origin
-- Nano Defender
-- SponsorBlock
-- I don't care about cookies
-- SoundFixer
-- YouTube NonStop
-- Youtube Playback Speed Control
-- Return Youtube Dislike
