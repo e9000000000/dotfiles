@@ -1,1 +1,73 @@
-/home/e/.config/sxhkd/sxhkdrc
+# apps_________________________________________________________________________
+
+# terminal
+super + t
+    alacritty
+
+# dmenu
+super + d
+    dmenu_run -b -nf "#fafafa" -nb "#000000" -sb "#e30137" -sf "#000000" -fn "DejaVu Sans-10.5" -p "r"
+
+# flameshot
+Print
+    flameshot gui
+
+
+# windows and workspaces_______________________________________________________
+
+# close
+super + q
+    bspc node -c
+
+# kill
+super + shift + q
+    bspc node -k
+
+# focus workspace
+super + {1-9}
+    bspc desktop -f {1-9}
+
+# move window to workspace
+super + shift + {1-9}
+    bspc node -d {1-9}
+
+# focus window
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
+
+# move window
+super + shift + {h,j,k,l}
+    bspc node -s {west,south,north,east}
+
+# resize window
+super + alt + h
+    bspc node -z left -20 0; bspc node -z right -20 0
+super + alt + l
+    bspc node -z left 20 0; bspc node -z right 20 0
+super + alt + j
+    bspc node -z top 0 20; bspc node -z bottom 0 20
+super + alt + k
+    bspc node -z top 0 -20; bspc node -z bottom 0 -20
+
+# make window tiled
+super + e
+    bspc node -t tiled
+
+# make window float
+super + w
+    bspc node -t floating
+
+# make window fullscreen
+super + f
+    bspc node -t fullscreen
+
+
+# bspwm _______________________________________________________________________
+
+# quit
+super + shift + e
+    bspc quit
+
+# restart
+super + shift + r
+    bspc wm -r
