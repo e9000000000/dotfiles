@@ -14,7 +14,7 @@ set nowritebackup
 set nobackup
 set noundofile
 set noswapfile 
-set wildmenu 
+set wildoptions-=pum
 set gp=git\ grep\ -n
 
 " netrw
@@ -33,53 +33,40 @@ map <Leader> <Plug>(easymotion-prefix)
 " easy motions
 let g:EasyMotion_smartcase = 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-" color theme (base on https://github.com/andreasvc/vim-256noir)
 highlight clear
 set background=dark
 if exists("syntax_on")
     syntax reset
 endif
 
-hi Normal cterm=NONE ctermfg=Gray ctermbg=None
-hi Keyword cterm=NONE ctermfg=White ctermbg=None
-hi Constant cterm=NONE ctermfg=Gray ctermbg=None
-hi String cterm=NONE ctermfg=Gray ctermbg=None
-hi Comment cterm=NONE ctermfg=DarkGray ctermbg=None
-hi Number cterm=NONE ctermfg=Red ctermbg=None
-hi Error cterm=NONE ctermfg=White ctermbg=DarkRed
-hi ErrorMsg cterm=NONE ctermfg=White ctermbg=Red
-hi Search cterm=NONE ctermfg=Gray ctermbg=DarkGray
+hi Normal cterm=none ctermfg=Gray ctermbg=none
+hi Keyword cterm=none ctermfg=White ctermbg=none
+hi Constant cterm=none ctermfg=Gray ctermbg=none
+hi String cterm=none ctermfg=Green ctermbg=none
+hi Comment cterm=none ctermfg=DarkGray ctermbg=none
+hi Number cterm=none ctermfg=Red ctermbg=none
+hi Error cterm=none ctermfg=White ctermbg=DarkRed
+hi ErrorMsg cterm=none ctermfg=White ctermbg=Red
+hi Search cterm=none ctermfg=Gray ctermbg=DarkGray
 hi IncSearch cterm=reverse ctermfg=White ctermbg=Gray
-hi DiffChange cterm=NONE ctermfg=Red ctermbg=White
+hi DiffChange cterm=none ctermfg=Red ctermbg=White
 hi DiffText cterm=bold ctermfg=Gray ctermbg=Red
-hi SignColumn cterm=NONE ctermfg=Red ctermbg=DarkGray
+hi SignColumn cterm=none ctermfg=Red ctermbg=DarkGray
 hi SpellBad cterm=undercurl ctermfg=White ctermbg=DarkRed
-hi SpellCap cterm=NONE ctermfg=White ctermbg=Red
-hi SpellRare cterm=NONE ctermfg=Red ctermbg=None
-hi WildMenu cterm=NONE ctermfg=DarkGray ctermbg=White
-hi Pmenu cterm=NONE ctermfg=White ctermbg=DarkGray
-hi PmenuThumb cterm=NONE ctermfg=Black ctermbg=DarkGray
-hi SpecialKey cterm=NONE ctermfg=Black ctermbg=White
-hi MatchParen cterm=NONE ctermfg=Black ctermbg=DarkGray
-hi CursorLine cterm=NONE ctermfg=NONE ctermbg=None
-hi StatusLine cterm=bold ctermfg=Gray ctermbg=None
-hi StatusLineNC cterm=reverse ctermfg=DarkGray ctermbg=None
-hi Visual cterm=reverse ctermfg=Gray ctermbg=None
-hi TermCursor cterm=reverse ctermfg=NONE ctermbg=NONE
+hi SpellCap cterm=none ctermfg=White ctermbg=Red
+hi SpellRare cterm=none ctermfg=Red ctermbg=none
+hi WildMenu cterm=none ctermfg=Red ctermbg=none
+hi Pmenu cterm=none ctermfg=White ctermbg=DarkGray
+hi PmenuThumb cterm=none ctermfg=Black ctermbg=DarkGray
+hi SpecialKey cterm=none ctermfg=Black ctermbg=White
+hi MatchParen cterm=none ctermfg=Black ctermbg=DarkGray
+hi CursorLine cterm=none ctermfg=none ctermbg=none
+hi StatusLine cterm=none ctermfg=Gray ctermbg=none
+hi StatusLineNC cterm=reverse ctermfg=DarkGray ctermbg=none
+hi Visual cterm=reverse ctermfg=Gray ctermbg=none
+hi TermCursor cterm=reverse ctermfg=none ctermbg=none
+hi Conditional cterm=none ctermfg=Blue ctermbg=none
+hi Statement cterm=none ctermfg=Blue ctermbg=none
 
 highlight! link Boolean Normal
 highlight! link Delimiter Normal
@@ -92,8 +79,6 @@ highlight! link Macro Normal
 highlight! link ModeMsg Normal
 highlight! link MoreMsg Normal
 highlight! link Question Normal
-highlight! link Conditional Keyword
-highlight! link Statement Keyword
 highlight! link Operator Keyword
 highlight! link Structure Keyword
 highlight! link Function Keyword
