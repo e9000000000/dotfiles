@@ -6,8 +6,7 @@ super + t
 
 # dmenu
 super + d
-    dmenu_run -b -nf "#fafafa" -nb "#000000" -sb "#e30137" -sf "#000000" -fn "DejaVu Sans-10.5" -p "r"
-
+    dmenu_run -b -nf "#b0b0b0" -nb "#000000" -sb "#b00030" -sf "#000000" -fn "DejaVu Sans-10.5" -p "господи помилуй"
 # flameshot
 super + r
     flameshot gui

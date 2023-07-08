@@ -48,42 +48,42 @@ draw_bold_text_with_bright_colors: false
 colors:
   primary:
     background: '#000000'
-    foreground: '#fefefe'
+    foreground: '#b0b0b0'
 
   cursor:
     text: '#000000'
-    cursor: '#fefefe'
+    cursor: '#b0b0b0'
 
   # noir
   normal:
     black:   '#000000'
-    red:     '#e30137'
-    green:   '#01e377'
+    red:     '#b00030'
+    green:   '#00b066'
     yellow:  '#777777'
-    blue:    '#0187d3'
+    blue:    '#0170b0'
     magenta: '#656565'
     cyan:    '#808080'
-    white:   '#fafafa'
+    white:   '#b0b0b0'
 
   bright:
     black:   '#000000'
-    red:     '#e30137'
-    green:   '#01e377'
+    red:     '#b00030'
+    green:   '#00b066'
     yellow:  '#777777'
-    blue:    '#0187d3'
+    blue:    '#0170b0'
     magenta: '#656565'
     cyan:    '#808080'
-    white:   '#fafafa'
+    white:   '#b0b0b0'
 
   dim:
     black:   '#000000'
-    red:     '#e30137'
-    green:   '#01e377'
+    red:     '#b00030'
+    green:   '#00b066'
     yellow:  '#777777'
-    blue:    '#0187d3'
+    blue:    '#0170b0'
     magenta: '#656565'
     cyan:    '#808080'
-    white:   '#fafafa'
+    white:   '#b0b0b0'
 
 
 selection:

@@ -1,9 +1,9 @@
 ; vim:ft=dosini
 [colors]
 background = #e5000000
-foreground = #fefefe
+foreground = #b0b0b0
 unfocused = #343434
-alert = #e30137
+alert = #b00030
 
 
 [bar/base]
