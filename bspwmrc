@@ -18,12 +18,6 @@ function exec_restart() {
 }
 
 
-# keyboard settings
-setxkbmap -layout us,ru
-setxkbmap -option "grp:alt_shift_toggle"
-xmodmap ~/.Xmodmap
-xset r rate 190 20
-
 # wallpapers
 feh --bg-fill ~/.bg/bg4.jpg &
 # xsetroot -solid black &

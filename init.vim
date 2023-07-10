@@ -24,15 +24,21 @@ let g:netrw_banner=0
 call plug#begin()
     Plug 'easymotion/vim-easymotion'
     Plug 'tpope/vim-commentary'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
-" keymap
+" easy motions
 let mapleader = " "
 map <Leader> <Plug>(easymotion-prefix)
-
-" easy motions
 let g:EasyMotion_smartcase = 1
 
+" fzf
+let g:fzf_layout = {'window': {'width': 1, 'height': 1}}
+nmap <c-f> :GFiles -co<cr>
+nmap <c-b> :Buffers<cr>
+
+" theme
 highlight clear
 set background=dark
 if exists("syntax_on")
@@ -62,13 +68,17 @@ hi SpecialKey cterm=none ctermfg=Black ctermbg=White
 hi MatchParen cterm=none ctermfg=Black ctermbg=DarkGray
 hi CursorLine cterm=none ctermfg=none ctermbg=none
 hi StatusLine cterm=none ctermfg=Gray ctermbg=none
-hi StatusLineNC cterm=reverse ctermfg=DarkGray ctermbg=none
+hi StatusLineNC cterm=none ctermfg=DarkGray ctermbg=none
 hi Visual cterm=reverse ctermfg=Gray ctermbg=none
 hi TermCursor cterm=reverse ctermfg=none ctermbg=none
 hi Conditional cterm=none ctermfg=Blue ctermbg=none
 hi Statement cterm=none ctermfg=Blue ctermbg=none
+hi Operator cterm=none ctermfg=Blue ctermbg=none
+hi Repeat cterm=none ctermfg=Blue ctermbg=none
+hi Include cterm=none ctermfg=Blue ctermbg=none
+hi Function cterm=none ctermfg=Yellow ctermbg=none
 
-highlight! link Boolean Normal
+highlight! link Boolean Number
 highlight! link Delimiter Normal
 highlight! link Identifier Normal
 highlight! link Title Normal
@@ -79,10 +89,7 @@ highlight! link Macro Normal
 highlight! link ModeMsg Normal
 highlight! link MoreMsg Normal
 highlight! link Question Normal
-highlight! link Operator Keyword
 highlight! link Structure Keyword
-highlight! link Function Keyword
-highlight! link Include Keyword
 highlight! link Type Keyword
 highlight! link Typedef Keyword
 highlight! link Todo Keyword
@@ -94,7 +101,6 @@ highlight! link diffCommon Keyword
 highlight! link Directory Keyword
 highlight! link PreCondit Keyword
 highlight! link PreProc Keyword
-highlight! link Repeat Keyword
 highlight! link Special Keyword
 highlight! link SpecialChar Keyword
 highlight! link StorageClass Keyword

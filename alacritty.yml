@@ -1,7 +1,7 @@
 window:
   opacity: 0.9
   dimensions:
-    columns: 140
+    columns: 80
     lines: 40
 
   padding:
@@ -33,7 +33,7 @@ font:
   bold_italic:
     family: DejaVu Sans Mono
 
-  size: 11.0
+  size: 10.0
 
   offset:
     x: 0
@@ -59,7 +59,7 @@ colors:
     black:   '#000000'
     red:     '#b00030'
     green:   '#00b066'
-    yellow:  '#777777'
+    yellow:  '#b0b050'
     blue:    '#0170b0'
     magenta: '#656565'
     cyan:    '#808080'
@@ -69,7 +69,7 @@ colors:
     black:   '#000000'
     red:     '#b00030'
     green:   '#00b066'
-    yellow:  '#777777'
+    yellow:  '#b0b050'
     blue:    '#0170b0'
     magenta: '#656565'
     cyan:    '#808080'
@@ -79,7 +79,7 @@ colors:
     black:   '#000000'
     red:     '#b00030'
     green:   '#00b066'
-    yellow:  '#777777'
+    yellow:  '#b0b050'
     blue:    '#0170b0'
     magenta: '#656565'
     cyan:    '#808080'
