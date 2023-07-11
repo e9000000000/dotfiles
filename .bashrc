@@ -25,7 +25,7 @@ fi
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="nvim"
-export PATH="/usr/bin:/usr/sbin"
+export PATH="/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
 alias ls="ls --color=auto"
