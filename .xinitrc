@@ -9,7 +9,7 @@ xmodmap ~/.Xmodmap
 xset r rate 190 20
 
 # screen
-xrandr --output eDP --brightness 0.6
+xrandr --output eDP --brightness 0.5
 
 # bar data
 while [ 1 ]
