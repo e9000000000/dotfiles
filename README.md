@@ -6,7 +6,7 @@ terminal           | st
 shell              | bash
 de                 | dwm
 browser            | firefox
-code/text editor   | neovim
+code/text editor   | emacs
 screenshots        | flameshot
 notifications      | dunst
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
