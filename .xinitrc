@@ -17,7 +17,7 @@ do
     POWER=$(upower -i `upower -e | grep BAT`| grep percentage | grep -P \\d+% -o)
     KB=$(xset -q | grep LED | grep -P \\d{8} -o)
     xsetroot -name "$POWER - $KB - `date`"
-    sleep 1
+    sleep 0.2
 done &
 
 # background
