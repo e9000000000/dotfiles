@@ -8,7 +8,11 @@
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
+(blink-cursor-mode 0)
 (setq split-width-threshold nil)
+
+;;; type y instead of yes for confirmation
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;;; instant kill current buffer
 (global-set-key (kbd "C-x C-k") 'kill-this-buffer)
@@ -18,21 +22,11 @@
 
 ;;; dired settings
 (setq dired-dwim-target t)
-(add-hook 'dired-mode-hook
-      (lambda ()
-        (dired-hide-details-mode)))
-
-;;; title
-(setq frame-title-format "nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger nigger")
-
-;;; font
-; (set-frame-font "Courier New-12" nil t)
 
 ;;; ido
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
-
 
 ;;; +melpa
 (require 'package)
@@ -50,6 +44,9 @@
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
+
+;;; packages without configuration
+(require 'restclient)
 
 ;;; generated code
 (custom-set-variables
