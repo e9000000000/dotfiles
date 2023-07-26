@@ -11,6 +11,9 @@
 (blink-cursor-mode 0)
 (setq split-width-threshold nil)
 
+;;; font
+(set-frame-font "DejaVu Sans Mono 13" nil t)
+
 ;;; type y instead of yes for confirmation
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -56,7 +59,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(ir-black))
  '(custom-safe-themes
-   '("38c4fb6c8b2625f6307f3dde763d5c61d774d854ecee9c5eb9c5433350bc0bef" default)))
+   '("38c4fb6c8b2625f6307f3dde763d5c61d774d854ecee9c5eb9c5433350bc0bef" default))
+ '(package-selected-packages
+   '(rust-mode magit smex restclient multiple-cursors ir-black-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

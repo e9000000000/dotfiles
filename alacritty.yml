@@ -1,0 +1,101 @@
+window:
+  opacity: 0.9
+  dimensions:
+    columns: 80
+    lines: 40
+
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: false
+
+  decorations: full
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+  gtk_theme_variant: None
+
+scrolling:
+  history: 4000
+  multiplier: 4
+
+font:
+  normal:
+    family: DejaVu Sans Mono
+  bold:
+    family: DejaVu Sans Mono
+  italic:
+    family: DejaVu Sans Mono
+  bold_italic:
+    family: DejaVu Sans Mono
+
+  size: 9.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
+
+colors:
+  primary:
+    background: '#000000'
+    foreground: '#b0b0b0'
+
+  cursor:
+    text: '#000000'
+    cursor: '#b0b0b0'
+
+  # noir
+  normal:
+    black:   '#000000'
+    red:     '#b00030'
+    green:   '#00b066'
+    yellow:  '#b0b050'
+    blue:    '#0170b0'
+    magenta: '#656565'
+    cyan:    '#808080'
+    white:   '#b0b0b0'
+
+  bright:
+    black:   '#000000'
+    red:     '#b00030'
+    green:   '#00b066'
+    yellow:  '#b0b050'
+    blue:    '#0170b0'
+    magenta: '#656565'
+    cyan:    '#808080'
+    white:   '#b0b0b0'
+
+  dim:
+    black:   '#000000'
+    red:     '#b00030'
+    green:   '#00b066'
+    yellow:  '#b0b050'
+    blue:    '#0170b0'
+    magenta: '#656565'
+    cyan:    '#808080'
+    white:   '#b0b0b0'
+
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+    blinking: Never
+
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true

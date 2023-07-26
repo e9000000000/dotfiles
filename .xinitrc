@@ -15,7 +15,8 @@ while [ 1 ]
 do
     POWER=$(upower -i `upower -e | grep BAT`| grep percentage | grep -P \\d+% -o)
     KB=$(xset -q | grep LED | grep -P \\d{8} -o)
-    xsetroot -name "$POWER - $KB - `date`"
+    MOLITVA=$(~/dotfiles/molitvaslov -c 50 -a)
+    xsetroot -name "|$MOLITVA| - $POWER - $KB - `date`"
     sleep 0.2
 done &
 
