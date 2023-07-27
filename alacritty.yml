@@ -1,11 +1,11 @@
 window:
-  opacity: 0.9
+  opacity: 1
   dimensions:
     columns: 80
     lines: 40
 
   padding:
-    x: 2
+    x: 7
     y: 2
   dynamic_padding: false
 
@@ -54,34 +54,33 @@ colors:
     text: '#000000'
     cursor: '#b0b0b0'
 
-  # noir
   normal:
     black:   '#000000'
-    red:     '#b00030'
+    red:     '#b60030'
     green:   '#00b066'
     yellow:  '#b0b050'
     blue:    '#0170b0'
-    magenta: '#656565'
+    magenta: '#b066b0'
     cyan:    '#808080'
     white:   '#b0b0b0'
 
   bright:
     black:   '#000000'
-    red:     '#b00030'
+    red:     '#b60030'
     green:   '#00b066'
     yellow:  '#b0b050'
     blue:    '#0170b0'
-    magenta: '#656565'
+    magenta: '#b066b0'
     cyan:    '#808080'
     white:   '#b0b0b0'
 
   dim:
     black:   '#000000'
-    red:     '#b00030'
+    red:     '#b60030'
     green:   '#00b066'
     yellow:  '#b0b050'
     blue:    '#0170b0'
-    magenta: '#656565'
+    magenta: '#b066b0'
     cyan:    '#808080'
     white:   '#b0b0b0'
 
