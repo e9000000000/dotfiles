@@ -14,10 +14,10 @@ xrandr --output eDP --brightness 0.5
 while [ 1 ]
 do
     POWER=$(upower -i `upower -e | grep BAT`| grep percentage | grep -P \\d+% -o)
+    POWER_STATE=$(upower -i `upower -e | grep BAT`| grep state: | sed s/\\s*state:\\s*//)
     KB=$(xset -q | grep LED | grep -P \\d{8} -o)
-    MOLITVA=$(~/dotfiles/molitvaslov -c 50 -a)
-    xsetroot -name "|$MOLITVA| - $POWER - $KB - `date`"
-    sleep 0.2
+    xsetroot -name "$POWER $POWER_STATE - $KB - `date`"
+    sleep 0.1
 done &
 
 # background
