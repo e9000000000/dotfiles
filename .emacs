@@ -46,7 +46,7 @@
 
 ;;; multiple cursors
 (require 'multiple-cursors)
-(global-set-key (kbd "C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-S-c")       'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
 (global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<")     'mc/mark-all-like-this)
@@ -55,7 +55,6 @@
 
 
 ;;; langs support
-(require 'python-mode)
 (require 'rust-mode)
 
 
@@ -65,9 +64,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(wheatgrass))
+ '(custom-enabled-themes '(ir-black))
+ '(custom-safe-themes
+   '("38c4fb6c8b2625f6307f3dde763d5c61d774d854ecee9c5eb9c5433350bc0bef" default))
  '(package-selected-packages
-   '(python-mode rust-mode magit smex restclient multiple-cursors)))
+   '(ir-black-theme rust-mode magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
