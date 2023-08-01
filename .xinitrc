@@ -3,7 +3,7 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 xset s off -dpms
 
 # keyboard settings
-setxkbmap -layout us,ru -option grp:rshift_toggle
+setxkbmap -layout us,ru
 xmodmap ~/.Xmodmap
 xset r rate 190 20
 
@@ -13,11 +13,11 @@ xrandr --output eDP --brightness 0.5
 # bar data
 while [ 1 ]
 do
+    DATETIME=$(date "+%H:%M %a %d-%m")
     POWER=$(upower -i `upower -e | grep BAT`| grep percentage | grep -P \\d+% -o)
-    POWER_STATE=$(upower -i `upower -e | grep BAT`| grep state: | sed s/\\s*state:\\s*//)
     KB=$(xset -q | grep LED | grep -P \\d{8} -o)
-    xsetroot -name "$POWER $POWER_STATE - $KB - `date`"
-    sleep 0.1
+    xsetroot -name "$KB  $POWER  $DATETIME"
+    sleep 1
 done &
 
 # background

@@ -6,4 +6,4 @@ add mod1 = Alt_L
 keycode 108 = Return NoSymbol Return
 keycode 105 = BackSpace NoSymbol BackSpace
 keycode 66 = Escape NoSymbol Escape
-keycode 9 = Mode_switch Multi_key Mode_switch
+keycode 9 = ISO_Next_Group ISO_Next_Group ISO_Next_Group ISO_Next_Group

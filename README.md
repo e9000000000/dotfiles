@@ -2,7 +2,7 @@
 task               | solution
 ------------------ | ---
 os                 | debian 12
-terminal           | alacritty
+terminal           | st
 shell              | bash
 de                 | dwm
 browser            | firefox
