@@ -1,3 +1,8 @@
+// patches
+// - st-alpha-20220206-0.8.5.diff
+// - st-expected-anysize-0.9.diff
+// - st-anygeometry-0.8.1.diff
+
 /* See LICENSE file for copyright and license details. */
 
 /*
@@ -93,6 +98,9 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.9;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
@@ -144,11 +152,24 @@ static unsigned int defaultrcs = 257;
 static unsigned int cursorshape = 2;
 
 /*
+ * Whether to use pixel geometry or cell geometry
+ */
+
+static Geometry geometry = CellGeometry;
+
+/*
  * Default columns and rows numbers
  */
 
 static unsigned int cols = 80;
 static unsigned int rows = 24;
+
+/*
+ * Default width and height (including borders!)
+ */
+
+static unsigned int width = 640;
+static unsigned int height = 480;
 
 /*
  * Default colour and shape of the mouse cursor

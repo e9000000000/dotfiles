@@ -10,6 +10,7 @@
 (scroll-bar-mode 0)
 (blink-cursor-mode 0)
 (setq split-width-threshold nil)
+(setq frame-resize-pixelwise t)
 
 ;;; env (tell programs to use emacs as editor or pager)
 (setenv "EDITOR" "emacsclient")
@@ -18,6 +19,10 @@
 
 ;;; font
 (set-frame-font "DejaVu Sans Mono 13" nil t)
+
+;;; opacity
+(set-frame-parameter (selected-frame) 'alpha '(90 . 50))
+(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
 
 ;;; type y instead of yes for confirmation
 (defalias 'yes-or-no-p 'y-or-n-p)
