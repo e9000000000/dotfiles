@@ -21,7 +21,8 @@ do
 done &
 
 # background
-hsetroot -solid black &
+# hsetroot -solid black &
+feh --bg-center ~/dotfiles/.bg/bg4.jpg
 
 # run
 picom &

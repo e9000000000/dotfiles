@@ -21,8 +21,8 @@
 (set-frame-font "DejaVu Sans Mono 13" nil t)
 
 ;;; opacity
-(set-frame-parameter (selected-frame) 'alpha '(90 . 50))
-(add-to-list 'default-frame-alist '(alpha . (90 . 50)))
+(set-frame-parameter (selected-frame) 'alpha '(80 . 50))
+(add-to-list 'default-frame-alist '(alpha . (80 . 50)))
 
 ;;; type y instead of yes for confirmation
 (defalias 'yes-or-no-p 'y-or-n-p)
