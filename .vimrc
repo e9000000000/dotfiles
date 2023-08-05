@@ -27,3 +27,7 @@ set tabstop=2
 set shiftwidth=2
 set encoding=UTF-8
 set ttimeoutlen=50
+
+
+" mark trailing spaces as errors
+match IncSearch '\s\+$'

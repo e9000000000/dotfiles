@@ -16,8 +16,9 @@ complete -cf time
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="vi"
-export GIT_PAGER="cat"
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
 alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
