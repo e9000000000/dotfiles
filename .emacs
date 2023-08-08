@@ -33,8 +33,11 @@
 (set-frame-font "DejaVu Sans Mono 13" nil t)
 
 ;;; opacity
-(set-frame-parameter (selected-frame) 'alpha '(80 . 50))
-(add-to-list 'default-frame-alist '(alpha . (80 . 50)))
+(set-frame-parameter (selected-frame) 'alpha '(80 . 80))
+(add-to-list 'default-frame-alist '(alpha . (80 . 80)))
+
+;;; tab width
+(setq-default tab-width 4)
 
 ;;; type y instead of yes for confirmation
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -70,7 +73,6 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
-
 ;;; langs support
 (require 'rust-mode)
 
@@ -85,7 +87,7 @@
  '(custom-safe-themes
    '("38c4fb6c8b2625f6307f3dde763d5c61d774d854ecee9c5eb9c5433350bc0bef" default))
  '(package-selected-packages
-   '(ir-black-theme rust-mode magit smex restclient multiple-cursors)))
+   '(go-mode ir-black-theme rust-mode magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
