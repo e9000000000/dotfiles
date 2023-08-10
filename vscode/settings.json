@@ -1,0 +1,28 @@
+{
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "window.titleBarStyle": "custom",
+    "python.defaultInterpreterPath": "/bin/python3",
+    "keyboard.dispatch": "keyCode",
+    "workbench.sideBar.location": "right",
+    "extensions.ignoreRecommendations": true,
+    "git.openRepositoryInParentFolders": "always",
+    "explorer.excludeGitIgnore": true,
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontalScrollbarSize": 0,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.folding": false,
+    "editor.foldingHighlight": false,
+    "editor.guides.indentation": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "terminal.integrated.tabs.hideCondition": "never",
+    "editor.autoClosingBrackets": "never",
+    "editor.bracketPairColorization.enabled": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
+    "editor.renderLineHighlight": "none",
+    "workbench.activityBar.visible": false,
+}
