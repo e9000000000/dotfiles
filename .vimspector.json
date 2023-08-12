@@ -1,0 +1,15 @@
+{
+  "configurations": {
+    "python run file": {
+      "adapter": "debugpy",
+      "filetypes": [ "python" ],
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/main.py",
+        "stopOnEntry": true,
+        "cwd": "${workspaceRoot}"
+      }
+    }
+  }
+}

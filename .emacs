@@ -83,11 +83,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(ir-black))
+ '(custom-enabled-themes '(spaceway))
  '(custom-safe-themes
-   '("38c4fb6c8b2625f6307f3dde763d5c61d774d854ecee9c5eb9c5433350bc0bef" default))
+   '("b9b9e48eee0fcf0fda026553a33526b7827877eba8ba05e809ea5f0e9140cf59" "2d035eb93f92384d11f18ed00930e5cc9964281915689fa035719cab71766a15" "28a104f642d09d3e5c62ce3464ea2c143b9130167282ea97ddcc3607b381823f" "35c096aa0975d104688a9e59e28860f5af6bb4459fd692ed47557727848e6dfe" "38c4fb6c8b2625f6307f3dde763d5c61d774d854ecee9c5eb9c5433350bc0bef" default))
  '(package-selected-packages
-   '(go-mode ir-black-theme rust-mode magit smex restclient multiple-cursors)))
+   '(spaceway-theme poet-theme go-mode ir-black-theme rust-mode magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
