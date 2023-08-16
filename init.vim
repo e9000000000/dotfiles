@@ -67,6 +67,7 @@ colorscheme spaceway
 " vimspector
 let g:vimspector_enable_mappings = 'HUMAN'  " https://github.com/puremourning/vimspector#human-mode
 let g:vimspector_install_gadgets = [ 'debugpy' ]
+nnoremap <f7> :VimspectorReset<cr>
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
