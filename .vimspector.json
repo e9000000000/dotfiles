@@ -10,6 +10,19 @@
         "stopOnEntry": true,
         "cwd": "${workspaceRoot}"
       }
+    },
+    "python run fastapi": {
+      "adapter": "debugpy",
+      "filetypes": ["python"],
+      "configuration": {
+        "name": "fastapi launch",
+        "type": "python",
+        "request": "launch",
+        "python": "${workspaceRoot}/.env/bin/python",
+        "module": "uvicorn",
+        "cwd": "${workspaceRoot}",
+        "args": ["--port", "8000", "--reload", "main:app"]
+      }
     }
   }
 }
