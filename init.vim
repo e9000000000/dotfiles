@@ -11,7 +11,8 @@
 "                               ░       ░
 
 
-" run this command install vim-plug sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+" run this command install vim-plug by the following command
+" sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 " run :PlugInstall for plugins installation
 "
 " install vimspector gadgets from g:vimspector_install_gadgets by runing :VimspectorInstall GADGETNAME
@@ -30,13 +31,13 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'jesseleite/vim-noh'
 Plug 'tpope/vim-commentary'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 " settings
 set ignorecase
 set smartcase
 set incsearch
-set autochdir
 set smartcase
 set smartindent
 set smarttab
@@ -58,6 +59,29 @@ let mapleader=","
 " mark trailing spaces as errors
 match Error '\s\+$'
 
+
+" custom autochdir (default not working when switching directories in netrw
+" and also when i type :e /home/user - it sets current directory to /home,
+" when i want it to be /home/user (like in dired mode in emacs))
+" sollution from here:
+" https://vi.stackexchange.com/questions/34557/how-can-i-use-let-gnetrw-keepdir-0-for-folders-and-autochdir-for-files
+" https://gist.github.com/user202729/483421a9e88af58def12f2e085dc1c02
+set noautochdir  " otherwise it conflict with netrw. Implement manually
+let g:netrw_keepdir=0  " i.e. pwd = current browsing directory
+function NetrwCheckAcd()
+	" could also be "terminal" or something in which case do nothing
+	if &buftype==""
+		if isdirectory(expand("%"))
+			call chdir(expand("%"))  " this is still necessary even with g:netrw_keepdir when triggered through remote vim...? TODO
+		else
+			if isdirectory(expand("%:h"))
+				call chdir(expand("%:h"))  " simulate acd. Do this even in case % does not exist
+			endif
+		endif
+	endif
+endfunction
+autocmd BufEnter * call NetrwCheckAcd()
+
 " netrw no banner
 let g:netrw_banner=0
 
@@ -72,6 +96,9 @@ nnoremap <f7> :VimspectorReset<cr>
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nnoremap <C-b> :CtrlPBuffer<cr>
+
+" ack
+let g:ackprg = 'ag --vimgrep'
 
 " lua
 :lua << EOF
