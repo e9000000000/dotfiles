@@ -31,7 +31,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'jesseleite/vim-noh'
 Plug 'tpope/vim-commentary'
-Plug 'mileszs/ack.vim'
 call plug#end()
 
 " settings
@@ -82,6 +81,13 @@ function NetrwCheckAcd()
 endfunction
 autocmd BufEnter * call NetrwCheckAcd()
 
+" rg instead of standart grep (standart grep can be accessed with vimgrep)
+" (don't use silversearcher-ag, it can's find
+" test sometimes for example: i search with -i flag for a only caps russian
+" text. result: not finded, but git grep and ripgrep easy find it, so use git grep)
+set grepprg=rg\ --vimgrep
+
+
 " netrw no banner
 let g:netrw_banner=0
 
@@ -96,9 +102,6 @@ nnoremap <f7> :VimspectorReset<cr>
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nnoremap <C-b> :CtrlPBuffer<cr>
-
-" ack
-let g:ackprg = 'ag --vimgrep'
 
 " lua
 :lua << EOF
