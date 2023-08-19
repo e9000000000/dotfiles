@@ -48,6 +48,8 @@ set encoding=UTF-8
 set ttimeoutlen=50
 set wildoptions-=pum
 set signcolumn=yes
+set noshowmode
+set statusline=%#Function#[%{mode()}]\ %#Keyword#%F:%#Number#%l%#Keyword#:%#Number#%c%#Keyword#:\ %L\ %#String#%{&fileencoding?&fileencoding:&encoding}%#Normal#\ %m%r%h%w%y%q
 
 " python path
 let g:python3_host_prog='/usr/bin/python3'
