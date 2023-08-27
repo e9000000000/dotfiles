@@ -49,6 +49,10 @@ set ttimeoutlen=50
 set wildoptions-=pum
 set signcolumn=yes
 set noshowmode
+
+"   statusline         current vim mode   abs file path   current line       current column    all lines                     file encoding                          flags
+"    ___||___                 _||_               \\          \\                    \\             \\              _______________||__________________              ___||_____
+"   |        |               |    |              ||          ||                    ||             ||             |                                   |            |          |
 set statusline=%#Function#[%{mode()}]\ %#Keyword#%F:%#Number#%l%#Keyword#:%#Number#%c%#Keyword#:\ %L\ %#String#%{&fileencoding?&fileencoding:&encoding}%#Normal#\ %m%r%h%w%y%q
 
 " use system clipboard with just space
