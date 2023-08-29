@@ -23,6 +23,7 @@ export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
 alias vi=nvim
+alias code=codium
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
