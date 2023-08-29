@@ -1,6 +1,5 @@
 {
-    "workbench.colorTheme": "Monokai Pro",
-    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.iconTheme": "vs-minimal",
     "window.titleBarStyle": "custom",
     "python.defaultInterpreterPath": "/bin/python3",
     "keyboard.dispatch": "keyCode",
@@ -25,4 +24,11 @@
     ],
     "editor.renderLineHighlight": "none",
     "workbench.activityBar.visible": false,
+    "python.languageServer": "None",
+    "workbench.colorTheme": "Black++ Dark Ula",
+    "git.confirmSync": false,
+    "window.zoomLevel": 1,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.lineNumbers": "off",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
 }
