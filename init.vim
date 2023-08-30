@@ -10,18 +10,17 @@
 "  ░           ░  ░             ░        ░   ░         ░
 "                               ░       ░
 
-
-" run this command install vim-plug by the following command
-" sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-" run :PlugInstall for plugins installation
-"
-" install vimspector gadgets from g:vimspector_install_gadgets by runing :VimspectorInstall GADGETNAME
-" if it's failed to install gadget cuz of cachesum - change cachesum inside of
-" plugin file ~/.local/share/nvim/plugged/vimspector/python3/vimspectorv/gadgets.py
-
 " syntax, indent, filetype
 syntax on
 filetype plugin indent on
+
+" install vim-plug if it's not already
+augroup PLUGGED
+	if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+		silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	endif
+augroup end
 
 " plugins
 call plug#begin()
@@ -94,7 +93,7 @@ autocmd BufEnter * call NetrwCheckAcd()
 
 " rg instead of standart grep (standart grep can be accessed with vimgrep)
 " (don't use silversearcher-ag, it can's find
-" test sometimes for example: i search with -i flag for a only caps russian
+" text sometimes for example: i search with -i flag for a only caps russian
 " text. result: not finded, but git grep and ripgrep easy find it, so use git grep)
 set grepprg=rg\ --vimgrep
 
@@ -106,6 +105,9 @@ let g:netrw_banner=0
 colorscheme spaceway
 
 " vimspector
+" install gadgets from g:vimspector_install_gadgets by runing :VimspectorInstall GADGETNAME
+" if it's failed to install gadget cuz of cachesum - change cachesum inside of
+" plugin file ~/.local/share/nvim/plugged/vimspector/python3/vimspectorv/gadgets.py
 let g:vimspector_enable_mappings = 'HUMAN'  " https://github.com/puremourning/vimspector#human-mode
 let g:vimspector_install_gadgets = [ 'debugpy' ]
 nnoremap <f7> :VimspectorReset<cr>
