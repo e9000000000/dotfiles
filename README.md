@@ -4,7 +4,7 @@ task               | solution
 os                 | debian 12
 terminal           | kitty
 shell              | bash
-de                 | dwm
+de                 | i3
 browser            | firefox
 code/text editor   | nvim
 screenshots        | flameshot
