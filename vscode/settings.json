@@ -6,7 +6,6 @@
     "workbench.sideBar.location": "right",
     "extensions.ignoreRecommendations": true,
     "git.openRepositoryInParentFolders": "always",
-    "explorer.excludeGitIgnore": true,
     "editor.cursorBlinking": "solid",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontalScrollbarSize": 0,
@@ -31,4 +30,11 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.lineNumbers": "off",
     "editor.unicodeHighlight.ambiguousCharacters": false,
+    "explorer.excludeGitIgnore": true,
+    "files.watcherExclude": {
+        "**/.env/": true
+    },
+    "search.exclude": {
+        "**/.env/": true
+    },
 }
