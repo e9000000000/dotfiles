@@ -6,8 +6,10 @@ terminal           | kitty
 shell              | bash
 de                 | i3
 browser            | firefox
-code/text editor   | nvim
+code editor        | codium
+text editor        | neovim
 screenshots        | flameshot
 notifications      | dunst
+file manager       | ranger
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
