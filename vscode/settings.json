@@ -26,7 +26,6 @@
     "python.languageServer": "None",
     "workbench.colorTheme": "Black++ Dark Ula",
     "git.confirmSync": false,
-    "window.zoomLevel": 1,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.lineNumbers": "off",
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -37,4 +36,21 @@
     "search.exclude": {
         "**/.env/": true
     },
+    "workbench.editor.showTabs": false,
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingQuotes": "never",
+    "window.zoomLevel": 1,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<space>"],
+            "after": ["\"", "+"],
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<space>"],
+            "after": ["\"", "+"],
+        }
+    ]
 }

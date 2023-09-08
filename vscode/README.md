@@ -20,4 +20,4 @@ sudo apt update && sudo apt install codium
 - `ms-python.python` - python support
 - `ms-pyright.pyright` - python language server (language servers from Python extension double completion list with two workspace folders)
 - `humao.rest-client` - rest client
-- `asvetliakov.vscode-neovim` - neovim integration
+- `scodevim.vim` - vim keybindings
