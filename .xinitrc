@@ -23,7 +23,7 @@ xrandr --output eDP --brightness 0.5
 
 # background
 # hsetroot -solid black &
-feh --bg-center ~/dotfiles/.bg/horizon.jpeg &
+feh --bg-center ~/dotfiles/.bg/bg_j4.jpg &
 
 # run
 picom &
