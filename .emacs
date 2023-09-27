@@ -53,6 +53,7 @@
 
 ;;; dired settings
 (setq dired-dwim-target t)
+(setq dired-listing-switches "-alFh")
 
 ;;; ido
 (setq ido-enable-flex-matching t)
