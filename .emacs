@@ -77,6 +77,10 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
+;;; move text
+(global-set-key (kbd "M-p") 'move-text-up)
+(global-set-key (kbd "M-n") 'move-text-down)
+
 ;;; langs support
 (require 'rust-mode)
 
@@ -91,7 +95,7 @@
  '(custom-safe-themes
    '("b9b9e48eee0fcf0fda026553a33526b7827877eba8ba05e809ea5f0e9140cf59" default))
  '(package-selected-packages
-   '(spaceway-theme go-mode rust-mode magit smex restclient multiple-cursors)))
+   '(move-text spaceway-theme go-mode rust-mode magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
