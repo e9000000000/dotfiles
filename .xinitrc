@@ -29,6 +29,7 @@ feh --bg-center ~/dotfiles/.bg/horizon.jpeg &
 picom &
 dunst &
 flameshot &
+connman-gtk &
 cd ~/code/language-indicator/ && .env/bin/python3 main.py &
 cd ~
 exec i3
