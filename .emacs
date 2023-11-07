@@ -56,9 +56,11 @@
 (setq dired-listing-switches "-alFh")
 
 ;;; ido
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
+(require 'ido-completing-read+)
 (ido-mode 1)
+(ido-ubiquitous-mode 1)
+(setq ido-everywhere t)
+;;; (setq ido-enable-flex-matching t)
 
 ;;; +melpa
 (require 'package)
@@ -95,7 +97,7 @@
  '(custom-safe-themes
    '("b9b9e48eee0fcf0fda026553a33526b7827877eba8ba05e809ea5f0e9140cf59" default))
  '(package-selected-packages
-   '(move-text spaceway-theme go-mode rust-mode magit smex restclient multiple-cursors)))
+   '(ido-completing-read+ move-text spaceway-theme go-mode rust-mode magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
