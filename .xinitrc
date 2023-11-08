@@ -28,8 +28,8 @@ feh --bg-center ~/dotfiles/.bg/horizon.jpeg &
 # run
 picom &
 dunst &
-flameshot &
-connman-gtk &
 cd ~/code/language-indicator/ && .env/bin/python3 main.py &
 cd ~
+flameshot &
+connman-gtk &
 exec i3
