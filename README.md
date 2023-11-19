@@ -13,4 +13,3 @@ notifications      | dunst
 file manager       | emacs
 telegram theme     | [Amoled Black](https://telegram.me/addtheme/abtheme)
 discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
-3

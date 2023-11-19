@@ -60,7 +60,7 @@
 (ido-mode 1)
 (ido-ubiquitous-mode 1)
 (setq ido-everywhere t)
-;;; (setq ido-enable-flex-matching t)
+(setq ido-enable-flex-matching t)
 
 ;;; +melpa
 (require 'package)
@@ -82,6 +82,12 @@
 ;;; move text
 (global-set-key (kbd "M-p") 'move-text-up)
 (global-set-key (kbd "M-n") 'move-text-down)
+
+;;; empty compile command by default
+(setq compile-command "")
+
+;;; no tabs, only spaces
+(setq-default indent-tabs-mode nil)
 
 ;;; langs support
 (require 'rust-mode)
