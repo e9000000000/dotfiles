@@ -32,10 +32,6 @@
 ;;; font
 (set-frame-font "DejaVu Sans Mono 13" nil t)
 
-;;; opacity
-(set-frame-parameter (selected-frame) 'alpha '(80 . 80))
-(add-to-list 'default-frame-alist '(alpha . (80 . 80)))
-
 ;;; tab width
 (setq-default tab-width 4)
 
