@@ -5,5 +5,3 @@ add control = Control_L
 add mod1 = Alt_L
 keycode 108 = Return NoSymbol Return
 keycode 105 = BackSpace NoSymbol BackSpace
-keycode 66 = Escape NoSymbol Escape
-keycode 9 = ISO_Next_Group ISO_Next_Group ISO_Next_Group ISO_Next_Group
