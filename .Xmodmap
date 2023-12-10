@@ -1,7 +1,0 @@
-clear control
-clear mod1
-clear lock
-add control = Control_L
-add mod1 = Alt_L
-keycode 108 = Return NoSymbol Return
-keycode 105 = BackSpace NoSymbol BackSpace
