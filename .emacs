@@ -82,8 +82,15 @@
 ;;; empty compile command by default
 (setq compile-command "")
 
+;;; git grep by default
+(setq grep-command "git grep -rniF '")
+(setq grep-use-null-device nil)
+
 ;;; no tabs, only spaces
 (setq-default indent-tabs-mode nil)
+
+;;; auto activate restclient-mode
+(add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
 
 ;;; generated code
@@ -96,7 +103,7 @@
  '(custom-safe-themes
    '("b9b9e48eee0fcf0fda026553a33526b7827877eba8ba05e809ea5f0e9140cf59" default))
  '(package-selected-packages
-   '(rust-mode go-mode ido-completing-read+ move-text spaceway-theme magit smex restclient multiple-cursors)))
+   '(wgrep rust-mode go-mode ido-completing-read+ move-text spaceway-theme magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
