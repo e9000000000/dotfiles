@@ -1,0 +1,45 @@
+{
+    "workbench.iconTheme": null,
+    "window.titleBarStyle": "custom",
+    "python.defaultInterpreterPath": "/bin/python3",
+    "keyboard.dispatch": "keyCode",
+    "workbench.sideBar.location": "right",
+    "extensions.ignoreRecommendations": true,
+    "git.openRepositoryInParentFolders": "always",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontalScrollbarSize": 0,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.folding": false,
+    "editor.foldingHighlight": false,
+    "editor.guides.indentation": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "terminal.integrated.tabs.hideCondition": "never",
+    "editor.autoClosingBrackets": "never",
+    "editor.bracketPairColorization.enabled": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
+    "editor.renderLineHighlight": "none",
+    "python.languageServer": "None",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.lineNumbers": "off",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "explorer.excludeGitIgnore": true,
+    "files.watcherExclude": {
+        "**/.env/": true
+    },
+    "search.exclude": {
+        "**/.env/": true
+    },
+    "workbench.editor.showTabs": "none",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingQuotes": "never",
+    "window.zoomLevel": 1,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+}

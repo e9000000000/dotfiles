@@ -1,0 +1,58 @@
+[
+    {
+        "key": "alt+`",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 11
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 11
+        },
+        "when": "editorTextFocus"
+    }    
+]

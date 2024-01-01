@@ -20,3 +20,4 @@ discord theme      | [AMOLED-Cord](https://betterdiscord.app/theme/AMOLED-Cord)
 - ms-python.python
 - humao.rest-client
 - alexcvzz.vscode-sqlite
+- adimcn.vscode-lldb
