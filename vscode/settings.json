@@ -1,11 +1,12 @@
 {
-    "workbench.iconTheme": "vs-minimal",
+    "workbench.iconTheme": null,
     "window.titleBarStyle": "custom",
     "python.defaultInterpreterPath": "/bin/python3",
     "keyboard.dispatch": "keyCode",
     "workbench.sideBar.location": "right",
     "extensions.ignoreRecommendations": true,
     "git.openRepositoryInParentFolders": "always",
+    "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "editor.minimap.enabled": false,
     "editor.scrollbar.horizontalScrollbarSize": 0,
@@ -22,9 +23,8 @@
         "-workbench.action.quickOpen"
     ],
     "editor.renderLineHighlight": "none",
-    "workbench.activityBar.visible": false,
     "python.languageServer": "None",
-    "workbench.colorTheme": "Black++ Dark Ula",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "git.confirmSync": false,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.lineNumbers": "off",
@@ -36,21 +36,9 @@
     "search.exclude": {
         "**/.env/": true
     },
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "none",
     "editor.autoClosingOvertype": "never",
     "editor.autoClosingDelete": "never",
     "editor.autoClosingQuotes": "never",
     "window.zoomLevel": 1,
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["<space>"],
-            "after": ["\"", "+"],
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": ["<space>"],
-            "after": ["\"", "+"],
-        }
-    ]
 }

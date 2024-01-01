@@ -109,7 +109,7 @@ colorscheme spaceway
 " if it's failed to install gadget cuz of cachesum - change cachesum inside of
 " plugin file ~/.local/share/nvim/plugged/vimspector/python3/vimspectorv/gadgets.py
 let g:vimspector_enable_mappings = 'HUMAN'  " https://github.com/puremourning/vimspector#human-mode
-let g:vimspector_install_gadgets = [ 'debugpy' ]
+let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
 nnoremap <f7> :VimspectorReset<cr>
 
 " ctrlp

@@ -1,12 +1,21 @@
 {
   "configurations": {
-    "python run file": {
+    "python run main.py": {
       "adapter": "debugpy",
-      "filetypes": [ "python" ],
-      "default": true,
+      "filetypes": ["python"],
       "configuration": {
         "request": "launch",
-        "program": "${workspaceRoot}/main.py",
+        "program": "-i ${workspaceRoot}/main.py",
+        "stopOnEntry": true,
+        "cwd": "${workspaceRoot}"
+      }
+    },
+    "python run current file": {
+      "adapter": "debugpy",
+      "filetypes": ["python"],
+      "configuration": {
+        "request": "launch",
+        "program": "${file}",
         "stopOnEntry": true,
         "cwd": "${workspaceRoot}"
       }

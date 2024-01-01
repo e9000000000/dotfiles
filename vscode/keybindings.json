@@ -26,5 +26,21 @@
     {
         "key": "ctrl+j",
         "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "cursorPageUp"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "cursorPageDown"
     }
 ]
