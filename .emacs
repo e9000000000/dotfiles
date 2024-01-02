@@ -92,6 +92,64 @@
 ;;; auto activate restclient-mode
 (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
+;;; debuger
+;;; config examples: https://github.com/svaante/dape/wiki
+;;; debugpy: https://github.com/microsoft/debugpy/wiki/Debug-configuration-settings
+(use-package dape
+  :config
+  (add-to-list 'dape-configs
+               `(file
+                 modes (python-mode)
+                 command "python3"
+                 command-args ("-m", "debugpy.adapter")
+                 :type "executable"
+                 :request "launch"
+                 :console "integratedTerminal"
+                 :cwd dape-cwd-fn
+                 :program dape-find-file-buffer-default))
+  (add-to-list 'dape-configs
+               `(file-env
+                 modes (python-mode)
+                 command "python3"
+                 command-args ("-m", "debugpy.adapter")
+                 :python (lambda () (expand-file-name (read-file-name "Python: ")))
+                 :type "executable"
+                 :request "launch"
+                 :console "integratedTerminal"
+                 :cwd dape-cwd-fn
+                 :program dape-find-file-buffer-default))
+  (add-to-list 'dape-configs
+               `(uvicorn-env
+                 modes (python-mode)
+                 command "python3"
+                 command-args ("-m", "debugpy.adapter")
+                 :python (lambda () (expand-file-name (read-file-name "Python: ")))
+                 :type "module"
+                 :request "launch"
+                 :console "integratedTerminal"
+                 :cwd dape-cwd-fn
+                 :module "uvicorn"
+                 :args ["--host" "127.0.0.1" "--port" "8000" "main:app"]))
+  (add-to-list 'dape-configs
+               `(remote
+                 modes (python-mode)
+                 host (lambda () (read-string "Host: " "localhost"))
+                 port (lambda () (read-number "Port: " 5678))
+                 :request "attach"
+                 :type "python"
+                 :pathMappings [(:localRoot (lambda ()
+                                              (read-directory-name "Local source directory: "
+                                                                   (funcall dape-cwd-fn)))
+                                            :remoteRoot (lambda ()
+                                                          (read-string "Remote source directory: ")))]))
+
+  ;; for rust-mode
+  ;; https://github.com/vadimcn/codelldb/releases
+  ;; Download latest vsix release for your platform `codelldb-<platform>-<os>.vsix`
+  ;; Unpack `mkdir -p ~/.emacs.d/debug-adapters && unzip codelldb-<platform>-<os>.vsix -d ~/.emacs.d/debug-adapters/codelldb`
+)
+
+
 
 ;;; generated code
 (custom-set-variables
@@ -103,7 +161,7 @@
  '(custom-safe-themes
    '("b9b9e48eee0fcf0fda026553a33526b7827877eba8ba05e809ea5f0e9140cf59" default))
  '(package-selected-packages
-   '(wgrep rust-mode go-mode ido-completing-read+ move-text spaceway-theme magit smex restclient multiple-cursors)))
+   '(dape wgrep rust-mode go-mode ido-completing-read+ move-text spaceway-theme magit smex restclient multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
