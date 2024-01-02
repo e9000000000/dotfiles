@@ -44,6 +44,9 @@
 ;;; instant kill current buffer
 (global-set-key (kbd "C-x C-k") 'kill-this-buffer)
 
+;;; switch between multiple windows with Shift + arrows
+(windmove-default-keybindings)
+
 ;;; enable to remove selected text
 (delete-selection-mode 1)
 
