@@ -12,6 +12,28 @@
 
 (package-initialize)
 
+
+;;; if windows
+(when
+    (eq system-type 'windows-nt)
+
+    ;;; set home path (link (mklink) .emacs and .emacs.d from home to home/Appdata/Roaming)
+    (setenv "HOME" "C:/Users/e")
+    (setq default-directory "~/")
+
+    ;;; title
+    (setq frame-title-format "NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER NIGGER")
+
+    ;;; font
+    (set-frame-font "Courier New-12" nil t))
+
+;;; if not windows
+(when
+    (not (eq system-type 'windows-nt))
+    ;;; font
+  (set-frame-font "DejaVu Sans Mono 13" nil t))
+
+
 ;;; remove trash
 (setq make-backup-files nil)
 (setq create-lockfiles nil)
@@ -28,9 +50,6 @@
 (setenv "EDITOR" "emacsclient")
 (setenv "PAGER" "cat")
 (setenv "READER" "emacsclient")
-
-;;; font
-(set-frame-font "DejaVu Sans Mono 13" nil t)
 
 ;;; tab width
 (setq-default tab-width 4)
@@ -54,16 +73,16 @@
 (setq dired-dwim-target t)
 (setq dired-listing-switches "-alFh")
 
+;;; +melpa
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 ;;; ido
 (require 'ido-completing-read+)
 (ido-mode 1)
 (ido-ubiquitous-mode 1)
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
-
-;;; +melpa
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 ;;; smex
 (require 'smex)
