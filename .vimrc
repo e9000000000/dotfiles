@@ -54,7 +54,7 @@ match Error '\s\+$'
 " (don't use silversearcher-ag, it can's find
 " text sometimes for example: i search with -i flag for a only caps russian
 " text. result: not finded, but git grep and ripgrep easy find it, so use git grep)
-set grepprg=get grep -rniF
+set grepprg=git\ grep\ -rniF
 
 
 " colorscheme
