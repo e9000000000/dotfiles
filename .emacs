@@ -114,11 +114,25 @@
 ;;; auto activate restclient-mode
 (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
+
+;;; debugger reisze variables window
+(defun set-locals-window-size-half-half ()
+  (interactive)
+  (setq locals-window (seq-elt
+                       (seq-filter
+                        (lambda (x)
+                          (cl-search "dape-info" (buffer-name (window-buffer x))))
+                        (window-list))
+                       0))
+  (window-resize locals-window (+ (- (/ (frame-width) 2) (window-total-width locals-window)) 1) t)
+  (window-resize locals-window (- (/ (frame-height) 2) (window-height locals-window))))
+
 ;;; debuger
 ;;; config examples: https://github.com/svaante/dape/wiki
 ;;; debugpy: https://github.com/microsoft/debugpy/wiki/Debug-configuration-settings
 (use-package dape
   :config
+  (add-hook 'dape-on-stopped-hooks 'set-locals-window-size-half-half)
   (add-to-list 'dape-configs
                `(file
                  modes (python-mode)
@@ -170,12 +184,6 @@
   ;; Download latest vsix release for your platform `codelldb-<platform>-<os>.vsix`
   ;; Unpack `mkdir -p ~/.emacs.d/debug-adapters && unzip codelldb-<platform>-<os>.vsix -d ~/.emacs.d/debug-adapters/codelldb`
 )
-
-(defun set-window-size-half-half ()
-    (interactive)
-    (shrink-window-horizontally (- (window-total-width) (/ (frame-width) 2)))
-    (shrink-window (- (window-height) (/ (frame-height) 2))))
-(keymap-global-set "<f7>" 'set-window-size-half-half)
 
 
 
