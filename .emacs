@@ -171,6 +171,12 @@
   ;; Unpack `mkdir -p ~/.emacs.d/debug-adapters && unzip codelldb-<platform>-<os>.vsix -d ~/.emacs.d/debug-adapters/codelldb`
 )
 
+(defun set-window-size-half-half ()
+    (interactive)
+    (shrink-window-horizontally (- (window-total-width) (/ (frame-width) 2)))
+    (shrink-window (- (window-height) (/ (frame-height) 2))))
+(keymap-global-set "<f7>" 'set-window-size-half-half)
+
 
 
 ;;; generated code
