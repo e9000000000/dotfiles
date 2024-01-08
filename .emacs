@@ -101,6 +101,9 @@
 (global-set-key (kbd "M-p") 'move-text-up)
 (global-set-key (kbd "M-n") 'move-text-down)
 
+;;; duplicate line
+(global-set-key (kbd "C-,") 'duplicate-line)
+
 ;;; empty compile command by default
 (setq compile-command "")
 
