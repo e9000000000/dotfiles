@@ -10,6 +10,7 @@
 ;;                             ░
 
 
+(server-start)
 (package-initialize)
 
 
