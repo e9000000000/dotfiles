@@ -32,7 +32,7 @@
 (when
     (not (eq system-type 'windows-nt))
     ;;; font
-  (set-frame-font "DejaVu Sans Mono 13" nil t))
+  (set-frame-font "Liberation Mono 12" nil t))
 
 
 ;;; remove trash
