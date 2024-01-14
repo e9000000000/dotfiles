@@ -18,14 +18,15 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-  Plug 'gavinok/spaceway.vim'
-  Plug 'jesseleite/vim-noh'
-  Plug 'tpope/vim-commentary'
-  Plug 'preservim/nerdtree'
+    Plug 'gavinok/spaceway.vim'
+    Plug 'jesseleite/vim-noh'
+    Plug 'tpope/vim-commentary'
+    Plug 'preservim/nerdtree'
 call plug#end()
 
 
 " settings
+set noswapfile
 set ignorecase
 set smartcase
 set incsearch
@@ -36,11 +37,10 @@ set smartindent
 set smarttab
 set expandtab
 set cindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set encoding=UTF-8
 set ttimeoutlen=50
-set colorcolumn=79
 
 
 " use system clipboard with just space

@@ -18,7 +18,7 @@ complete -cf time
 # env vars
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
-export EDITOR="nvim"
+export EDITOR="vim"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
