@@ -31,7 +31,6 @@ set ignorecase
 set smartcase
 set incsearch
 set autochdir
-set noesckeys
 set smartcase
 set smartindent
 set smarttab
@@ -66,7 +65,7 @@ colorscheme spaceway
 
 " NERDTree
 let NERDTreeMinimalUI=1
-nnoremap <C-i> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-noremap <C-f> :NERDTreeFind<CR>
+nnoremap <space>a :NERDTreeFocus<CR>
+nnoremap <space>n :NERDTree<CR>
+nnoremap <space>t :NERDTreeToggle<CR>
+noremap <space>f :NERDTreeFind<CR>

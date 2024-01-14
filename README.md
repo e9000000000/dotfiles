@@ -6,7 +6,7 @@ terminal           | kitty + tmux
 shell              | bash
 de                 | i3
 browser            | firefox
-text/code editor   | vim
+text/code editor   | neovim
 screenshots        | flameshot
 notifications      | dunst
 file manager       | none of them
