@@ -2,7 +2,7 @@
 task               | solution
 ------------------ | ---
 os                 | debian 12
-terminal           | kitty + tmux
+terminal           | sakura + tmux
 shell              | bash
 de                 | i3
 browser            | firefox
