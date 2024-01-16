@@ -18,7 +18,7 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'gavinok/spaceway.vim'
+    Plug 'pgdouyon/vim-yin-yang'
     Plug 'jesseleite/vim-noh'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
@@ -60,7 +60,7 @@ set grepprg=git\ grep\ -rniF
 
 
 " colorscheme
-colorscheme spaceway
+colorscheme yin
 
 
 " NERDTree
