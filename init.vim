@@ -25,7 +25,7 @@ set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
 set list
-set timeoutlen=50
+set timeoutlen=314
 set grepprg=git\ grep\ -rniF
 
 " use system clipboard with just space
