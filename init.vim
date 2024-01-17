@@ -25,7 +25,7 @@ set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
 set list
-set timeoutlen=314
+set timeoutlen=50
 set grepprg=git\ grep\ -rniF
 
 " use system clipboard with just space
@@ -37,7 +37,8 @@ colorscheme yin
 
 " NERDTree
 let NERDTreeMinimalUI=1
+let NERDTreeMapHelp='<C-h>'
 nnoremap <space>a :NERDTreeFocus<CR>
 nnoremap <space>n :NERDTree<CR>
 nnoremap <space>t :NERDTreeToggle<CR>
-noremap <space>f :NERDTreeFind<CR>
+nnoremap <space>f :NERDTreeFind<CR>
