@@ -11,6 +11,8 @@ call plug#begin()
     Plug 'jesseleite/vim-noh'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
+
+    Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 
 " settings
