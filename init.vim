@@ -11,6 +11,7 @@ call plug#begin()
     Plug 'jesseleite/vim-noh'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
+    Plug 'puremourning/vimspector'
 
     Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
@@ -44,3 +45,19 @@ nnoremap <space>a :NERDTreeFocus<CR>
 nnoremap <space>n :NERDTree<CR>
 nnoremap <space>t :NERDTreeToggle<CR>
 nnoremap <space>f :NERDTreeFind<CR>
+
+" vimspector
+let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
+let g:vimspector_enable_mappings = 'HUMAN'
+set <S-F1>=^[O1;0R
+set <S-F3>=^[O1;2R
+set <S-F4>=^[O1;3R
+nnoremap <space>d <Plug>VimspectorBalloonEval
+xnoremap <space>d <Plug>VimspectorBalloonEval
+nnoremap <f1> <Plug>VimspectorStepInto
+nnoremap <f2> <Plug>VimspectorStepOver
+nnoremap <f3> <Plug>VimspectorStepOut
+nnoremap <space>b <Plug>VimspectorToggleBreakpoint
+nnoremap <space>c <Plug>VimspectorAddFunctionBreakpoint
+nnoremap <f4> <Plug>VimspectorRestart
+nnoremap <f7> :VimspectorReset<cr>
