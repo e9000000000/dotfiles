@@ -7,7 +7,7 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'andreasvc/vim-256noir'
+    Plug 'Gavinok/SpaceWay.vim'
     Plug 'jesseleite/vim-noh'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
@@ -35,7 +35,7 @@ nnoremap <space> "+
 vnoremap <space> "+
 
 " colorscheme
-colorscheme 256_noir
+colorscheme spaceway
 
 " NERDTree
 let NERDTreeMinimalUI=1
