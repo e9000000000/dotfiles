@@ -19,6 +19,7 @@ complete -cf time
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export EDITOR="nvim"
+export PAGER="less -S"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases

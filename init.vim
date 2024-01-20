@@ -7,7 +7,7 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'pgdouyon/vim-yin-yang'
+    Plug 'andreasvc/vim-256noir'
     Plug 'jesseleite/vim-noh'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
@@ -35,7 +35,7 @@ nnoremap <space> "+
 vnoremap <space> "+
 
 " colorscheme
-colorscheme yin
+colorscheme 256_noir
 
 " NERDTree
 let NERDTreeMinimalUI=1
