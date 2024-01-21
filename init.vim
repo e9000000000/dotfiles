@@ -35,23 +35,24 @@ set grepprg=git\ grep\ -rniF
 nnoremap <space> "+
 vnoremap <space> "+
 
+" quickfix list hotkeys
+nnoremap <space>n :cn<cr>
+nnoremap <space>N :cp<cr>
+
 " colorscheme
 colorscheme spaceway
 
 " NERDTree
 let NERDTreeMinimalUI=1
 let NERDTreeMapHelp='<C-h>'
-nnoremap <space>a :NERDTreeFocus<CR>
-nnoremap <space>n :NERDTree<CR>
-nnoremap <space>t :NERDTreeToggle<CR>
-nnoremap <space>f :NERDTreeFind<CR>
+nnoremap <space>a :NERDTreeFocus<cr>
+nnoremap <space>m :NERDTree<cr>
+nnoremap <space>t :NERDTreeToggle<cr>
+nnoremap <space>f :NERDTreeFind<cr>
 
 " vimspector
 let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
 let g:vimspector_enable_mappings = 'HUMAN'
-set <S-F1>=^[O1;0R
-set <S-F3>=^[O1;2R
-set <S-F4>=^[O1;3R
 nnoremap <space>d <Plug>VimspectorBalloonEval
 xnoremap <space>d <Plug>VimspectorBalloonEval
 nnoremap <f1> <Plug>VimspectorStepInto
