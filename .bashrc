@@ -4,10 +4,7 @@
 [[ $- != *i* ]] && return
 
 # prompt
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-export PS1="\w\$(parse_git_branch) \$ "
+export PS1="\n\w <~> "
 
 # completions
 complete -cf sudo
@@ -29,5 +26,4 @@ alias pdb=pdb3
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
-alias rbt="systemctl reboot"
 . "$HOME/.cargo/env"

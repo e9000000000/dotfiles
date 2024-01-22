@@ -1,0 +1,86 @@
+window:
+  opacity: 1
+  dimensions:
+    columns: 80
+    lines: 40
+
+  padding:
+    x: 7
+    y: 2
+  dynamic_padding: false
+
+  decorations: full
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+  class:
+    instance: Alacritty
+    general: Alacritty
+  gtk_theme_variant: None
+
+scrolling:
+  history: 4000
+  multiplier: 4
+
+font:
+  normal:
+    family: Liberation Mono
+  bold:
+    family: Liberation Mono
+  italic:
+    family: Liberation Mono
+  bold_italic:
+    family: Liberation Mono
+
+  size: 8.5
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
+
+colors:
+   primary:
+     background: '#0a0a0a'
+     foreground: '#b8b9b4'
+
+   normal:
+     black: '#0a0a0a'
+     red: '#939490'
+     green: '#5e6e5c'
+     yellow: '#b6b8b3'
+     blue: '#727370'
+     magenta: '#d1d1cb'
+     cyan: '#636361'
+     white: '#aaaba6'
+
+   bright:
+     black: '#2e2e2c'
+     red: '#989995'
+     green: '#636361'
+     yellow: '#bbbdb8'
+     blue: '#777875'
+     magenta: '#d6d6d0'
+     cyan: '#696966'
+     white: '#afb0ab'
+
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+    blinking: Never
+
+  unfocused_hollow: true
+  thickness: 0.15
+
+live_config_reload: true

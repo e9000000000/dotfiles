@@ -7,17 +7,18 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'Gavinok/SpaceWay.vim'
-    Plug 'jesseleite/vim-noh'
+    Plug 'andreasvc/vim-256noir'
     Plug 'tpope/vim-commentary'
-    Plug 'preservim/nerdtree'
+    Plug 'kien/ctrlp.vim'
     Plug 'puremourning/vimspector'
 
     Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 
 " settings
+set noundofile
 set noswapfile
+set nobackup
 set smartcase
 set incsearch
 set autochdir
@@ -31,6 +32,9 @@ set list
 set timeoutlen=314
 set grepprg=git\ grep\ -rniF
 
+" :noh
+nnoremap <silent> <esc> :noh<cr><esc>
+
 " use system clipboard with just space
 nnoremap <space> "+
 vnoremap <space> "+
@@ -40,15 +44,17 @@ nnoremap <space>n :cn<cr>
 nnoremap <space>N :cp<cr>
 
 " colorscheme
-colorscheme spaceway
+colorscheme 256_noir
+hi StatusLine cterm=none ctermfg=253 ctermbg=none gui=bold guifg=#8a8a8a guibg=#000000
+hi StatusLineNC cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
+hi TabLineSel cterm=none ctermfg=253 ctermbg=none gui=bold guifg=#8a8a8a guibg=#000000
+hi TabLine cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
+hi TabLineFill cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
+hi WinSeparator cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
 
-" NERDTree
-let NERDTreeMinimalUI=1
-let NERDTreeMapHelp='<C-h>'
-nnoremap <space>a :NERDTreeFocus<cr>
-nnoremap <space>m :NERDTree<cr>
-nnoremap <space>t :NERDTreeToggle<cr>
-nnoremap <space>f :NERDTreeFind<cr>
+" ctrlp
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+nnoremap <C-b> :CtrlPBuffer<cr>
 
 " vimspector
 let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
