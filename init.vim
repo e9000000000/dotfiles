@@ -9,6 +9,7 @@ filetype plugin indent on
 call plug#begin()
     Plug 'andreasvc/vim-256noir'
     Plug 'tpope/vim-commentary'
+    Plug 'preservim/nerdtree'
     Plug 'kien/ctrlp.vim'
     Plug 'puremourning/vimspector'
 
@@ -55,6 +56,9 @@ hi WinSeparator cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 gu
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 nnoremap <C-b> :CtrlPBuffer<cr>
+
+" NERDTree
+let NERDTreeMinimalUI=1
 
 " vimspector
 let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
