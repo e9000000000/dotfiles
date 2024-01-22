@@ -28,7 +28,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
-set list
 set timeoutlen=314
 set grepprg=git\ grep\ -rniF
 
