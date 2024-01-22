@@ -7,11 +7,10 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'andreasvc/vim-256noir'
+    Plug 'tek256/simple-dark'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
     Plug 'kien/ctrlp.vim'
-    Plug 'puremourning/vimspector'
 
     Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
@@ -45,7 +44,7 @@ nnoremap <space>n :cn<cr>
 nnoremap <space>N :cp<cr>
 
 " colorscheme
-colorscheme 256_noir
+colorscheme simple-dark
 hi StatusLine cterm=none ctermfg=253 ctermbg=none gui=bold guifg=#8a8a8a guibg=#000000
 hi StatusLineNC cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
 hi TabLineSel cterm=none ctermfg=253 ctermbg=none gui=bold guifg=#8a8a8a guibg=#000000
@@ -59,16 +58,3 @@ nnoremap <C-b> :CtrlPBuffer<cr>
 
 " NERDTree
 let NERDTreeMinimalUI=1
-
-" vimspector
-let g:vimspector_install_gadgets = [ 'debugpy', 'CodeLLDB' ]
-let g:vimspector_enable_mappings = 'HUMAN'
-nnoremap <space>d <Plug>VimspectorBalloonEval
-xnoremap <space>d <Plug>VimspectorBalloonEval
-nnoremap <f1> <Plug>VimspectorStepInto
-nnoremap <f2> <Plug>VimspectorStepOver
-nnoremap <f3> <Plug>VimspectorStepOut
-nnoremap <space>b <Plug>VimspectorToggleBreakpoint
-nnoremap <space>c <Plug>VimspectorAddFunctionBreakpoint
-nnoremap <f4> <Plug>VimspectorRestart
-nnoremap <f7> :VimspectorReset<cr>

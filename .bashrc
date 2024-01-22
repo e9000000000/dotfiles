@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 # prompt
-export PS1="\n\w <~> "
+export PS1="\w ::: "
 
 # completions
 complete -cf sudo
