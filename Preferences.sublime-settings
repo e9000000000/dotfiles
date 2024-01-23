@@ -1,0 +1,20 @@
+{
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"theme": "Adaptive.sublime-theme",
+	"font_face": "Liberation Mono",
+	"font_size": 11,
+	"font_options": ["no_bold", "no_italic"],
+	"auto_complete": false,
+	"show_definitions": false,
+	"caret_style": "phase",
+	"margin": 0,
+	"fold_buttons": false,
+	"mini_diff": false,
+	"auto_match_enabled": false,
+	"word_wrap": "enabled",
+	"shift_tab_unindent": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}
