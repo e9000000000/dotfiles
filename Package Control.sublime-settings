@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
-		"REST Client"
+		"Package Control",
+		"REST Client",
 	],
 }
