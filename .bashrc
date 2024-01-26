@@ -15,6 +15,7 @@ complete -cf time
 # env vars
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
+export ESCDELAY=0
 export EDITOR="nvim"
 export PAGER="less -S"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"

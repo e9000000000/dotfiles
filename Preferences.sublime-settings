@@ -18,4 +18,5 @@
 		"Vintage",
 	],
 	"index_files": true,
+	"inactive_sheet_dimming": false,
 }
