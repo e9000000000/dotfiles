@@ -1,6 +1,9 @@
 " vim-plug install command
 " curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 " https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+" install ripgrep for searching
+" doas apt install ripgrep
 
 syntax on
 filetype plugin indent on
@@ -29,7 +32,7 @@ set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
 set timeoutlen=314
-set grepprg=git\ grep\ -rniF
+set grepprg=rg\ --smart-case\ --vimgrep
 
 " :noh
 nnoremap <silent> <esc> :noh<cr><esc>
