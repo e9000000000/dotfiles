@@ -57,3 +57,8 @@ nnoremap <C-b> :CtrlPBuffer<cr>
 
 " NERDTree
 let NERDTreeMinimalUI=1
+let NERDTreeMapHelp='<C-h>'
+nnoremap <space>a :NERDTreeFocus<cr>
+nnoremap <space>m :NERDTree<cr>
+nnoremap <space>t :NERDTreeToggle<cr>
+nnoremap <space>f :NERDTreeFind<cr>
