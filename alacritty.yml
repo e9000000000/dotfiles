@@ -27,26 +27,30 @@ font:
   size: 9
 
 colors:
-   primary:
-     background: '#0a0a0a'
-     foreground: '#b8b9b4'
+  primary:
+    background: '#0a0a0a'
+    foreground: '#b8b9b4'
 
-   normal:
-     black: '#0a0a0a'
-     red: '#939490'
-     green: '#5e6e5c'
-     yellow: '#b6b8b3'
-     blue: '#727370'
-     magenta: '#d1d1cb'
-     cyan: '#636361'
-     white: '#aaaba6'
+  cursor: 
+    text: '#0a0a0a'
+    cursor: '#b8b9b4'
 
-   bright:
-     black: '#2e2e2c'
-     red: '#989995'
-     green: '#636361'
-     yellow: '#bbbdb8'
-     blue: '#777875'
-     magenta: '#d6d6d0'
-     cyan: '#696966'
-     white: '#afb0ab'
+  normal:
+    black: '#0a0a0a'
+    red: '#939490'
+    green: '#5e6e5c'
+    yellow: '#b6b8b3'
+    blue: '#727370'
+    magenta: '#d1d1cb'
+    cyan: '#636361'
+    white: '#aaaba6'
+
+  bright:
+    black: '#2e2e2c'
+    red: '#989995'
+    green: '#636361'
+    yellow: '#bbbdb8'
+    blue: '#777875'
+    magenta: '#d6d6d0'
+    cyan: '#696966'
+    white: '#afb0ab'

@@ -1,6 +1,6 @@
 {
 	"color_scheme": "Packages/Theme - Midnight/Midnight.hybrid.tmTheme",
-	"theme": "Midnight-hybrid.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"font_face": "Hack",
 	"font_size": 12,
 	"font_options": ["no_bold", "no_italic"],
