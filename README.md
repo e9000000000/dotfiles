@@ -6,7 +6,7 @@ terminal           | alacritty + tmux
 shell              | bash
 de                 | i3
 browser            | firefox
-text/code editor   | neovim
+text/code editor   | sublime text
 screenshots        | flameshot
 notifications      | dunst
 file manager       | bash
