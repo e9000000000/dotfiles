@@ -1,10 +1,8 @@
 {
-	"color_scheme": "Monokai.sublime-color-scheme",
-	"theme": "Adaptive.sublime-theme",
-	"font_face": "Liberation Mono",
 	"color_scheme": "Packages/Theme - Midnight/Midnight.hybrid.tmTheme",
 	"theme": "Midnight-hybrid.sublime-theme",
-	"font_size": 11,
+	"font_face": "Hack",
+	"font_size": 12,
 	"font_options": ["no_bold", "no_italic"],
 	"auto_complete": false,
 	"show_definitions": false,

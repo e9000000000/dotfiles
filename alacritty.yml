@@ -1,5 +1,4 @@
 window:
-  opacity: 1
   dimensions:
     columns: 80
     lines: 40
@@ -7,43 +6,25 @@ window:
   padding:
     x: 7
     y: 2
-  dynamic_padding: false
-
-  decorations: full
-  startup_mode: Windowed
-  title: Alacritty
-  dynamic_title: true
-
-  class:
-    instance: Alacritty
-    general: Alacritty
-  gtk_theme_variant: None
-
-scrolling:
-  history: 4000
-  multiplier: 4
 
 font:
   normal:
-    family: Liberation Mono
+    family: Hack
+    style: Regular
+
   bold:
-    family: Liberation Mono
+    family: Hack
+    style: Bold
+
   italic:
-    family: Liberation Mono
+    family: Hack
+    style: Italic
+
   bold_italic:
-    family: Liberation Mono
+    family: Hack
+    style: Bold Italic
 
-  size: 8.5
-
-  offset:
-    x: 0
-    y: 0
-
-  glyph_offset:
-    x: 0
-    y: 0
-
-draw_bold_text_with_bright_colors: false
+  size: 9
 
 colors:
    primary:
@@ -69,18 +50,3 @@ colors:
      magenta: '#d6d6d0'
      cyan: '#696966'
      white: '#afb0ab'
-
-
-selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-  save_to_clipboard: false
-
-cursor:
-  style:
-    shape: Block
-    blinking: Never
-
-  unfocused_hollow: true
-  thickness: 0.15
-
-live_config_reload: true
