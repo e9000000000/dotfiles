@@ -34,6 +34,7 @@ set shiftwidth=4
 set encoding=UTF-8
 set timeoutlen=314
 set signcolumn=no
+set scrolloff=12
 set grepprg=rg\ --smart-case\ --vimgrep
 
 " :noh
