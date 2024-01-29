@@ -10,13 +10,11 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'tek256/simple-dark'
+    Plug 'pgdouyon/vim-yin-yang'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
     Plug 'kien/ctrlp.vim'
     Plug 'neovim/nvim-lspconfig'
-
-    Plug 'Vimjas/vim-python-pep8-indent'
 call plug#end()
 
 " settings
@@ -40,6 +38,9 @@ set grepprg=rg\ --smart-case\ --vimgrep
 " :noh
 nnoremap <silent> <esc> :noh<cr><esc>
 
+" ctrl + s for save
+nnoremap <silent> <C-s> :w<cr>
+
 " use system clipboard with just space
 nnoremap <space> "+
 vnoremap <space> "+
@@ -49,13 +50,7 @@ nnoremap <space>n :cn<cr>
 nnoremap <space>N :cp<cr>
 
 " colorscheme
-colorscheme simple-dark
-hi StatusLine cterm=none ctermfg=253 ctermbg=none gui=bold guifg=#8a8a8a guibg=#000000
-hi StatusLineNC cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
-hi TabLineSel cterm=none ctermfg=253 ctermbg=none gui=bold guifg=#8a8a8a guibg=#000000
-hi TabLine cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
-hi TabLineFill cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
-hi WinSeparator cterm=none ctermfg=245 ctermbg=none gui=reverse guifg=#303030 guibg=#000000
+colorscheme yin
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
@@ -76,7 +71,7 @@ local lspconfig = require('lspconfig')
 
 -- to make pyright work with venv - create a pyrightconfig.json file in the root of python project with following content:
 -- {"venvPath": "/absolute/path/to/directory/which/contains/venv", "venv": "venv directory name (I am using .env)"}
--- then restart neovim
+-- then restart lsp :LspRestart<cr>
 lspconfig.pyright.setup {}
 
 lspconfig.tsserver.setup {}
