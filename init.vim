@@ -38,12 +38,19 @@ set grepprg=rg\ --smart-case\ --vimgrep
 " :noh
 nnoremap <silent> <esc> :noh<cr><esc>
 
-" ctrl + s for save
-nnoremap <silent> <C-s> :w<cr>
+" don't wanna broke my fingers
+nnoremap <silent> <space>s :w<cr>
+nnoremap <space>w <C-w>
 
 " use system clipboard with just space
-nnoremap <space> "+
-vnoremap <space> "+
+nnoremap <space>y "+y
+vnoremap <space>y "+y
+nnoremap <space>p "+p
+vnoremap <space>p "+p
+nnoremap <space>Y "+Y
+vnoremap <space>Y "+Y
+nnoremap <space>P "+P
+vnoremap <space>P "+P
 
 " quickfix list hotkeys
 nnoremap <space>n :cn<cr>
@@ -54,7 +61,8 @@ colorscheme yin
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-nnoremap <C-b> :CtrlPBuffer<cr>
+nnoremap <space>j :CtrlP<cr>
+nnoremap <space>b :CtrlPBuffer<cr>
 
 " NERDTree
 let NERDTreeMinimalUI=1
@@ -62,7 +70,7 @@ let NERDTreeMapHelp='<C-h>'
 nnoremap <space>a :NERDTreeFocus<cr>
 nnoremap <space>m :NERDTree<cr>
 nnoremap <space>t :NERDTreeToggle<cr>
-nnoremap <space>f :NERDTreeFind<cr>
+nnoremap <space>h :NERDTreeFind<cr>
 
 
 lua << EOF
@@ -73,14 +81,8 @@ local lspconfig = require('lspconfig')
 -- {"venvPath": "/absolute/path/to/directory/which/contains/venv", "venv": "venv directory name (I am using .env)"}
 -- then restart lsp :LspRestart<cr>
 lspconfig.pyright.setup {}
-
 lspconfig.tsserver.setup {}
-lspconfig.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
-  settings = {
-    ['rust-analyzer'] = {},
-  },
-}
+lspconfig.rust_analyzer.setup {}
 
 
 -- Global mappings.
@@ -106,9 +108,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
-    vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
-    vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
-    vim.keymap.set('n', '<space>wl', function()
+    vim.keymap.set('n', '<space>Wa', vim.lsp.buf.add_workspace_folder, opts)
+    vim.keymap.set('n', '<space>Wr', vim.lsp.buf.remove_workspace_folder, opts)
+    vim.keymap.set('n', '<space>Wl', function()
       print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, opts)
     vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
