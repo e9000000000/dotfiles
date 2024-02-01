@@ -10,7 +10,7 @@ filetype plugin indent on
 
 " plugins
 call plug#begin()
-    Plug 'pgdouyon/vim-yin-yang'
+    Plug 'Gavinok/SpaceWay.vim'
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
     Plug 'kien/ctrlp.vim'
@@ -57,7 +57,7 @@ nnoremap <space>n :cn<cr>
 nnoremap <space>N :cp<cr>
 
 " colorscheme
-colorscheme yin
+colorscheme spaceway
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
@@ -103,7 +103,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- Buffer local mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     local opts = { buffer = ev.buf }
-    vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+    vim.keymap.set('n', '<space>D', vim.lsp.buf.declaration, opts)
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
@@ -113,7 +113,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<space>Wl', function()
       print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, opts)
-    vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
+    vim.keymap.set('n', 'gD', vim.lsp.buf.type_definition, opts)
     vim.keymap.set('n', '<space>r', vim.lsp.buf.rename, opts)
     vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
