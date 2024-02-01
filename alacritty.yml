@@ -54,3 +54,9 @@ colors:
     magenta: '#d6d6d0'
     cyan: '#696966'
     white: '#afb0ab'
+
+key_bindings:
+  - {key: V, mods: Alt, action: Paste}
+  - {key: C, mods: Alt, action: Copy}
+  - {key: Q, mods: Alt, action: Quit}
+  - {key: N, mods: Alt, action: SpawnNewInstance}

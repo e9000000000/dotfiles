@@ -34,6 +34,8 @@ set timeoutlen=314
 set signcolumn=no
 set scrolloff=12
 set grepprg=rg\ --smart-case\ --vimgrep
+set list
+set mouse=
 
 " :noh
 nnoremap <silent> <esc> :noh<cr><esc>
@@ -92,8 +94,7 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
 
--- Use LspAttach autocommand to only map the following keys
--- after the language server attaches to the current buffer
+-- Use LspAttach autocommand to only map the following keys -- after the language server attaches to the current buffer
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
   callback = function(ev)
