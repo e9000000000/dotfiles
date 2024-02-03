@@ -66,7 +66,8 @@ colorscheme spaceway
 nnoremap <space>k :Telescope resume<cr>
 nnoremap <space>j :Telescope git_files<cr>
 nnoremap <space>J :Telescope find_files<cr>
-nnoremap <space>f :Telescope live_grep<cr>
+nnoremap <space>f :lua require'telescope.builtin'.live_grep( { cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] } )<cr>
+nnoremap <space>F :Telescope live_grep<cr>
 nnoremap <space>b :Telescope oldfiles<cr>
 nnoremap <space>h :Telescope help_tags<cr>
 
