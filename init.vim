@@ -11,9 +11,10 @@ filetype plugin indent on
 " plugins
 call plug#begin()
     Plug 'Gavinok/SpaceWay.vim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
-    Plug 'kien/ctrlp.vim'
     Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
@@ -46,13 +47,13 @@ nnoremap <space>w <C-w>
 
 " use system clipboard with just space
 nnoremap <space>y "+y
-vnoremap <space>y "+y
+xnoremap <space>y "+y
 nnoremap <space>p "+p
-vnoremap <space>p "+p
+xnoremap <space>p "+p
 nnoremap <space>Y "+Y
-vnoremap <space>Y "+Y
+xnoremap <space>Y "+Y
 nnoremap <space>P "+P
-vnoremap <space>P "+P
+xnoremap <space>P "+P
 
 " quickfix list hotkeys
 nnoremap <space>n :cn<cr>
@@ -61,10 +62,13 @@ nnoremap <space>N :cp<cr>
 " colorscheme
 colorscheme spaceway
 
-" ctrlp
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-nnoremap <space>j :CtrlP<cr>
-nnoremap <space>b :CtrlPBuffer<cr>
+" telescope
+nnoremap <space>k :Telescope resume<cr>
+nnoremap <space>j :Telescope git_files<cr>
+nnoremap <space>J :Telescope find_files<cr>
+nnoremap <space>f :Telescope live_grep<cr>
+nnoremap <space>b :Telescope oldfiles<cr>
+nnoremap <space>h :Telescope help_tags<cr>
 
 " NERDTree
 let NERDTreeMinimalUI=1
@@ -72,7 +76,7 @@ let NERDTreeMapHelp='<C-h>'
 nnoremap <space>a :NERDTreeFocus<cr>
 nnoremap <space>m :NERDTree<cr>
 nnoremap <space>t :NERDTreeToggle<cr>
-nnoremap <space>h :NERDTreeFind<cr>
+nnoremap <space>g :NERDTreeFind<cr>
 
 
 lua << EOF
@@ -118,7 +122,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<space>r', vim.lsp.buf.rename, opts)
     vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-    vim.keymap.set('n', '<space>f', function()
+    vim.keymap.set('n', '<space>p', function()
       vim.lsp.buf.format { async = true }
     end, opts)
   end,
