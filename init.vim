@@ -12,7 +12,7 @@ filetype plugin indent on
 call plug#begin()
     Plug 'Gavinok/SpaceWay.vim'
     Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+    Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
     Plug 'tpope/vim-commentary'
     Plug 'preservim/nerdtree'
     Plug 'neovim/nvim-lspconfig'
@@ -64,8 +64,8 @@ colorscheme spaceway
 
 " telescope
 nnoremap <space>k :Telescope resume<cr>
-nnoremap <space>j :Telescope git_files<cr>
-nnoremap <space>J :Telescope find_files<cr>
+nnoremap <space>j :Telescope git_files show_untracked=1<cr>
+nnoremap <space>J :Telescope find_files hidden=1 no_ignore=1<cr>
 nnoremap <space>f :lua require'telescope.builtin'.live_grep( { cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] } )<cr>
 nnoremap <space>F :Telescope live_grep<cr>
 nnoremap <space>b :Telescope oldfiles<cr>
@@ -123,7 +123,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<space>r', vim.lsp.buf.rename, opts)
     vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-    vim.keymap.set('n', '<space>p', function()
+    vim.keymap.set('n', '<space>o', function()
       vim.lsp.buf.format { async = true }
     end, opts)
   end,
