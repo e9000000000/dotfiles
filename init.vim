@@ -11,6 +11,7 @@ filetype plugin indent on
 " plugins
 call plug#begin()
     Plug 'Gavinok/SpaceWay.vim'
+    Plug 'tpope/vim-rsi'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
     Plug 'tpope/vim-commentary'
@@ -68,7 +69,8 @@ nnoremap <space>j :Telescope git_files show_untracked=1<cr>
 nnoremap <space>J :Telescope find_files hidden=1 no_ignore=1<cr>
 nnoremap <space>f :lua require'telescope.builtin'.live_grep( { cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] } )<cr>
 nnoremap <space>F :Telescope live_grep<cr>
-nnoremap <space>b :Telescope oldfiles<cr>
+nnoremap <space>B :Telescope oldfiles<cr>
+nnoremap <space>b :Telescope buffers sort_mru=1 ignore_current_buffer=1<cr>
 nnoremap <space>h :Telescope help_tags<cr>
 
 " NERDTree
