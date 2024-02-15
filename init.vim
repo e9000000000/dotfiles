@@ -12,6 +12,7 @@ filetype plugin indent on
 call plug#begin()
     Plug 'Gavinok/SpaceWay.vim'
     Plug 'tpope/vim-rsi'
+    Plug 'Aasim-A/scrollEOF.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
     Plug 'tpope/vim-commentary'
@@ -23,6 +24,7 @@ call plug#end()
 set noundofile
 set noswapfile
 set nobackup
+set ignorecase
 set smartcase
 set incsearch
 set autochdir
@@ -34,7 +36,7 @@ set shiftwidth=4
 set encoding=UTF-8
 set timeoutlen=314
 set signcolumn=no
-set scrolloff=12
+set scrolloff=15
 set grepprg=rg\ --smart-case\ --vimgrep
 set list
 set mouse=
@@ -43,7 +45,6 @@ set mouse=
 nnoremap <silent> <esc> :noh<cr><esc>
 
 " don't wanna broke my fingers
-nnoremap <silent> <space>s :w<cr>
 nnoremap <space>w <C-w>
 
 " use system clipboard with just space
@@ -62,6 +63,14 @@ nnoremap <space>N :cp<cr>
 
 " colorscheme
 colorscheme spaceway
+
+" lsp underlines disable my ability to read code
+hi DiagnosticUnderlineError cterm=none
+hi DiagnosticUnderlineWarn cterm=none
+hi DiagnosticUnderlineInfo cterm=none
+hi DiagnosticUnderlineHint cterm=none
+hi DiagnosticUnderlineOk cterm=none
+
 
 " telescope
 nnoremap <space>k :Telescope resume<cr>
@@ -83,6 +92,9 @@ nnoremap <space>g :NERDTreeFind<cr>
 
 
 lua << EOF
+require('scrollEOF').setup()
+
+
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 
