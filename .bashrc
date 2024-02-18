@@ -21,6 +21,7 @@ export PAGER="less -S"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
+alias e=emacsclient
 alias vi=nvim
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
