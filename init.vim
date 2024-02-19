@@ -34,7 +34,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
-set timeoutlen=314
 set signcolumn=no
 set scrolloff=15
 set grepprg=rg\ --smart-case\ --vimgrep
@@ -57,10 +56,6 @@ xnoremap <space>Y "+Y
 nnoremap <space>P "+P
 xnoremap <space>P "+P
 
-" quickfix list hotkeys
-nnoremap <space>n :cn<cr>
-nnoremap <space>N :cp<cr>
-
 " colorscheme
 colorscheme spaceway
 
@@ -80,7 +75,6 @@ nnoremap <space>f :lua require'telescope.builtin'.live_grep( { cwd = vim.fn.syst
 nnoremap <space>F :Telescope live_grep<cr>
 nnoremap <space>B :Telescope oldfiles<cr>
 nnoremap <space>b :Telescope buffers sort_mru=1 ignore_current_buffer=1<cr>
-nnoremap <space>h :Telescope help_tags<cr>
 
 " NERDTree
 let NERDTreeMinimalUI=1
