@@ -16,9 +16,8 @@ hsetroot -solid black &
 
 # run
 picom &
-dunst &
 cd ~/code/language-indicator/ && .env/bin/python3 main.py &
 cd ~
 flameshot &
 connman-gtk &
-exec i3
+dbus-run-session i3
