@@ -28,14 +28,6 @@
         "command": "workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+a",
-        "command": "cursorLineStart"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "cursorLineEnd"
-    },
-    {
         "key": "ctrl+up",
         "command": "cursorMove",
         "args": {

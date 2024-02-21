@@ -24,7 +24,6 @@
     ],
     "editor.renderLineHighlight": "none",
     "python.languageServer": "Pylance",
-    "workbench.colorTheme": "Monokai Pro",
     "git.confirmSync": false,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.lineNumbers": "off",
@@ -43,7 +42,42 @@
     "editor.unicodeHighlight.nonBasicASCII": false,
     "scm.diffDecorations": "none",
     "window.customTitleBarVisibility": "auto",
-    "workbench.activityBar.location": "hidden",
     "editor.inlayHints.enabled": "off",
-    "editor.cursorSurroundingLines": 12
+    "editor.cursorSurroundingLines": 12,
+    "workbench.editor.showTabs": "none",
+    "editor.quickSuggestionsDelay": 1073741824,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.hover.enabled": true,
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "other": "off",
+        "strings": "off"
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": "off",
+    "telemetry.telemetryLevel": "off",
+    "rest-client.enableTelemetry": false,
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "terminal.integrated.scrollback": 120015,
+    "editor.fontSize": 13,
+    "debug.console.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
+    "chat.editor.fontSize": 13,
+    "markdown.preview.fontSize": 13,
+    "workbench.activityBar.location": "hidden",
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "*.mutable": {
+                "underline": false,
+            }
+        }
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
 }
