@@ -46,5 +46,9 @@
             "value": 11
         },
         "when": "editorTextFocus"
-    }    
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.closeEditorsInOtherGroups"
+    } 
 ]
