@@ -44,10 +44,9 @@
     "window.customTitleBarVisibility": "auto",
     "editor.inlayHints.enabled": "off",
     "editor.cursorSurroundingLines": 12,
-    "workbench.editor.showTabs": "none",
     "editor.quickSuggestionsDelay": 1073741824,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnEnter": "on",
     "editor.hover.enabled": true,
     "editor.parameterHints.enabled": false,
     "editor.quickSuggestions": {
@@ -77,5 +76,7 @@
         }
     },
     "workbench.colorTheme": "Visual Studio Dark",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "workbench.editor.showTabs": "none",
+    "editor.wrappingIndent": "none"
 }
