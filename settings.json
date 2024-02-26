@@ -20,7 +20,8 @@
     "editor.autoClosingBrackets": "never",
     "editor.bracketPairColorization.enabled": false,
     "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
+        "-workbench.action.quickOpen",
+        "workbench.action.toggleSidebarVisibility",
     ],
     "editor.renderLineHighlight": "none",
     "python.languageServer": "Pylance",
@@ -78,5 +79,6 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "explorer.confirmDelete": false,
     "workbench.editor.showTabs": "none",
-    "editor.wrappingIndent": "none"
+    "editor.wrappingIndent": "none",
+    "editor.renderWhitespace": "trailing",
 }
