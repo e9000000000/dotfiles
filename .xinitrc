@@ -4,6 +4,7 @@ xset s off -dpms
 
 # keyboard settings
 setxkbmap -layout us,ru -option grp:alt_shift_toggle
+xmodmap .Xmodmap
 xset r rate 190 20
 
 # screen

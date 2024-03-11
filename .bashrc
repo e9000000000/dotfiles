@@ -16,12 +16,15 @@ complete -cf time
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export ESCDELAY=0
-export EDITOR="code -r"
+export EDITOR="vim"
 export PAGER="less -S"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
+alias vi=vim
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 . "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

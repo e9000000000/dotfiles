@@ -1,0 +1,30 @@
+window:
+  dimensions:
+    columns: 80
+    lines: 40
+
+  padding:
+    x: 7
+    y: 2
+
+font:
+  normal:
+    family: Hack
+    style: Regular
+
+  bold:
+    family: Hack
+    style: Regular
+
+  italic:
+    family: Hack
+    style: Regular
+
+  bold_italic:
+    family: Hack
+    style: Regular
+
+  size: 9
+
+key_bindings:
+  - {key: V, mods: Alt, action: Paste}
