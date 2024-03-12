@@ -4,7 +4,6 @@ syntax enable
 call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
-    Plug 'gavinok/spaceway.vim'
 call plug#end()
 
 set tabstop=4
@@ -33,4 +32,4 @@ nnoremap <C-p> :Files!<cr>
 nnoremap <C-b> :Buffers!<cr>
 nnoremap <C-f> :Rg!<cr>
 
-colorscheme spaceway
+colorscheme habamax
