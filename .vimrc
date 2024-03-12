@@ -1,10 +1,10 @@
 filetype plugin on
 syntax enable
-colorscheme habamax
 
 call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+    Plug 'gavinok/spaceway.vim'
 call plug#end()
 
 set tabstop=4
@@ -32,3 +32,5 @@ let $FZF_DEFAULT_COMMAND = "rg --files --vimgrep"
 nnoremap <C-p> :Files!<cr>
 nnoremap <C-b> :Buffers!<cr>
 nnoremap <C-f> :Rg!<cr>
+
+colorscheme spaceway
