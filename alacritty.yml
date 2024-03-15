@@ -28,28 +28,28 @@ font:
 
 colors:
    primary:
-     background: '#0a0a0a'
-     foreground: '#b8b9b4'
+     background: '#333333'
+     foreground: '#fefefe'
 
    normal:
-     black: '#0a0a0a'
-     red: '#939490'
-     green: '#5e6e5c'
-     yellow: '#b6b8b3'
-     blue: '#727370'
-     magenta: '#d1d1cb'
-     cyan: '#636361'
-     white: '#aaaba6'
+     black: '#333333'
+     red: '#c15858'
+     green: '#94f494'
+     yellow: '#ece28a'
+     blue: '#84cae7'
+     magenta: '#5f87af'
+     cyan: '#6dceeb'
+     white: '#eeeeee'
 
    bright:
-     black: '#2e2e2c'
-     red: '#989995'
-     green: '#636361'
-     yellow: '#bbbdb8'
-     blue: '#777875'
-     magenta: '#d6d6d0'
-     cyan: '#696966'
-     white: '#afb0ab'
+     black: '#666666'
+     red: '#ffa0a0'
+     green: '#94f494'
+     yellow: '#ece28a'
+     blue: '#84cae7'
+     magenta: '#5f87af'
+     cyan: '#6dceeb'
+     white: '#eeeeee'
 
 key_bindings:
   - {key: V, mods: Alt, action: Paste}
