@@ -33,5 +33,5 @@ nnoremap <C-p> :Files!<cr>
 nnoremap <C-b> :Buffers!<cr>
 nnoremap <C-f> :Rg!<cr>
 
-colorscheme habamax
-highlight MatchParen cterm=none
+colorscheme industry
+hi MatchParen cterm=reverse
