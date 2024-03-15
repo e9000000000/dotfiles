@@ -33,4 +33,5 @@ nnoremap <C-p> :Files!<cr>
 nnoremap <C-b> :Buffers!<cr>
 nnoremap <C-f> :Rg!<cr>
 
-colorscheme desert
+colorscheme habamax
+highlight MatchParen cterm=none

@@ -26,30 +26,5 @@ font:
 
   size: 9
 
-colors:
-   primary:
-     background: '#333333'
-     foreground: '#fefefe'
-
-   normal:
-     black: '#333333'
-     red: '#c15858'
-     green: '#94f494'
-     yellow: '#ece28a'
-     blue: '#84cae7'
-     magenta: '#5f87af'
-     cyan: '#6dceeb'
-     white: '#eeeeee'
-
-   bright:
-     black: '#666666'
-     red: '#ffa0a0'
-     green: '#94f494'
-     yellow: '#ece28a'
-     blue: '#84cae7'
-     magenta: '#5f87af'
-     cyan: '#6dceeb'
-     white: '#eeeeee'
-
 key_bindings:
   - {key: V, mods: Alt, action: Paste}
