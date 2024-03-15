@@ -33,7 +33,7 @@ colors:
 
   normal:
     black: '#303030'
-    red: '#870000'
+    red: '#d70000'
     green: '#5fd75f'
     yellow: '#afaf00'
     blue: '#87afff'
