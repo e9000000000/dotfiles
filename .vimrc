@@ -28,6 +28,8 @@ nnoremap <silent> <esc> :noh<cr><esc>
 nnoremap <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
 
 let $FZF_DEFAULT_COMMAND = "rg --files --hidden --glob '!**/.git/**'"
+let g:fzf_vim = { 'preview_window': [] }
+let g:fzf_layout = { 'down': '~66%' }
 nnoremap <C-p> :Files<cr>
 nnoremap <C-b> :Buffers<cr>
 nnoremap <C-f> :Rg<cr>
