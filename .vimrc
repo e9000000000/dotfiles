@@ -5,7 +5,6 @@ call plug#end()
 
 set tabstop=4
 set shiftwidth=4
-set expandtab
 set autoindent
 set noundofile
 set noswapfile
@@ -29,9 +28,9 @@ nnoremap <silent> <esc> :noh<cr><esc>
 nnoremap <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
 
 let $FZF_DEFAULT_COMMAND = "rg --files --hidden --glob '!**/.git/**'"
-nnoremap <C-p> :Files!<cr>
-nnoremap <C-b> :Buffers!<cr>
-nnoremap <C-f> :Rg!<cr>
+nnoremap <C-p> :Files<cr>
+nnoremap <C-b> :Buffers<cr>
+nnoremap <C-f> :Rg<cr>
 
 colorscheme industry
 hi MatchParen cterm=reverse

@@ -18,7 +18,7 @@ export LANG="en_US.UTF-8"
 export ESCDELAY=0
 export EDITOR="vim"
 export PAGER="less -S"
-export PATH="$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
+export PATH="$HOME/go/bin:$HOME/.cargo/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/usr/sbin"
 
 # aliases
 alias vi=vim
