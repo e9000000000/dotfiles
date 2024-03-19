@@ -18,4 +18,5 @@ picom &
 cd ~/code/language-indicator/ && .env/bin/python3 main.py &
 cd ~
 connman-gtk &
+feh --bg-center ~/dotfiles/wp.jpg
 dbus-run-session i3

@@ -21,6 +21,9 @@ set wildmenu
 set confirm
 set showcmd
 set hlsearch
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
 
 nnoremap <space> "+
 xnoremap <space> "+
@@ -35,4 +38,5 @@ nnoremap <C-b> :Buffers<cr>
 nnoremap <C-f> :Rg<cr>
 
 colorscheme industry
-hi MatchParen cterm=reverse
+highlight Normal ctermbg=none
+highlight EndOfBuffer ctermbg=none
