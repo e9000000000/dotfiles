@@ -1,4 +1,5 @@
 # Bloated
+![](./screenshot.png)
 aa                 | a
 ------------------ | ---
 firefox theme      | [Cascade](https://github.com/e9000000000/cascade)
