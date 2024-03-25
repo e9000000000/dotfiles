@@ -18,7 +18,6 @@ set incsearch
 set ignorecase
 set smartcase
 set wildmenu
-set confirm
 set showcmd
 set hlsearch
 set keymap=russian-jcukenwin
@@ -40,3 +39,4 @@ nnoremap <C-f> :Rg<cr>
 colorscheme industry
 highlight Normal ctermbg=none
 highlight EndOfBuffer ctermbg=none
+highlight Error ctermbg=none
