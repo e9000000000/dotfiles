@@ -2,7 +2,6 @@ window:
   dimensions:
     columns: 80
     lines: 40
-  opacity: 0.8
 
   padding:
     x: 7
@@ -29,32 +28,12 @@ font:
 
 colors:
   primary:
-    background: '#000000'
     foreground: '#dadada'
+    background: '#0f0f0f'
 
   cursor:
-    foreground: '#000000'
+    foreground: '#0f0f0f'
     background: '#dadada'
-
-  normal:
-    black: '#303030'
-    red: '#d70000'
-    green: '#5fd75f'
-    yellow: '#afaf00'
-    blue: '#87afff'
-    magenta: '#af00af'
-    cyan: '#00afaf'
-    white: '#6c6c6c'
-
-  bright:
-    black: '#444444'
-    red: '#ff0000'
-    green: '#00ff00'
-    yellow: '#ffff00'
-    blue: '#005fff'
-    magenta: '#ff00ff'
-    cyan: '#00ffff'
-    white: '#ffffff'
 
 key_bindings:
   - {key: V, mods: Alt, action: Paste}

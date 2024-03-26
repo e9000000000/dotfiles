@@ -10,7 +10,6 @@ set noundofile
 set noswapfile
 set nobackup
 set shortmess+=I
-set nonumber
 set laststatus=0
 set ttimeoutlen=0
 set scrolloff=12
@@ -36,7 +35,8 @@ nnoremap <C-p> :Files<cr>
 nnoremap <C-b> :Buffers<cr>
 nnoremap <C-f> :Rg<cr>
 
-colorscheme industry
+set background=dark
+colorscheme lunaperche
+highlight Error ctermbg=none
 highlight Normal ctermbg=none
 highlight EndOfBuffer ctermbg=none
-highlight Error ctermbg=none
