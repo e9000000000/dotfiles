@@ -13,10 +13,13 @@ xrandr --output eDP --brightness 0.5
 # background
 hsetroot -solid black &
 
+while true; do
+	xset -q | awk '/LED/{print $10}' > /tmp/keyboard_lang
+	sleep 1
+done &
+
 # run
 picom &
-cd ~/code/language-indicator/ && .env/bin/python3 main.py &
-cd ~
 connman-gtk &
 feh --bg-center ~/dotfiles/wp.jpg
 dbus-run-session i3
