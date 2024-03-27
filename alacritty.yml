@@ -1,11 +1,7 @@
 window:
-  dimensions:
-    columns: 80
-    lines: 40
-
   padding:
-    x: 12
-    y: 6
+    x: 7
+    y: 2
 
 font:
   normal:
