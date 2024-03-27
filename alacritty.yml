@@ -27,12 +27,8 @@ font:
   size: 9
 
 colors:
-  primary:
-    foreground: '#dadada'
-    background: '#0f0f0f'
-
   cursor:
-    foreground: '#0f0f0f'
+    foreground: '#000000'
     background: '#dadada'
 
 key_bindings:
