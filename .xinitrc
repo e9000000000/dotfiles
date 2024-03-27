@@ -1,8 +1,7 @@
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 xset s off -dpms
 xrandr --output eDP --brightness 0.5
-setxkbmap -layout us,ru -option grp:alt_shift_toggle
-xmodmap .Xmodmap
+setxkbmap -layout us,ru -option grp:alt_shift_toggle,caps:swapescape
 xset r rate 190 20
 hsetroot -solid black
 
