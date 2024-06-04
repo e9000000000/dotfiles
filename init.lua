@@ -23,6 +23,7 @@ vim.o.smartcase = true
 vim.o.showcmd = true
 vim.o.hlsearch = true
 vim.o.lazyredraw = true
+vim.o.termguicolors = true
 
 vim.keymap.set({ 'x', 'i' }, '<tab>', '<esc>', { silent = true })
 vim.keymap.set({ 'n', 'x' }, '<space>', '"+', { silent = true })
