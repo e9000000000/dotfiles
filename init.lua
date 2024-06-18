@@ -24,6 +24,7 @@ vim.o.showcmd = true
 vim.o.hlsearch = true
 vim.o.lazyredraw = true
 vim.o.termguicolors = true
+vim.cmd('hi Normal ctermbg=none guibg=none')
 
 vim.keymap.set({ 'x', 'i' }, '<tab>', '<esc>', { silent = true })
 vim.keymap.set({ 'n', 'x' }, '<space>', '"+', { silent = true })
