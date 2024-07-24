@@ -1,5 +1,8 @@
 set -o emacs
 autoload -U compinit; compinit
+autoload -U select-word-style
+
+select-word-style bash
 
 alias ls="ls --color=auto"
 alias vi="nvim"
