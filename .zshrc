@@ -7,6 +7,7 @@ select-word-style bash
 alias ls="ls --color=auto"
 alias vi="nvim"
 alias lg="lazygit"
+alias e="emacsclient"
 
 export CLICOLOR="1"
 export PROMPT="%~ ::: "
