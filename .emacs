@@ -4,15 +4,15 @@
 
 ;;; if windows
 (when
-    (eq system-type 'windows-nt)
+	(eq system-type 'windows-nt)
 
-    (setenv "HOME" "C:/Users/e")
-    (setq default-directory "~/")
-    (set-frame-font "Courier New-12" nil t))
+	(setenv "HOME" "C:/Users/e")
+	(setq default-directory "~/")
+	(set-frame-font "Courier New-12" nil t))
 
 ;;; if not windows
 (when
-    (not (eq system-type 'windows-nt))
+	(not (eq system-type 'windows-nt))
 
   (set-frame-font "Liberation Mono 12" nil t))
 
@@ -72,3 +72,5 @@
 
 (require 'magit)
 (global-set-key (kbd "C-.") 'magit)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

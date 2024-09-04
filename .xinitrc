@@ -5,7 +5,7 @@ xset r rate 190 25
 nm-applet &
 flameshot &
 picom &
-feh --bg-center ~/Dotfiles/bg.jpg &
+feh --bg-fill ~/Dotfiles/bg2.jpg &
 dunst &
 
 while true; do
