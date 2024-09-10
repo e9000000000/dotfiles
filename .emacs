@@ -40,6 +40,7 @@
 (setq dired-dwim-target t)
 (setq dired-listing-switches "-alFh")
 (global-set-key (kbd "C-,") 'duplicate-line)
+(global-set-key (kbd "C-j") 'recompile)
 (setq compile-command "")
 (setq grep-command "")
 (setq grep-use-null-device nil)
