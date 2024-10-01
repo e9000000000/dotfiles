@@ -1,6 +1,7 @@
 # xrandr --output eDP --brightness 0.5
 setxkbmap -layout us,ru -option grp:win_space_toggle
 xset r rate 190 25
+xrdb ~/.Xresources
 
 nm-applet &
 flameshot &

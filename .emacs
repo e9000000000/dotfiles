@@ -46,15 +46,26 @@
 (setq grep-use-null-device nil)
 (set-frame-parameter nil 'alpha-background 90)
 (add-to-list 'default-frame-alist '(alpha-background . 90))
-(fido-mode 1)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
-(require 'ir-black-theme)
+(use-package ir-black-theme
+  :ensure t)
 (load-theme 'ir-black t)
 
-(require 'multiple-cursors)
+(use-package ido-completing-read+
+  :ensure t)
+(ido-mode 1)
+(ido-everywhere 1)
+(ido-ubiquitous-mode 1)
+
+(use-package smex
+  :ensure t)
+(global-set-key (kbd "M-x") 'smex)
+
+(use-package multiple-cursors
+  :ensure t)
 (global-set-key (kbd "C-S-c")       'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
 (global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
@@ -62,16 +73,21 @@
 (global-set-key (kbd "C-\"")        'mc/skip-to-next-like-this)
 (global-set-key (kbd "C-:")         'mc/skip-to-previous-like-this)
 
-(require 'move-text)
+(use-package move-text
+  :ensure t)
 (global-set-key (kbd "M-p") 'move-text-up)
 (global-set-key (kbd "M-n") 'move-text-down)
 
-(require 'restclient)
+(use-package restclient
+  :ensure t)
+(setq restclient-inhibit-cookies 1)
 (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
-(require 'wgrep)
+(use-package wgrep
+  :ensure t)
 
-(require 'magit)
+(use-package magit
+  :ensure t)
 (global-set-key (kbd "C-.") 'magit)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
