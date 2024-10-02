@@ -44,6 +44,7 @@
 (setq compile-command "")
 (setq grep-command "")
 (setq grep-use-null-device nil)
+(fido-mode 1)
 (set-frame-parameter nil 'alpha-background 90)
 (add-to-list 'default-frame-alist '(alpha-background . 90))
 
@@ -53,16 +54,6 @@
 (use-package ir-black-theme
   :ensure t)
 (load-theme 'ir-black t)
-
-(use-package ido-completing-read+
-  :ensure t)
-(ido-mode 1)
-(ido-everywhere 1)
-(ido-ubiquitous-mode 1)
-
-(use-package smex
-  :ensure t)
-(global-set-key (kbd "M-x") 'smex)
 
 (use-package multiple-cursors
   :ensure t)
@@ -91,3 +82,8 @@
 (global-set-key (kbd "C-.") 'magit)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+
+(use-package yaml-mode
+  :ensure t)
+(use-package zig-mode
+  :ensure t)
