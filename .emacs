@@ -51,9 +51,10 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
-(use-package ir-black-theme
+(use-package spaceway-theme
   :ensure t)
-(load-theme 'ir-black t)
+(load-theme 'spaceway t)
+(set-cursor-color "#aa0000")
 
 (use-package multiple-cursors
   :ensure t)
@@ -83,6 +84,27 @@
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
+(use-package vterm
+  :ensure t)
+(add-hook
+ 'vterm-mode-hook
+ (lambda() (setq show-trailing-whitespace nil)))
+
+(use-package vterm-toggle
+  :ensure t)
+(global-set-key (kbd "C-=") 'vterm-toggle)
+(global-set-key (kbd "C-+") 'vterm-toggle-insert-cd)
+(setq vterm-toggle-fullscreen-p nil)
+(add-to-list 'display-buffer-alist
+             '((lambda (buffer-or-name _)
+                 (let ((buffer (get-buffer buffer-or-name)))
+                   (with-current-buffer buffer
+                     (or (equal major-mode 'vterm-mode)
+                         (string-prefix-p vterm-buffer-name (buffer-name buffer))))))
+			   (display-buffer-reuse-window display-buffer-same-window)))
+
+(use-package python-mode
+  :ensure t)
 (use-package yaml-mode
   :ensure t)
 (use-package zig-mode
