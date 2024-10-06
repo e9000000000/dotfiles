@@ -83,9 +83,10 @@
     "accessibility.verbosity.terminal": false,
     "workbench.activityBar.location": "hidden",
     "editor.semanticHighlighting.enabled": false,
-    "workbench.colorTheme": "Midnight Code Theme",
+    "workbench.colorTheme": "Black",
     "editor.cursorStyle": "block",
     "zig.path": "zig",
     "zig.zls.path": "/home/e/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "zig.initialSetupDone": true,
+    "glassit.alpha": 230,
 }
