@@ -7,11 +7,10 @@ select-word-style bash
 alias ls="ls --color=auto"
 alias vi="nvim"
 alias lg="lazygit"
-alias e="emacsclient"
 
 export CLICOLOR="1"
 export PROMPT="%~ ::: "
 export KEYTIMEOUT=1
 export ESCDELAY=0
-export EDITOR="nvim"
+export EDITOR="vim"
 export PATH="$HOME/.cargo/bin:$HOME/go/bin:/usr/local/go/bin:$HOME/.local/bin:/snap/bin:/usr/local/bin:/usr/bin:/usr/sbin"
