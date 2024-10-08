@@ -89,4 +89,6 @@
     "zig.zls.path": "/home/e/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "zig.initialSetupDone": true,
     "glassit.alpha": 230,
+    "debug.onTaskErrors": "abort",
+    "go.toolsManagement.autoUpdate": true,
 }

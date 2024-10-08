@@ -1,5 +1,11 @@
 syntax on
 filetype plugin indent on
+
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
 set tabstop=4
 set shiftwidth=4
 set autoindent
@@ -23,3 +29,6 @@ nnoremap <space> "+
 xnoremap <space> "+
 nnoremap <silent> <C-l> :noh<cr>
 nnoremap <silent> <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
+nnoremap <silent> <C-p> :Files<cr>
+nnoremap <silent> <C-f> :Rg<cr>
+nnoremap <silent> <C-b> :Buffers<cr>
