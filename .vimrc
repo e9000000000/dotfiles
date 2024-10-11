@@ -22,11 +22,12 @@ set showcmd
 set hlsearch
 set lazyredraw
 set termguicolors
+colorscheme tokyonight-night
 
 inoremap <tab> <esc>
 xnoremap <tab> <esc>
-nnoremap <space> "+
-xnoremap <space> "+
+nnoremap <C-c> "+yy
+xnoremap <C-c> "+y
 nnoremap <silent> <C-l> :noh<cr>
 nnoremap <silent> <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
 nnoremap <silent> <C-p> :Files<cr>
