@@ -83,12 +83,10 @@
     "accessibility.verbosity.terminal": false,
     "workbench.activityBar.location": "hidden",
     "editor.semanticHighlighting.enabled": false,
-    "workbench.colorTheme": "Tokyo Night",
     "editor.cursorStyle": "block",
     "zig.path": "zig",
     "zig.zls.path": "/home/e/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "zig.initialSetupDone": true,
-    "glassit.alpha": 255,
     "debug.onTaskErrors": "abort",
     "go.toolsManagement.autoUpdate": true,
 }

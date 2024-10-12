@@ -1,11 +1,12 @@
 # xrandr --output eDP --brightness 0.5
 setxkbmap -layout us,ru -option grp:win_space_toggle
 xset r rate 190 25
+xrdb ~/.Xresources
+hsetroot -solid "#141c21" 
 
 nm-applet &
 flameshot &
 picom &
-feh --bg-fill ~/Dotfiles/bg3.jpg &
 dunst &
 
 while true; do

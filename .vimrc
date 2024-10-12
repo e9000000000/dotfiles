@@ -21,8 +21,6 @@ set smartcase
 set showcmd
 set hlsearch
 set lazyredraw
-set termguicolors
-colorscheme tokyonight-night
 
 inoremap <tab> <esc>
 xnoremap <tab> <esc>

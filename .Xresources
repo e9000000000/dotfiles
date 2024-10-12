@@ -1,0 +1,62 @@
+*.foreground: #93a1a1
+*.background: #141c21
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! green
+*.color2: #819400
+*.color10: #a4bd00
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
+
+
+*.font: xft:Liberation Mono:style=Regular:size=12
+*.boldFont: xft:Liberation Mono:style=Bold:size=12
+*.italicFont: xft:Liberation Mono:style=Italic:size=12
+*.boldItalicFont: xft:Liberation Mono:style=Bold Italic:size=12
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 7
+URxvt.cursorBlink: false
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+URxvt.perl-ext-common: default,selection-to-clipboard,pasta,matcher,keyboard-select,font-size
+URxvt.copyCommand: xclip -i -sel clip
+URxvt.pasteCommand: xclip -o -sel clip
+URxvt.keysym.C-S-C: eval:selection_to_clipboard
+URxvt.keysym.C-S-V: eval:paste_clipboard
+URxvt.keysym.C-equal: font-size:increase
+URxvt.keysym.C-minus: font-size:decrease
+URxvt.keysym.C-0: font-size:reset
