@@ -13,4 +13,5 @@ while true; do
 	sleep 0.2
 done &
 
+export DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
 dwm
