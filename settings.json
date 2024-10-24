@@ -91,4 +91,9 @@
     "go.toolsManagement.autoUpdate": true,
     "editor.stickyScroll.enabled": false,
     "workbench.colorTheme": "Black",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#aa0000",
+        "terminalCursor.foreground": "#aa0000"
+    }
 }
