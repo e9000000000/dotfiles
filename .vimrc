@@ -23,3 +23,5 @@ nnoremap <C-c> "+yy
 xnoremap <C-c> "+y
 nnoremap <silent> <C-l> :noh<cr>
 nnoremap <silent> <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
+
+autocmd BufNewFile,BufRead *.script :set filetype=lua
