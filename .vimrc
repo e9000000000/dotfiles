@@ -25,3 +25,5 @@ nnoremap <silent> <C-l> :noh<cr>
 nnoremap <silent> <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
 
 autocmd BufNewFile,BufRead *.script :set filetype=lua
+autocmd BufNewFile,BufRead *.fp :set filetype=glsl
+autocmd BufNewFile,BufRead *.vp :set filetype=glsl
