@@ -1,6 +1,13 @@
 syntax on
 filetype plugin indent on
 
+" iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+"     ni $HOME/vimfiles/autoload/plug.vim -Force
+call plug#begin()
+Plug 'preservim/nerdtree'
+Plug 'farmergreg/vim-lastplace'
+call plug#end()
+
 set tabstop=4
 set shiftwidth=4
 set autoindent
@@ -16,6 +23,8 @@ set showcmd
 set hlsearch
 set lazyredraw
 set ruler
+set termguicolors
+let NERDTreeMinimalUI=1
 
 inoremap <tab> <esc>
 xnoremap <tab> <esc>
@@ -23,7 +32,9 @@ nnoremap <C-c> "+yy
 xnoremap <C-c> "+y
 nnoremap <silent> <C-l> :noh<cr>
 nnoremap <silent> <C-j> :let @+ = expand("%:p") . ":" . line(".")<cr>
+nnoremap <C-n> :NERDTreeFocus<CR>
+nnoremap <C-y> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
-autocmd BufNewFile,BufRead *.script :set filetype=lua
-autocmd BufNewFile,BufRead *.fp :set filetype=glsl
-autocmd BufNewFile,BufRead *.vp :set filetype=glsl
+colorscheme lunaperche
