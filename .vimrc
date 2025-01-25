@@ -5,7 +5,6 @@ filetype plugin indent on
 "     ni $HOME/vimfiles/autoload/plug.vim -Force
 call plug#begin()
 Plug 'preservim/nerdtree'
-Plug 'farmergreg/vim-lastplace'
 call plug#end()
 
 set tabstop=4
@@ -23,6 +22,9 @@ set showcmd
 set hlsearch
 set lazyredraw
 set ruler
+set hidden
+set wildmenu
+set wildmode=full:lastused
 set termguicolors
 let NERDTreeMinimalUI=1
 
@@ -37,4 +39,4 @@ nnoremap <C-y> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-colorscheme lunaperche
+colorscheme desert
