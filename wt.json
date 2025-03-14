@@ -43,16 +43,20 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "firstWindowPreference": "persistedWindowLayout",
+    "focusFollowMouse": false,
     "newTabMenu": 
     [
         {
             "type": "remainingProfiles"
         }
     ],
+    "newTabPosition": "afterCurrentTab",
     "profiles": 
     {
         "defaults": 
         {
+            "closeOnExit": "graceful",
             "cursorColor": "#AA0000",
             "cursorShape": "filledBox",
             "font": 
@@ -97,5 +101,6 @@
     "schemes": [],
     "tabWidthMode": "equal",
     "themes": [],
-    "useAcrylicInTabRow": false
+    "useAcrylicInTabRow": false,
+    "windowingBehavior": "useAnyExisting"
 }
