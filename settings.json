@@ -1,10 +1,6 @@
 {
-    "workbench.colorTheme": "Ayu Dark",
-    "workbench.iconTheme": "ayu",
     "window.titleBarStyle": "custom",
-    "python.defaultInterpreterPath": "/bin/python3",
     "keyboard.dispatch": "keyCode",
-    "workbench.sideBar.location": "right",
     "extensions.ignoreRecommendations": true,
     "git.openRepositoryInParentFolders": "always",
     "editor.minimap.enabled": false,
@@ -81,15 +77,11 @@
     "accessibility.verbosity.terminal": false,
     "workbench.activityBar.location": "hidden",
     "editor.semanticHighlighting.enabled": false,
-    "zig.path": "zig",
-    "zig.zls.path": "/home/e/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-    "zig.initialSetupDone": true,
     "debug.onTaskErrors": "abort",
-    "go.toolsManagement.autoUpdate": true,
     "editor.stickyScroll.enabled": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'DejaVu Sans Mono'",
-    "terminal.integrated.fontFamily": "'DejaVu Sans Mono'",
     "editor.lineNumbers": "off",
-    "rest-client.rememberCookiesForSubsequentRequests": false
+    "rest-client.rememberCookiesForSubsequentRequests": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "dotnet.codeLens.enableReferencesCodeLens": false
 }
