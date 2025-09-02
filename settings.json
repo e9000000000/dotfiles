@@ -1,6 +1,5 @@
 {
     "window.titleBarStyle": "custom",
-    "keyboard.dispatch": "keyCode",
     "extensions.ignoreRecommendations": true,
     "git.openRepositoryInParentFolders": "always",
     "editor.minimap.enabled": false,
@@ -31,18 +30,10 @@
     "editor.unicodeHighlight.nonBasicASCII": false,
     "scm.diffDecorations": "none",
     "window.customTitleBarVisibility": "auto",
-    "editor.inlayHints.enabled": "off",
     "editor.cursorSurroundingLines": 12,
-    "editor.quickSuggestionsDelay": 1073741824,
-    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnCommitCharacter": true,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.hover.enabled": true,
-    "editor.parameterHints.enabled": false,
-    "editor.quickSuggestions": {
-        "comments": "off",
-        "other": "off",
-        "strings": "off"
-    },
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestOnTriggerCharacters": false,
     "editor.wordBasedSuggestions": "off",
@@ -64,7 +55,6 @@
         }
     },
     "explorer.confirmDelete": false,
-    "workbench.editor.showTabs": "none",
     "editor.wrappingIndent": "none",
     "editor.renderWhitespace": "trailing",
     "files.simpleDialog.enable": true,
@@ -75,7 +65,7 @@
         "**/__pycache__/**": true
     },
     "accessibility.verbosity.terminal": false,
-    "workbench.activityBar.location": "hidden",
+    "workbench.activityBar.location": "bottom",
     "editor.semanticHighlighting.enabled": false,
     "debug.onTaskErrors": "abort",
     "editor.stickyScroll.enabled": false,
@@ -83,5 +73,14 @@
     "editor.lineNumbers": "off",
     "rest-client.rememberCookiesForSubsequentRequests": false,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "dotnet.codeLens.enableReferencesCodeLens": false
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "files.exclude": {
+        "**/.env/": true
+    },
+    "workbench.editor.wrapTabs": true,
+    "window.density.editorTabHeight": "compact",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "python.analysis.typeCheckingMode": "standard",
+    "workbench.colorTheme": "One Monokai Shadow",
 }
